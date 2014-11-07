@@ -1,0 +1,4 @@
+digraph double {
+  a -> b -> c -> d -> e -> a
+  a -> e -> d -> c -> b -> a
+}

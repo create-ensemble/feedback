@@ -1,0 +1,8 @@
+digraph weird {
+  a -> b -> c -> a
+  d -> e -> d
+  a -> d
+  e -> b
+  a -> a
+  c -> c
+}

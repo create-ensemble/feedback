@@ -1,0 +1,4 @@
+digraph rings {
+  a -> b -> c -> a
+  d -> e -> d
+}

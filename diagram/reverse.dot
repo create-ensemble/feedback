@@ -1,0 +1,3 @@
+digraph reverse {
+  a -> e -> d -> c -> b -> a
+}
