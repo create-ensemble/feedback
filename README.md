@@ -32,11 +32,13 @@ performance.
 As the nature of the piece has evolved so has the description of the typical
 (or desirable) instrument. Each instrument in the piece is a node in a digraph,
 so in order to allow feedback, each instrument must provide a few basic
-affordances and each digraph must contain at least one cycle. Each node must
-provide some sort of attenuation/amplification and some perceptually
-substantial delay. Ideally (optionally), an instrument (or the system) shows
-the player the input level and the output level of her node, but the input
-spectrum and the output spectrum may be more useful visual feeback.
+affordances and each digraph (there may be more than one) must contain at least
+one cycle--One way to ensure this is to make sure the "out degree" of each node
+is 1 where an out-vertex means "listens to". Each node must provide some sort
+of attenuation/amplification and some perceptually substantial delay. Ideally
+(optionally), an instrument (or the system) shows the player the input level
+and the output level of her node, but the input spectrum and the output
+spectrum may be more useful visual feeback.
 
 For the piece to remain viable, some characteristics are necessary for the
 system and some characteristics are necessary for each individual node
@@ -49,9 +51,10 @@ time.
 
 The system may be thought of as a [Feedback Delay Network][].
 
-Each instrument may exhibit internal feedback.
+Each instrument may exhibit internal feedback and each instrument creator is
+encouraged to internal feedback.
 
-## Scholarly References
+## (Possible) Scholarly References
 
 http://www.mtg.upf.edu/files/publications/9b7c65-NIME2005-Jorda.pdf
 
