@@ -56,7 +56,8 @@ encouraged to internal feedback.
 
 ## (Possible) Scholarly References
 
-http://www.mtg.upf.edu/files/publications/9b7c65-NIME2005-Jorda.pdf
+http://www.mtg.upf.edu/files/publications/9b7c65-NIME2005-Jorda.pdf  
+http://www.chadmckinneyaudio.com/WP-Content/resources/papers/Visualizing2013.pdf  
 
 ## Topics / Keywords
 
