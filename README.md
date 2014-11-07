@@ -38,17 +38,20 @@ substantial delay. Ideally (optionally), an instrument (or the system) shows
 the player the input level and the output level of her node, but the input
 spectrum and the output spectrum may be more useful visual feeback.
 
-Necessary characteristics of the system versus necessary characteristics of the
-individual instrument or node....
+For the piece to remain viable, some characteristics are necessary for the
+system and some characteristics are necessary for each individual node
+(instrument). When the topology is a simple, single ring, at least one
+instrument needs to exhibit a long delay (perceptually substantial) so that the
+feedback system does not suffer from unwieldy "ringing". More generally, any
+instrument that is participant in a ring (aka digraph cycle) should exhibit a
+long delay. For this reason, ideally each instrument has controllable delay
+time.
 
-Optional, but helpful or pleasing
-  Input / Output visualization (level and/or spectrum)
-  Controllable delay
+The system may be thought of as a [Feedback Delay Network][].
 
-Rad, but unnecessary
-  Internal feedback
+Each instrument may exhibit internal feedback.
 
-## 
+## Scholarly References
 
 http://www.mtg.upf.edu/files/publications/9b7c65-NIME2005-Jorda.pdf
 
@@ -57,7 +60,8 @@ http://www.mtg.upf.edu/files/publications/9b7c65-NIME2005-Jorda.pdf
 - [Second-order Cybernetics][]  
 - [Directed graph][]  
 - [Stability theory][]  
-- [Attractors][]
+- [Attractors][]  
+- [Feedback Delay Network][]  
 
 [CREATE Ensemble]: https://github.com/create-ensemble
 [This repo]: https://github.com/create-ensemble/feedback
@@ -65,3 +69,4 @@ http://www.mtg.upf.edu/files/publications/9b7c65-NIME2005-Jorda.pdf
 [Directed graph]: http://en.wikipedia.org/wiki/Directed_graph
 [Stability theory]: http://en.wikipedia.org/wiki/Stability_theory
 [Attractors]: http://en.wikipedia.org/wiki/Attractor
+[Feedback Delay Network]: https://ccrma.stanford.edu/~jos/cfdn/Feedback_Delay_Networks.html
