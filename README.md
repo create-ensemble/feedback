@@ -35,10 +35,11 @@ of audio signals (and potentially metadata streams), so in order to allow
 feedback, each instrument must provide a few basic affordances and each digraph
 (there may be more than one) must contain at least one cycle--One way to ensure
 this is to make the "out degree" of each node 1 where an out-vertex means
-"listens to" or "processes". Each node must provide some sort of
-attenuation/amplification and some perceptually substantial delay. Ideally
-(optionally), an instrument (or the system) shows the player the input level
-and the output level of her node, but the input spectrum and the output
+"listens to" or "processes" (Alternatively, you could make the "in degree" 1
+where an in-vertex means "sends audio to"). Next, each node must provide some
+sort of attenuation/amplification and some perceptually substantial delay.
+Ideally (optionally), an instrument (or the system) shows the player the input
+level and the output level of her node, but the input spectrum and the output
 spectrum may be more useful visual feeback.
 
 For the piece to remain viable, some characteristics are necessary for the
