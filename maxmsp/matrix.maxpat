@@ -87,7 +87,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1290.0, 330.0, 120.0, 33.0 ],
+					"patching_rect" : [ 1290.0, 330.0, 121.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 1273.5, 349.0, 121.5, 33.0 ],
@@ -105,11 +105,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.0, 945.0, 167.0, 596.0 ],
+					"patching_rect" : [ 315.0, 945.0, 163.0, 596.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 15,
-					"presentation_rect" : [ 720.0, 7.0, 705.0, 194.0 ],
-					"text" : "CREATE Ensemble Feedback Piece Matrix Mixer (v0.2) -- karl yerkes / 2014.11.14\n\nThis patch replaces the analogue mixer we used for the CREATE Ensemble Feedback Piece. Here we may 1) reduce the number of gain analogue stages by mixing mostly in the digital domain, 2) inspect/test/characterize each player's instrument*, 3) create visualizations of various aspects of the piece (graph, levels, spectrums, delays, etc), 4) automate graph topology changes (and save presets).\n\n* We may be able to determine the minimum, maximum, and nominal gain of each instrument as well as some delay and spectral characteristics using test signals and cross-correlation.\n\nWe lose the \"zero latency\" (and maybe lower SNR?) of an analogue mixer and pay the price of ADC/DAC: noise and latency, but so far we've improved the piece and what we might win is totally rad.\n\nHit the ESC key to toggle fullscreen, the ` (tick) key to toggle \"presentation mode\", and the SPACE bar to toggle audio.\n"
+					"presentation_linecount" : 14,
+					"presentation_rect" : [ 720.0, 7.0, 647.0, 194.0 ],
+					"text" : "CREATE Ensemble Feedback Piece Matrix Mixer (v0.2) -- karl yerkes / 2014.11.14\n\nThis patch replaces the analogue mixer we used for the CREATE Ensemble Feedback Piece. Here we may 1) reduce the number of gain stages by mixing mostly in the digital domain, 2) inspect/test/characterize each player's instrument*, 3) create visualizations of various aspects of the piece (graph, levels, spectrums, delays, etc), 4) automate graph topology changes (and save presets).\n\n* We may be able to determine the minimum, maximum, and unity gain of each instrument (as well as some delay and spectral characteristics using test signals and cross-correlation... in the future).\n\nWe lose the \"zero latency\" (and maybe better SNR?) of an analogue mixer and pay the price of ADC/DAC: noise and latency, but so far we've improved the piece and what we might win is totally rad.\n\nHit the ESC key to toggle fullscreen, the ` (tick) key to toggle \"presentation mode\", and the SPACE bar to toggle audio."
 				}
 
 			}
