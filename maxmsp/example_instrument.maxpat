@@ -29,40 +29,13 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-52",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 900.0, 255.0, 51.0, 20.0 ],
-					"text" : "gate~ 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-50",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 90.0, 210.0, 100.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-49",
 					"logfreq" : 1,
 					"maxclass" : "spectroscope~",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 585.0, 465.0, 155.0 ],
-					"presentation_rect" : [ 254.0, 627.0, 0.0, 0.0 ]
+					"patching_rect" : [ 255.0, 585.0, 465.0, 155.0 ]
 				}
 
 			}
@@ -171,7 +144,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 15.0, 405.0, 18.0, 50.0 ],
 					"size" : 3,
-					"value" : 1
+					"value" : 2
 				}
 
 			}
@@ -236,7 +209,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 130.0, 210.0, 18.0 ],
-									"text" : "4749.856445 0.579363 0.856256"
+									"text" : "9465.376953 0.83815 0.877269"
 								}
 
 							}
@@ -436,7 +409,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 130.0, 210.0, 18.0 ],
-									"text" : "48.387104 0.891329 0.732534"
+									"text" : "45.516167 0.83815 0.85118"
 								}
 
 							}
@@ -711,7 +684,7 @@
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 255.0, 15.0, 465.0, 180.0 ],
-					"setfilter" : [ 0, 2, 1, 0, 0, 48.387104, 0.891329, 0.732534, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 2, 1, 0, 0, 45.516167, 0.83815, 0.85118, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -739,7 +712,7 @@
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 255.0, 390.0, 465.0, 180.0 ],
-					"setfilter" : [ 0, 1, 1, 0, 0, 4749.856445, 0.579363, 0.856256, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 1, 1, 0, 0, 9465.376953, 0.83815, 0.877269, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
