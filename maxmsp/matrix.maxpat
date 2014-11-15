@@ -36,7 +36,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1200.0, 240.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1191.0, 210.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1212.0, 232.0, 150.0, 20.0 ],
 					"text" : "key presses mean what?"
@@ -53,10 +53,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1365.0, 300.0, 150.0, 33.0 ],
+					"patching_rect" : [ 1365.0, 270.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1342.0, 289.5, 150.0, 33.0 ],
+					"presentation_rect" : [ 1344.0, 289.5, 67.0, 33.0 ],
 					"text" : "audio\nsettings"
 				}
 
@@ -70,9 +70,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1200.0, 345.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1199.0, 300.0, 66.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1185.0, 315.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 1185.0, 315.0, 75.0, 20.0 ],
 					"text" : "audio on?"
 				}
 
@@ -87,10 +87,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1245.0, 345.0, 150.0, 33.0 ],
+					"patching_rect" : [ 1290.0, 330.0, 120.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1273.5, 349.0, 150.0, 33.0 ],
+					"presentation_rect" : [ 1273.5, 349.0, 121.5, 33.0 ],
 					"text" : "look in here for extra audio stuff"
 				}
 
@@ -101,15 +101,15 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-63",
-					"linecount" : 45,
+					"linecount" : 44,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.0, 945.0, 164.0, 610.0 ],
+					"patching_rect" : [ 315.0, 945.0, 167.0, 596.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 15,
-					"presentation_rect" : [ 720.0, 7.0, 742.0, 208.0 ],
-					"text" : "CREATE Ensemble Feedback Piece Matrix Mixer (v0.2)\n\nThis patch replaces the analogue mixer we used for the CREATE Ensemble Feedback Piece. Here we may 1) reduce the number of gain analogue stages by mixing mostly in the digital domain, 2) inspect/test/characterize each player's instrument*, 3) create visualizations of various aspects of the piece (graph, levels, spectrums, delays, etc), 4) automate graph topology changes (and save presets).\n\n* We may be able to determine the minimum, maximum, and nominal gain of each instrument as well as some delay and spectral characteristics using test signals and cross-correlation.\n\nWe lose the \"zero latency\" (and maybe lower SNR?) of an analogue mixer and pay the price of ADC/DAC: noise and latency, but so far we've improved the piece and what we might win is totally rad.\n\nHit the ESC key to toggle fullscreen, the ` (tick) key to toggle \"presentation mode\", and the SPACE bar to toggle audio.\n\n-- karl yerkes / 2014.11.14"
+					"presentation_rect" : [ 720.0, 7.0, 705.0, 194.0 ],
+					"text" : "CREATE Ensemble Feedback Piece Matrix Mixer (v0.2) -- karl yerkes / 2014.11.14\n\nThis patch replaces the analogue mixer we used for the CREATE Ensemble Feedback Piece. Here we may 1) reduce the number of gain analogue stages by mixing mostly in the digital domain, 2) inspect/test/characterize each player's instrument*, 3) create visualizations of various aspects of the piece (graph, levels, spectrums, delays, etc), 4) automate graph topology changes (and save presets).\n\n* We may be able to determine the minimum, maximum, and nominal gain of each instrument as well as some delay and spectral characteristics using test signals and cross-correlation.\n\nWe lose the \"zero latency\" (and maybe lower SNR?) of an analogue mixer and pay the price of ADC/DAC: noise and latency, but so far we've improved the piece and what we might win is totally rad.\n\nHit the ESC key to toggle fullscreen, the ` (tick) key to toggle \"presentation mode\", and the SPACE bar to toggle audio.\n"
 				}
 
 			}
@@ -121,7 +121,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1321.0, 315.0, 20.0, 20.0 ],
+					"patching_rect" : [ 1179.0, 300.0, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1200.0, 335.0, 20.0, 20.0 ]
 				}
@@ -136,7 +136,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1380.0, 287.5, 37.0, 18.0 ],
+					"patching_rect" : [ 1331.5, 277.5, 37.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1305.0, 297.0, 37.0, 18.0 ],
 					"text" : "open"
@@ -806,7 +806,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1355.0, 315.0, 50.0, 20.0 ],
+					"patching_rect" : [ 1291.0, 363.0, 50.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1273.5, 382.0, 50.0, 20.0 ],
 					"saved_object_attributes" : 					{
@@ -2024,21 +2024,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-3",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1200.0, 225.0, 141.0, 47.0 ],
-					"text" : "ESC for fullscreen\n` (tick) for presentation\nSPACE for audio toggle"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-98",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2317,7 +2302,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1200.0, 287.5, 174.0, 20.0 ],
+					"patching_rect" : [ 1179.0, 230.0, 174.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1200.0, 252.0, 174.0, 20.0 ],
 					"saved_object_attributes" : 					{
@@ -2346,7 +2331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1200.0, 313.0, 69.0, 20.0 ],
+					"patching_rect" : [ 1179.0, 255.0, 69.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
