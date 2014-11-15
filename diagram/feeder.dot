@@ -1,0 +1,4 @@
+digraph feeder {
+  e -> d -> c -> b -> a
+  a -> c
+}

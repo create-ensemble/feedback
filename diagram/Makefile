@@ -6,7 +6,8 @@ TARGET=$(SOURCE:.dot=.svg)
 BUILD=dot -Kcirco -Tsvg
 
 %.svg : %.dot
-	$(BUILD) $< -o $@
+	mkdir -p svg
+	$(BUILD) $< -o svg/$@
 
 _: $(TARGET)
 

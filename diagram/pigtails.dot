@@ -1,0 +1,6 @@
+digraph pigtails {
+  e -> d -> a
+  c -> b -> a
+  d -> e
+  b -> c
+}
