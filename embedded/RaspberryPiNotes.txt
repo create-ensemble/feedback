@@ -1,0 +1,68 @@
+apt-get install usbutils
+lsusb
+Bus 001 Device 007: ID 0d8c:0102 C-Media Electronics, Inc. CM106 Like Sound Device
+apt-get install puredata-core
+apt-get install alsa-utils
+
+/etc/modules
+#snd-bcm2835
+
+
+/etc/asound.conf
+pcm.mmap0 {
+    type mmap_emul;
+    slave {
+      pcm "hw:0,0";
+    }
+}
+
+pcm.!default {
+  type plug;
+  slave {
+    pcm mmap0;
+  }
+}
+
+passthru.pd
+#N canvas 573 364 450 300 10;
+#X obj 75 186 dac~ 1 2;
+#X obj 76 107 adc~ 1 2;
+#X connect 1 0 0 0;
+#X connect 1 1 0 1;
+
+pd -nogui -rt -verbose passthru.pd
+
+aplay -L
+null
+    Discard all samples (playback) or generate zero samples (capture)
+sysdefault:CARD=Device
+    USB Sound Device, USB Audio
+    Default Audio Device
+front:CARD=Device,DEV=0
+    USB Sound Device, USB Audio
+    Front speakers
+surround40:CARD=Device,DEV=0
+    USB Sound Device, USB Audio
+    4.0 Surround output to Front and Rear speakers
+surround41:CARD=Device,DEV=0
+    USB Sound Device, USB Audio
+    4.1 Surround output to Front, Rear and Subwoofer speakers
+surround50:CARD=Device,DEV=0
+    USB Sound Device, USB Audio
+    5.0 Surround output to Front, Center and Rear speakers
+surround51:CARD=Device,DEV=0
+    USB Sound Device, USB Audio
+    5.1 Surround output to Front, Center, Rear and Subwoofer speakers
+surround71:CARD=Device,DEV=0
+    USB Sound Device, USB Audio
+    7.1 Surround output to Front, Center, Side, Rear and Woofer speakers
+iec958:CARD=Device,DEV=0
+    USB Sound Device, USB Audio
+    IEC958 (S/PDIF) Digital Audio Output
+
+aplay -l
+**** List of PLAYBACK Hardware Devices ****
+card 0: Device [USB Sound Device], device 0: USB Audio [USB Audio]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+
