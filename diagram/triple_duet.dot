@@ -1,0 +1,5 @@
+digraph triple_duet {
+  a -> b -> a
+  c -> d -> c
+  e -> f -> e
+}

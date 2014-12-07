@@ -1,3 +1,4 @@
 *.svg
 .DS_Store
 diagram/svg/
+diagram/pdf/

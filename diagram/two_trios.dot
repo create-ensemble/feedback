@@ -1,0 +1,4 @@
+digraph two_trios {
+  a -> b -> c -> a
+  d -> e -> f -> d
+}
