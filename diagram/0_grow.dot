@@ -1,0 +1,8 @@
+digraph grow0 {
+  a -> b [style=invis]
+  b -> c [style=invis]
+  c -> d [style=invis]
+  d -> e [style=invis]
+  e -> f [style=invis]
+  f -> a [style=invis]
+}

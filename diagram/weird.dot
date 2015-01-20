@@ -3,6 +3,5 @@ digraph weird {
   d -> e -> d
   a -> d
   e -> b
-  a -> a
-  c -> c
+  f -> {e a}
 }

@@ -1,6 +1,6 @@
 digraph two_trios {
   a -> b -> c -> a
   d -> e -> f -> d
-  c -> d [style=invis]
-  f -> a [style=invis]
+  b -> e
+  f -> a
 }

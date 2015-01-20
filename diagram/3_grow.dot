@@ -1,0 +1,8 @@
+digraph grow1 {
+  a -> b
+  b -> c [penwidth=2]
+  c -> d [penwidth=4]
+  d -> e [style=invis]
+  e -> f [style=invis]
+  f -> a [style=invis]
+}

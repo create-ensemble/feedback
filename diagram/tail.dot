@@ -1,4 +1,5 @@
 digraph tail {
-  a -> b -> c -> d -> e
+  a -> b -> c -> d -> e -> f
   c -> a
+  f -> a [style=invis]
 }
