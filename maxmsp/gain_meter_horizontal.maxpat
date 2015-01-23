@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 712.0, 87.0, 640.0, 480.0 ],
+		"rect" : [ 593.0, 258.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -55,6 +55,7 @@
 					"id" : "obj-96",
 					"maxclass" : "meter~",
 					"numinlets" : 1,
+					"numleds" : 20,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 15.0, 75.0, 255.0, 45.0 ],
