@@ -1,12 +1,18 @@
 digraph complete {
   graph [margin="0,0"]
   node [shape=circle, fixedsize=true, width=1.0, height=1.0, fontsize=24]
+
   a -> {a b c d e f}
   b -> {a b c d e f}
   c -> {a b c d e f}
   d -> {a b c d e f}
   e -> {a b c d e f}
   f -> {a b c d e f}
+
+  // hack to correct ordering
+  //
+  f [label="b"]
+  b [label="f"]
 
   /*
   a -> {  b c d e f}
