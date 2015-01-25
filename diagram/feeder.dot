@@ -1,4 +1,5 @@
 digraph feeder {
+  node [shape=circle, fixedsize=true, width=1.0, height=1.0, fontsize=24]
   e -> d -> c -> b -> a
   a -> c
 }

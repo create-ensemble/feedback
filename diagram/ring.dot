@@ -1,3 +1,4 @@
 digraph ring {
+  node [shape=circle, fixedsize=true, width=1.0, height=1.0, fontsize=24]
   a -> b -> c -> d -> e -> f -> a
 }
