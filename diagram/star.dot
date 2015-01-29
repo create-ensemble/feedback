@@ -1,10 +1,15 @@
 digraph star {
   graph [margin="0,0"]
   node [shape=circle, fixedsize=true, width=1.0, height=1.0, fontsize=24]
+
+  a -> {b c d e f}
+  {b c d e f} -> a
+  /*
   a -> b -> c -> d -> e -> f -> a [style=invis]
   a -> f -> e -> d -> c -> b -> a [style=invis]
   c -> {d e f a b}
        {d e f a b} -> c
+       */
   //a -> {b c d e f}
   //{b c d e f} -> a
 }
