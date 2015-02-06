@@ -8,6 +8,8 @@
 // added. Perhaps we can take that LU decomposition, then calculate the
 // determinant. a determinant near 0 would be bad and lead to a retry.
 //
+// what's real and what's complex? is the mix matrix real? should it be complex?
+//
 // use gsl_rng_mt19937 instead of cmath/rand()
 //
 // on OSX...
