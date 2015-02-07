@@ -8,6 +8,7 @@ var rowSum = new Array(N, 0.0);
 
 function init() {
   post('init');
+  post();
   clear();
 }
 
@@ -16,17 +17,23 @@ function list(c, r, g) {
     rowSum[r]++;
   else if (g == 0)
     rowSum[r]--;
-  else
-    post("ERROR\n");
+  else {
+    post("ERROR: g =");
+    post(g);
+    post();
+  }
 
   if (rowSum[r] == 0)
     outlet(r, 1.0);
   else if (rowSum[r] == 1)
     outlet(r, 1.0);
-  else if (rowSum[r] < 0)
-    post("ERROR\n");
+  else if (rowSum[r] < 0) {
+    post("ERROR: rowSum[r] =");
+    post(rowSum[r]);
+    post();
+  }
   else
-    outlet(r, sqrt(1.0 / rowSum[r]));
+    outlet(r, Math.sqrt(1.0 / rowSum[r]));
 }
 
 function clear() {
