@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 517.0, 64.0, 640.0, 480.0 ],
+		"rect" : [ 194.0, 212.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -36,8 +36,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 30.0, 85.0, 20.0 ],
-					"text" : "r all_gain_say"
+					"patching_rect" : [ 225.0, 45.0, 90.0, 20.0 ],
+					"text" : "r all_gain_hear"
 				}
 
 			}
@@ -50,7 +50,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 270.0, 150.0, 36.0, 20.0 ],
+					"patching_rect" : [ 285.0, 165.0, 36.0, 20.0 ],
 					"text" : "*~ 0."
 				}
 
@@ -64,8 +64,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 75.0, 101.0, 20.0 ],
-					"text" : "r noise_gain_say"
+					"patching_rect" : [ 345.0, 90.0, 107.0, 20.0 ],
+					"text" : "r noise_gain_hear"
 				}
 
 			}
@@ -78,7 +78,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 240.0, 105.0, 40.0, 20.0 ],
+					"patching_rect" : [ 255.0, 120.0, 40.0, 20.0 ],
 					"text" : "pink~"
 				}
 
@@ -90,7 +90,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 86.0, 300.0, 25.0, 25.0 ]
+					"patching_rect" : [ 101.0, 315.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -102,7 +102,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 15.0, 25.0, 25.0 ]
+					"patching_rect" : [ 101.0, 30.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -114,7 +114,7 @@
 					"numleds" : 20,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 120.0, 60.0, 45.0, 225.0 ],
+					"patching_rect" : [ 135.0, 75.0, 45.0, 225.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 0.0, 45.0, 225.0 ]
 				}
@@ -128,7 +128,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 90.0, 60.0, 15.0, 225.0 ],
+					"patching_rect" : [ 105.0, 75.0, 15.0, 225.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 15.0, 225.0 ]
 				}
