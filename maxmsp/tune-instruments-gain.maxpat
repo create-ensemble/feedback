@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 4
+			"minor" : 1,
+			"revision" : 7,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 225.0, 45.0, 1409.0, 595.0 ],
@@ -29,12 +30,27 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-54",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 229.0, 486.0, 74.0, 18.0 ],
+					"text" : "startwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-52",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1299.362793, 514.0, 51.0, 48.0 ],
+					"patching_rect" : [ 1299.362793, 514.0, 51.0, 47.0 ],
 					"text" : "12"
 				}
 
@@ -43,11 +59,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-43",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1217.362915, 514.0, 48.0, 48.0 ],
+					"patching_rect" : [ 1217.362915, 514.0, 48.0, 47.0 ],
 					"text" : "11"
 				}
 
@@ -56,11 +73,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1135.363037, 514.0, 51.0, 48.0 ],
+					"patching_rect" : [ 1135.363037, 514.0, 51.0, 47.0 ],
 					"text" : "10"
 				}
 
@@ -69,11 +87,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1053.363159, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 1053.363159, 514.0, 39.0, 47.0 ],
 					"text" : "9"
 				}
 
@@ -82,11 +101,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-40",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 971.36322, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 971.36322, 514.0, 39.0, 47.0 ],
 					"text" : "8"
 				}
 
@@ -95,11 +115,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-39",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 889.363281, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 889.363281, 514.0, 39.0, 47.0 ],
 					"text" : "7"
 				}
 
@@ -108,11 +129,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-38",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 807.363342, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 807.363342, 514.0, 39.0, 47.0 ],
 					"text" : "6"
 				}
 
@@ -121,11 +143,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-33",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 725.363403, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 725.363403, 514.0, 39.0, 47.0 ],
 					"text" : "5"
 				}
 
@@ -134,11 +157,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-30",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 643.363464, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 643.363464, 514.0, 39.0, 47.0 ],
 					"text" : "4"
 				}
 
@@ -147,11 +171,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-24",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 561.181763, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 561.181763, 514.0, 39.0, 47.0 ],
 					"text" : "3"
 				}
 
@@ -160,11 +185,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.363586, 514.0, 39.0, 48.0 ],
+					"patching_rect" : [ 479.363586, 514.0, 39.0, 47.0 ],
 					"text" : "2"
 				}
 
@@ -173,12 +199,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 36.0,
+					"frgb" : 0.0,
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 397.363647, 514.0, 39.0, 48.0 ],
-					"presentation_rect" : [ 83.999878, 90.0, 0.0, 0.0 ],
+					"patching_rect" : [ 397.363647, 514.0, 39.0, 47.0 ],
 					"text" : "1"
 				}
 
@@ -187,6 +213,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-37",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -200,6 +227,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-36",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -311,12 +339,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-21",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.999878, 28.0, 48.0, 34.0 ],
+					"patching_rect" : [ 58.999878, 28.0, 48.0, 33.0 ],
 					"text" : "Which inst?"
 				}
 
@@ -439,12 +468,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-16",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 170.363525, 28.0, 68.0, 34.0 ],
+					"patching_rect" : [ 170.363525, 28.0, 68.0, 33.0 ],
 					"text" : "0 = none, -1 = all"
 				}
 
@@ -1201,6 +1231,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 11 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1239,7 +1278,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "gain_tester.maxpat",
 				"bootpath" : "/Users/user/Desktop/feedback/maxmsp",
-				"patcherrelativepath" : "",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
