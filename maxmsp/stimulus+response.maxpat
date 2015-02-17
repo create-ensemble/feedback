@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 130.0, 44.0, 1569.0, 1026.0 ],
+		"rect" : [ 168.0, 44.0, 1569.0, 1026.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,30 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-55",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 949.0, 601.0, 37.0, 18.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 930.0, 632.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -92,7 +116,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1269.75, 853.0, 85.0, 18.0 ],
-					"text" : "test-005"
+					"text" : "test-002"
 				}
 
 			}
@@ -1431,6 +1455,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1468,28 +1501,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "gain_meter_vertical_say.maxpat",
-				"bootpath" : "/Users/matt/repos/feedback/maxmsp",
+				"bootpath" : "/Users/user/Desktop/feedback/maxmsp",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gain_tester.maxpat",
-				"bootpath" : "/Users/matt/repos/feedback/maxmsp",
+				"bootpath" : "/Users/user/Desktop/feedback/maxmsp",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SignalGenerator.maxpat",
-				"bootpath" : "/Users/matt/repos/feedback/maxmsp",
+				"bootpath" : "/Users/user/Desktop/feedback/maxmsp",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mono-recorder.maxpat",
-				"bootpath" : "/Users/matt/repos/feedback/maxmsp",
+				"bootpath" : "/Users/user/Desktop/feedback/maxmsp",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
