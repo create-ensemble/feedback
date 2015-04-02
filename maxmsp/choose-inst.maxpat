@@ -31,13 +31,28 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 18.0, 41.0, 50.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.0, 40.0, 50.0, 20.0 ],
+					"text" : "bypass"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 287.0, 263.0, 43.0, 18.0 ],
-					"presentation_rect" : [ 290.5, 251.0, 0.0, 0.0 ],
 					"text" : "set $1"
 				}
 
@@ -80,7 +95,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 6.0, 50.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 2.0, 50.0, 18.0 ],
+					"presentation_rect" : [ 2.0, 1.0, 50.0, 18.0 ],
 					"text" : "#1"
 				}
 
@@ -323,22 +338,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 86.0, 33.0, 67.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 58.0, 20.0, 67.0, 20.0 ],
-					"text" : "delay (ms)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-8",
 					"maxclass" : "flonum",
 					"minimum" : 0.0,
@@ -348,23 +347,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 28.0, 31.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 20.0, 50.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-4",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 53.0, 50.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 42.0, 50.0, 20.0 ],
-					"text" : "Bypass"
+					"presentation_rect" : [ 2.0, 20.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -379,8 +362,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 46.0, 71.0, 139.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 60.0, 139.0, 20.0 ],
-					"text" : "ADC/DAC = Real = Live"
+					"presentation_rect" : [ 15.0, 56.0, 31.0, 20.0 ],
+					"text" : "live"
 				}
 
 			}
@@ -396,7 +379,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 28.0, 53.0, 18.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 42.0, 18.0, 34.0 ],
+					"presentation_rect" : [ 2.0, 41.0, 18.0, 34.0 ],
 					"size" : 2,
 					"value" : 1
 				}
