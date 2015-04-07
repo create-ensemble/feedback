@@ -51,7 +51,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1055.0, 112.0, 67.0, 18.0 ],
-					"presentation_rect" : [ 1031.0, 107.0, 0.0, 0.0 ],
 					"text" : "/*/delay $1"
 				}
 
@@ -412,7 +411,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 826.0, 190.0, 61.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 671.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 671.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -427,7 +426,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 766.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 610.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 610.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -442,7 +441,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 706.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 549.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 549.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -457,7 +456,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 646.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 488.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 488.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -472,7 +471,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 586.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 427.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 427.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -487,7 +486,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 526.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 366.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 366.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -502,7 +501,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 466.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 305.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 305.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -517,7 +516,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 406.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 244.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -532,7 +531,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 346.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 183.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 183.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -547,7 +546,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 286.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 122.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 122.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -562,7 +561,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 226.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 61.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 61.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -577,7 +576,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 166.0, 190.0, 59.0, 95.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 59.0, 92.0 ]
+					"presentation_rect" : [ 0.0, 0.0, 63.0, 180.0 ]
 				}
 
 			}
@@ -861,9 +860,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "whistle-space9.maxpat",
-				"bootpath" : "/Users/matt/Documents/School/classes/CS377/cybernetic-improviser",
-				"patcherrelativepath" : "../../../Documents/School/classes/CS377/cybernetic-improviser",
+				"name" : "whistlespace.maxpat",
+				"bootpath" : "/Users/matt/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "./whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -876,23 +875,23 @@
 			}
 , 			{
 				"name" : "mod-delay~.maxpat",
-				"bootpath" : "/Users/matt/Documents/School/classes/CS377/cybernetic-improviser",
-				"patcherrelativepath" : "../../../Documents/School/classes/CS377/cybernetic-improviser",
+				"bootpath" : "/Users/matt/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "./whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "boring",
-				"bootpath" : "/Users/matt/Documents/School/classes/CS377/cybernetic-improviser",
-				"patcherrelativepath" : "../../../Documents/School/classes/CS377/cybernetic-improviser",
-				"type" : "maxb",
+				"name" : "boring.maxpat",
+				"bootpath" : "/Users/matt/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "./whistlespace",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "boring~",
-				"bootpath" : "/Users/matt/Documents/School/classes/CS377/cybernetic-improviser",
-				"patcherrelativepath" : "../../../Documents/School/classes/CS377/cybernetic-improviser",
-				"type" : "maxb",
+				"name" : "boring~.maxpat",
+				"bootpath" : "/Users/matt/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "./whistlespace",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
