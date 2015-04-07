@@ -30,8 +30,11 @@ function list() {
   for (i = 2; i < L; i += 3) {
     // if the gain indicates that the previous (row, column) pair is "connected"
     if (a[i] > 0.5) {
+	  // matrix~ is 0-origin but our labeling system is 1-origin
+      row = a[i-2]+1;
+      col = a[i-1]+1;
       // make a line in the file with an arrow: row -> column
-      dot += "  " + a[i-2] + " -> " + a[i-1] + "\n"
+      dot += "  " + row + " -> " + col + "\n"
     }
   }
   dot += "}\n"
