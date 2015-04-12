@@ -1,13 +1,11 @@
-# First copy all the jars from Processing to Max (see README.md).
-# Then adjust this classpath according to which version of Max
-# you have.
+# compile [mxj shell] external
 #
 
-# for Max 6.1.10
+# if you have Max 6.1.10...
 #
 CLASSPATH = -cp ".:/Applications/Max 6.1/Cycling '74/java/lib/*"
 
-# for Max 5
+# if you have Max 5....
 #
 #CLASSPATH = -cp ".:/Applications/Max5/Cycling '74/java/lib/*"
 
