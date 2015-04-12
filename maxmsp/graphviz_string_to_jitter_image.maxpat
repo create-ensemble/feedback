@@ -32,6 +32,21 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"id" : "obj-10",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 360.0, 390.0, 535.0, 114.0 ],
+					"text" : "this patch makes some assumptions:\n\n- you're running this patch from the maxmsp/ folder of a clone of the create-ensemble feedback git repo (https://github.com/create-ensemble/feedback)\n- you're using a mac\n- you have homebrew installed (http://brew.sh)\n- you installed graphviz using brew (brew install graphviz)\n- you don't use the files /tmp/graph.dot and /tmp/graph.png elsewhere"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -93,7 +108,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 453.0, 120.0, 155.0, 18.0 ],
-					"text" : "/tmp/graph_7b33bb.png"
+					"text" : "/tmp/graph_5ed037.png"
 				}
 
 			}
@@ -121,7 +136,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 278.0, 120.0, 165.0, 18.0 ],
-					"text" : "/tmp/graph_7b33bb.dot"
+					"text" : "/tmp/graph_5ed037.dot"
 				}
 
 			}
@@ -662,7 +677,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }
