@@ -8364,14 +8364,15 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
-									"fontsize" : 12.0,
+									"fontsize" : 41.0,
 									"frgb" : 0.0,
 									"id" : "obj-6",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 796.0, 698.0, 178.0, 20.0 ],
-									"text" : "CE visual branding goes here?"
+									"patching_rect" : [ 780.499695, 665.0, 562.0, 98.0 ],
+									"text" : "CREATE\nEnsemble"
 								}
 
 							}
@@ -9201,7 +9202,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.400668, 0.364396, 0.470363, 1.0 ],
+									"bgcolor" : [ 0.806751, 0.879361, 1.0, 1.0 ],
 									"id" : "obj-1",
 									"maxclass" : "panel",
 									"numinlets" : 1,
@@ -12463,15 +12464,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-142", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-25", 12 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 12 ]
