@@ -31,6 +31,21 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-45",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 597.392517, 414.0, 150.0, 47.0 ],
+					"text" : "Whistlespace also goes through DA/AD so Matt can use his mixer."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -905,6 +920,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -968,7 +992,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 3 ],
+					"destination" : [ "obj-28", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
@@ -985,8 +1009,8 @@
 			}
 , 			{
 				"name" : "gain~.1cyb.maxpat",
-				"bootpath" : "/Users/matt/Documents/max_path/enabled/matt repertoire dependencies mess/MattLib/cybernetics",
-				"patcherrelativepath" : "../../../Documents/max_path/enabled/matt repertoire dependencies mess/MattLib/cybernetics",
+				"bootpath" : "/Users/matt/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "./whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}

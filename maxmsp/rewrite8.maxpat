@@ -8361,6 +8361,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -9884,7 +9885,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 964.0, 84.0, 699.0, 602.0 ],
+						"rect" : [ 1131.0, 60.0, 699.0, 602.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -9908,13 +9909,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-8",
-									"linecount" : 3,
+									"linecount" : 9,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 304.0, 47.0, 85.0, 45.0 ],
-									"text" : ";\r1-name Matt;\r2-name Karl"
+									"patching_rect" : [ 304.0, 46.0, 113.0, 125.0 ],
+									"text" : ";\r1-name Matt;\r2-name Hafiz;\r3-name Tim;\r4-name Anis;\r5-name Charlie;\r6-name Fernando;\r7-name Hannah;\r8-name Karl"
 								}
 
 							}
@@ -9956,7 +9957,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 83.0, 90.0, 69.0, 18.0 ],
-									"text" : "/6/delay 50"
+									"text" : "/4/delay 50"
 								}
 
 							}
@@ -11600,7 +11601,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 289.499756, -11.0, 72.0, 20.0 ],
+					"patching_rect" : [ 302.499756, -11.0, 72.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -12197,15 +12198,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-83", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-103", 0 ]
 				}
 
 			}
