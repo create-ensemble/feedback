@@ -1,5 +1,14 @@
 digraph odd {
   edge [penwidth=2] node [penwidth=2, fontsize=24]
+  Matt     [pos="527.681,-98.5215"]
+  Hafiz    [pos="327.075,-15.4274"]
+  Karl     [pos="610.776,-299.128"]
+  Tim      [pos="126.468,-98.5215"]
+  Anis     [pos="43.3738,-299.128"]
+  Charlie  [pos="126.468,-499.735"]
+  Fernando [pos="327.075,-582.829"]
+  Hannah   [pos="527.681,-499.735"]
+
   Matt -> Tim
   Matt -> Anis
   Matt -> Charlie

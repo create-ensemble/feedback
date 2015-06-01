@@ -1,10 +1,5 @@
 digraph not_connected {
   edge [penwidth=2] node [penwidth=2, fontsize=24]
-//  Matt -> Hafiz -> Tim -> Anis -> Charlie -> Fernando -> Hannah -> Karl -> Matt [style=invis]
-//  Matt -> Karl -> Hannah -> Fernando -> Charlie -> Anis -> Tim -> Hafiz -> Matt [style=invis]
-
-//  Matt Hafiz Tim Anis Charlie Fernando Hannah Karl Matt
-
   Matt     [pos="527.681,-98.5215"]
   Hafiz    [pos="327.075,-15.4274"]
   Karl     [pos="610.776,-299.128"]
@@ -13,4 +8,5 @@ digraph not_connected {
   Charlie  [pos="126.468,-499.735"]
   Fernando [pos="327.075,-582.829"]
   Hannah   [pos="527.681,-499.735"]
+
 }

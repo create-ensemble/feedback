@@ -21,7 +21,7 @@ public class shell extends MaxObject {
     for (Atom a : argument)
       command += " " + a;
     try {
-      Process p = Runtime.getRuntime().exec(command);
+      Process p = Runtime.getRuntime().exec(command, null, ".");
       p.waitFor();
       outletBang(0);
     }

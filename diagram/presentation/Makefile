@@ -6,7 +6,8 @@ TARGET=$(SOURCE:.dot=.svg)
 TARGET_PDF=$(SOURCE:.dot=.pdf)
 BUILD=dot -Kneato -n1 -Tsvg
 #BUILD=dot -Kcirco -Tsvg
-BUILD_PDF=dot -Kcirco -Tpdf
+BUILD_PDF=dot -Kneato -n1 -Tpdf
+#BUILD_PDF=dot -Kcirco -Tpdf
 
 %.svg : %.dot
 	mkdir -p svg
