@@ -1,0 +1,7 @@
+digraph trios_and_duets {
+  edge [penwidth=2] node [penwidth=2, fontsize=24]
+  Matt -> Hafiz -> Tim -> Anis -> Charlie -> Fernando -> Hannah -> Karl -> Matt [style=invis]
+  Matt -> Hafiz -> Tim -> Matt
+  Anis -> Charlie -> Fernando -> Anis
+  Hannah -> Karl -> Hannah
+}

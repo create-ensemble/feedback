@@ -1,0 +1,14 @@
+digraph weird {
+  edge [penwidth=2]  node [penwidth=2, fontsize=24]
+  Matt -> Hafiz
+  Hafiz -> Karl
+  Tim -> Matt
+  Tim -> Charlie
+  Anis -> Fernando
+  Charlie -> Anis
+  Fernando -> Tim
+  Fernando -> Hannah
+  Hannah -> Hafiz
+  Karl -> Fernando
+}
+ 

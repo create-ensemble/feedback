@@ -1,0 +1,11 @@
+digraph star {
+  edge [penwidth=2] node [penwidth=2, fontsize=24]
+//  Matt -> Hafiz -> Tim -> Anis -> Charlie -> Fernando -> Hannah -> Karl -> Matt [style=invis]
+  Matt -> Anis -> Matt
+  Matt -> Charlie -> Matt
+  Matt -> Fernando -> Matt
+  Matt -> Hannah -> Matt
+  Matt -> Karl -> Matt
+  Matt -> Hafiz -> Matt
+  Matt -> Tim -> Matt
+}

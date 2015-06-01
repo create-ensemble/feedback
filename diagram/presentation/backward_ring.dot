@@ -1,0 +1,5 @@
+digraph backward_ring {
+  edge [penwidth=2] node [penwidth=2, fontsize=24]
+  Matt -> Hafiz -> Tim -> Anis -> Charlie -> Fernando -> Hannah -> Karl -> Matt [style=invis]
+  Matt -> Karl -> Hannah -> Fernando -> Charlie -> Anis -> Tim -> Hafiz -> Matt
+}

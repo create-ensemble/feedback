@@ -1,0 +1,53 @@
+digraph fully_connected {
+  edge [penwidth=2] node [penwidth=2, fontsize=24]
+  Matt -> Hafiz -> Tim -> Anis -> Charlie -> Fernando -> Hannah -> Karl -> Matt
+  Matt -> Karl -> Hannah -> Fernando -> Charlie -> Anis -> Tim -> Hafiz -> Matt
+
+  Karl -> Hafiz -> Karl
+  Karl -> Tim -> Karl
+  Karl -> Anis -> Karl
+  Karl -> Charlie -> Karl
+  Karl -> Fernando -> Karl
+
+  Matt -> Tim -> Matt
+  Matt -> Anis -> Matt
+  Matt -> Charlie -> Matt
+  Matt -> Fernando -> Matt
+  Matt -> Hannah -> Matt
+
+  Hafiz -> Anis -> Hafiz
+  Hafiz -> Charlie -> Hafiz
+  Hafiz -> Fernando -> Hafiz
+  Hafiz -> Hannah -> Hafiz
+  Hafiz -> Karl -> Hafiz
+
+  Tim -> Charlie -> Tim
+  Tim -> Fernando -> Tim
+  Tim -> Hannah -> Tim
+  Tim -> Karl -> Tim
+  Tim -> Matt -> Tim
+
+  Anis -> Fernando -> Anis
+  Anis -> Hannah -> Anis
+  Anis -> Karl -> Anis
+  Anis -> Matt -> Anis
+  Anis -> Hafiz -> Anis
+
+  Charlie -> Hannah -> Charlie
+  Charlie -> Karl -> Charlie
+  Charlie -> Matt -> Charlie
+  Charlie -> Hafiz -> Charlie
+  Charlie -> Tim -> Charlie
+
+  Fernando -> Karl -> Fernando
+  Fernando -> Matt -> Fernando
+  Fernando -> Hafiz -> Fernando
+  Fernando -> Tim -> Fernando
+  Fernando -> Anis -> Fernando
+
+  Hannah -> Matt -> Hannah
+  Hannah -> Hafiz -> Hannah
+  Hannah -> Tim -> Hannah
+  Hannah -> Anis -> Hannah
+  Hannah -> Charlie -> Hannah
+}

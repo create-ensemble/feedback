@@ -1,0 +1,17 @@
+digraph odd {
+  edge [penwidth=2] node [penwidth=2, fontsize=24]
+  Matt -> Tim
+  Matt -> Anis
+  Matt -> Charlie
+  Tim -> Hafiz
+  Tim -> Fernando
+  Anis -> Matt
+  Anis -> Charlie
+  Anis -> Hannah
+  Charlie -> Hannah
+  Fernando -> Hafiz
+  Fernando -> Anis
+  Fernando -> Hannah
+  Karl -> Matt -> Karl
+}
+ 
