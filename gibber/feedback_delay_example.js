@@ -1,23 +1,24 @@
 //Gibber.clear()
-l = LPF()
-l.cutoff = Slider()
-h = HPF()
-h.cutoff = Slider()
-d = Delay({wet:1, dry:0})
-d.time = Slider()
-d.feedback = Slider()
+lpf = LPF()
+lpf.cutoff = Slider()
+hpf = HPF()
+hpf.cutoff = Slider()
+delay = Delay({wet:1, dry:0})
+delay.time = Slider()
+delay.feedback = Slider()
 input = Input()
-g = Group(input).fx.add(d, h, l)
-follow = Follow( g.fx[2] )
-inputFollow = Follow( input )
+input.fx.add( delay, hpf, lpf )
 
-h = Column()
-cnvs = Canvas( h )
+inputFollow = Follow( input )
+outputFollow = Follow( input.fx[2] )
+
+meterColumn = Column()
+cnvs = Canvas( meterColumn )
 
 cnvs.draw = function() {
   cnvs.clear()
   
-  var val = follow.getValue(),
+  var val = outputFollow.getValue(),
       inputVal = inputFollow.getValue(),
       canvasHeight = cnvs.height * .5,
       inputHeight = canvasHeight - (canvasHeight * inputVal),
@@ -28,5 +29,5 @@ cnvs.draw = function() {
   cnvs.fill( 'white' )
   
   cnvs.fillRect(0, canvasHeight + inputHeight, cnvs.width, inputHeight )
-  cnvs.fill( 'red' ) 
+  cnvs.fill( 'green' ) 
 }
