@@ -63,6 +63,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -129,28 +130,45 @@
 										"description" : "",
 										"digest" : "",
 										"tags" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
-													"id" : "obj-31",
+													"id" : "obj-3",
 													"maxclass" : "newobj",
-													"numinlets" : 5,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 144.5, 334.0, 94.0, 20.0 ],
-													"text" : "map 0. 1. 0 127"
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "int" ],
+													"patching_rect" : [ 50.0, 255.0, 32.5, 20.0 ],
+													"text" : "t b i"
 												}
 
 											}
 , 											{
 												"box" : 												{
-													"id" : "obj-30",
-													"maxclass" : "button",
-													"numinlets" : 1,
+													"fontname" : "Arial",
+													"fontsize" : 12.0,
+													"id" : "obj-2",
+													"maxclass" : "message",
+													"numinlets" : 2,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 144.5, 265.0, 20.0, 20.0 ]
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 210.0, 165.0, 165.0, 18.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 12.0,
+													"id" : "obj-31",
+													"maxclass" : "newobj",
+													"numinlets" : 6,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 144.5, 334.0, 99.0, 20.0 ],
+													"text" : "scale 0. 1. 0 137"
 												}
 
 											}
@@ -164,7 +182,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "int" ],
 													"patching_rect" : [ 50.0, 229.0, 32.5, 20.0 ],
-													"text" : "+ 1"
+													"text" : "+ 0"
 												}
 
 											}
@@ -247,8 +265,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 100.0, 106.0, 20.0 ],
-													"text" : "udpreceive 10002"
+													"patching_rect" : [ 50.0, 100.0, 99.0, 20.0 ],
+													"text" : "udpreceive 8082"
 												}
 
 											}
@@ -343,6 +361,15 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
+													"destination" : [ "obj-2", 1 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-12", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-29", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -433,16 +460,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-27", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-30", 0 ],
+													"destination" : [ "obj-3", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-27", 0 ]
@@ -460,10 +478,19 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-18", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-3", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-26", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-30", 0 ]
+													"source" : [ "obj-3", 0 ]
 												}
 
 											}
@@ -14090,13 +14117,6 @@
 				"bootpath" : "/Users/ky/code/create-ensemble/feedback/maxmsp",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "map.maxpat",
-				"bootpath" : "/Applications/Max 6.1/patches/docs/tutorial-patchers/msp-tut",
-				"patcherrelativepath" : "../../../../../../Applications/Max 6.1/patches/docs/tutorial-patchers/msp-tut",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
