@@ -302,8 +302,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 50.0, 131.0, 328.0, 20.0 ],
-													"text" : "OSC-route /speaker /topologies /verbose_matrix"
+													"patching_rect" : [ 50.0, 131.0, 258.0, 20.0 ],
+													"text" : "OSC-route /speaker /topology /verbose_matrix"
 												}
 
 											}
@@ -647,6 +647,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
+									"interp" : 131.0,
 									"maxclass" : "gain~",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1513,8 +1514,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 365.698608, 42.0, 34.0, 20.0 ],
-									"presentation_rect" : [ 355.698608, 29.300293, 0.0, 0.0 ]
+									"patching_rect" : [ 365.698608, 42.0, 34.0, 20.0 ]
 								}
 
 							}
