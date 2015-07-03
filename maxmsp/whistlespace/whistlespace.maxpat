@@ -1493,8 +1493,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 167.5, 696.125, 34.0, 17.0 ],
-					"text" : ">~ 50"
+					"patching_rect" : [ 167.5, 696.125, 32.5, 17.0 ],
+					"text" : ">~ 7"
 				}
 
 			}
