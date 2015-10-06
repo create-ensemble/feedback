@@ -38,6 +38,97 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 603.392517, 434.0, 122.0, 22.0 ],
+					"style" : "",
+					"text" : "poly~ whistlespace 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 163.0, 398.0, 70.0, 22.0 ],
+					"style" : "",
+					"text" : "print all-tap"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 182.5, 438.0, 91.0, 22.0 ],
+					"style" : "",
+					"text" : "print from-tapin"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 295.5, 328.0, 43.0, 22.0 ],
+					"style" : "",
+					"text" : "sig~ 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 163.0, 310.0, 51.0, 22.0 ],
+					"style" : "",
+					"text" : "r all-tap"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 709.0, 403.0, 63.0, 22.0 ],
+					"style" : "",
+					"text" : "/power $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 709.0, 370.0, 35.0, 22.0 ],
+					"style" : "",
+					"text" : "== 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -355,6 +446,36 @@
 			}
 , 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 661.892517, 394.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 43.0, 71.0, 20.0, 20.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 117.0, 183.0, 50.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 71.0, 50.0, 20.0 ],
+					"style" : "",
+					"text" : "matt"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-7",
@@ -583,17 +704,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 302.5, 259.0, 51.0, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "signal" ],
+					"patching_rect" : [ 285.5, 266.0, 214.0, 22.0 ],
 					"style" : "",
-					"text" : "gate~ 2"
+					"text" : "gate~ 3"
 				}
 
 			}
@@ -703,7 +823,7 @@
 			}
 , 			{
 				"box" : 				{
-					"disabled" : [ 0, 0 ],
+					"disabled" : [ 0, 0, 0 ],
 					"id" : "obj-1",
 					"itemtype" : 0,
 					"maxclass" : "radiogroup",
@@ -711,10 +831,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 99.0, 153.0, 18.0, 34.0 ],
+					"patching_rect" : [ 99.0, 153.0, 18.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 41.0, 18.0, 34.0 ],
-					"size" : 2,
+					"presentation_rect" : [ 2.0, 41.0, 18.0, 50.0 ],
+					"size" : 3,
 					"style" : "",
 					"value" : 1
 				}
@@ -736,6 +856,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -876,6 +1005,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -886,6 +1024,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-26", 0 ]
@@ -966,6 +1113,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -997,6 +1153,42 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -1038,6 +1230,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1063,9 +1273,74 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "whistlespace.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gain~.1cyb.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mod-delay~.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "boring.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "boring~.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "nothing.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
+				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "OSC-route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mattrms~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "fiddle~.mxo",
 				"type" : "iLaX"
 			}
  ],
