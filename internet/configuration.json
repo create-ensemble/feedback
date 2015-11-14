@@ -2,7 +2,6 @@
   "configuration" : {
     "blockSize" : 512,
     "sampleRate" : 48000,
-    "serverHostName" : "foo.local",
     "node" : [
       {"ip": "193.197.160.121", "clientName": "HFG_matrix-Matt",     "portOffset": 0, "channelCount": 8},
       {"ip": "193.197.160.121", "clientName": "HFG_matrix-Karl",     "portOffset": 1, "channelCount": 8},
