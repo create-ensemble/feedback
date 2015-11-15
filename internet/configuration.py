@@ -16,22 +16,30 @@ url = 'https://raw.githubusercontent.com/create-ensemble/feedback/master/interne
 import argparse
 parser = argparse.ArgumentParser()
 
+# clientname
+#
 parser.add_argument("-c", "--clientname", help =
-'''If you are going to be a client, provide 'clientname' of the jacktrip
+'''If you are going to be a client, provide the 'clientname' of the jacktrip
 session you are to connect to. Try anything. If you're wrong, we'll give you a
 list of possibilities.'''
 )
 
+# (configuration) url
+#
 parser.add_argument("-u", "--url", help =
 '''Provide the URL of the JSON configuration file for the system. If you do not
 provide this, the default will be {}'''.format(url)
 )
 
+# test
+#
 parser.add_argument("-t", "--test", action = 'store_true', help =
 '''Show all the commands that would be run if this were not a test. Don't
 actually spawn any processes. Don't start jackd and jacktrip.'''
 )
 
+# parse and process the command line arguments
+#
 args = parser.parse_args()
 
 # are we the server? we assume so...
@@ -75,7 +83,6 @@ except requests.exceptions.RequestException:
     sys.exit(1)
 print(" ...download successful")
 data = resp.json()
-
 configuration = data['configuration']
 
 # these will be used for jackd, if we ever get that into this script
@@ -83,11 +90,7 @@ configuration = data['configuration']
 blockSize = configuration['blockSize']
 sampleRate = configuration['sampleRate']
 
-# a list of processes
-#
-process = []
-
-#
+# if we're the server, start a bunch of jacktrip sessions, one for each player
 #
 if (server):
 
@@ -123,6 +126,8 @@ if (server):
         r = pool.map_async(work, command)
         r.wait()
 
+# if we're a client, just start one session, connecting to the server
+#
 else:
 
     if (args.clientname not in configuration['node']):
@@ -138,7 +143,7 @@ else:
 
     node = configuration['node'][args.clientname]
     jacktrip = "jacktrip -c {} -o {} -n {} --clientname {}".format(
-            node['ipAddress'],
+            node['serverAddress'],
             node['portOffset'],
             node['channelCount'],
             args.clientname)
@@ -154,5 +159,10 @@ else:
         signal.signal(signal.SIGINT, signal_handler)
 
         p.wait()
+
+# links...
+# https://sites.google.com/site/jacktripdocumentation/calendar
+# https://ccrma.stanford.edu/groups/soundwire/software/jacktrip
+# https://github.com/jcacerec/jacktrip/tree/master/jacktrip/src
 
 # fin

@@ -6,32 +6,32 @@
             "Matt": {
                 "channelCount": 8,
                 "portOffset": 0,
-                "ipAddress": "193.197.160.121"
+                "serverAddress": "193.197.160.121"
             },
             "Karl": {
                 "channelCount": 8,
                 "portOffset": 1,
-                "ipAddress": "193.197.160.121"
+                "serverAddress": "193.197.160.121"
             },
             "Hannah": {
                 "channelCount": 8,
                 "portOffset": 2,
-                "ipAddress": "193.197.160.121"
+                "serverAddress": "193.197.160.121"
             },
             "Hafiz": {
                 "channelCount": 1,
                 "portOffset": 3,
-                "ipAddress": "192.168.3.92"
+                "serverAddress": "192.168.3.92"
             },
             "Fernando": {
                 "channelCount": 1,
                 "portOffset": 4,
-                "ipAddress": "192.168.3.92"
+                "serverAddress": "192.168.3.92"
             },
             "Marco": {
                 "channelCount": 1,
                 "portOffset": 5,
-                "ipAddress": "192.168.3.92"
+                "serverAddress": "192.168.3.92"
             }
         }
     }
