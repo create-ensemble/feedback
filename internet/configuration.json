@@ -1,14 +1,38 @@
 {
-  "configuration" : {
-    "blockSize" : 512,
-    "sampleRate" : 48000,
-    "node" : [
-      {"ip": "193.197.160.121", "clientName": "HFG_matrix-Matt",     "portOffset": 0, "channelCount": 8},
-      {"ip": "193.197.160.121", "clientName": "HFG_matrix-Karl",     "portOffset": 1, "channelCount": 8},
-      {"ip": "193.197.160.121", "clientName": "HFG_matrix-Hannah",   "portOffset": 2, "channelCount": 8},
-      {"ip": "192.168.3.92",    "clientName": "HFG_matrix-Hafiz",    "portOffset": 3, "channelCount": 1},
-      {"ip": "192.168.3.92",    "clientName": "HFG_matrix-Fernando", "portOffset": 4, "channelCount": 1},
-      {"ip": "192.168.3.92",    "clientName": "HFG_matrix-Marco",    "portOffset": 5, "channelCount": 1}
-    ]
-  }
+    "configuration": {
+        "blockSize": 512,
+        "sampleRate": 48000,
+        "node": {
+            "Matt": {
+                "channelCount": 8,
+                "portOffset": 0,
+                "ipAddress": "193.197.160.121"
+            },
+            "Karl": {
+                "channelCount": 8,
+                "portOffset": 1,
+                "ipAddress": "193.197.160.121"
+            },
+            "Hannah": {
+                "channelCount": 8,
+                "portOffset": 2,
+                "ipAddress": "193.197.160.121"
+            },
+            "Hafiz": {
+                "channelCount": 1,
+                "portOffset": 3,
+                "ipAddress": "192.168.3.92"
+            },
+            "Fernando": {
+                "channelCount": 1,
+                "portOffset": 4,
+                "ipAddress": "192.168.3.92"
+            },
+            "Marco": {
+                "channelCount": 1,
+                "portOffset": 5,
+                "ipAddress": "192.168.3.92"
+            }
+        }
+    }
 }

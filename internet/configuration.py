@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Create Ensemble - Internet Ensemble Feedback Configuration
 #
 # Eventually, this script may be used to start up jackd and jacktrip
@@ -7,44 +9,75 @@
 # Immediate configutation required!
 #
 
-# are you the server?
-#
-iAmServer = True
-#iAmServer = False
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-c", "--clientname", help = "the name of the thing your connecting to")
+parser.add_argument("-u", "--url", help = "url of the json configuration for the system")
+parser.add_argument("-t", "--test", help = "don't actually spawn processes, starting jacd and jacktrip")
+args = parser.parse_args()
 
-# are you the client? which one?
+# are we the server? we assume so...
 #
-clientNumber = 0
+server = True
+
+clientName = None
+if (args.clientname):
+    # ...until we know that we're a client
+    #
+    server = False
+    clientName = args.clientname
 
 # where online can we find the configuration file?
 #
 url = 'https://raw.githubusercontent.com/create-ensemble/feedback/master/internet/configuration.json'
+if (args.url):
+    url = args.url
 
-# is this for real or just a test?
+# is this for real or only a test?
 #
-just_a_test = False
-#just_a_test = True
+this_is_only_a_test = False
+if (args.test):
+    this_is_only_a_test = True
 
-import urllib # install with: pip install urllib
+# import library modules we'll use later
+#
 import json
+import shlex
+import signal
 import socket
-from subprocess import check_call # not used yet
+import subprocess
+import urllib # install with: pip install urllib
 
+# download the current configuration and parse out various parameters
+#
+print("downloading configuration...")
 response = urllib.urlopen(url)
 string = response.read()
 data = json.loads(string)
 configuration = data['configuration']
-
 blockSize = configuration['blockSize']
 sampleRate = configuration['sampleRate']
 
-if (iAmServer):
+if (server):
     print("as the server, i will start each of these sessions:")
     for node in configuration['node']:
-        command = ["jacktrip", "-s", "-o", str(node['portOffset']), "-n", str(node['channelCount']), "--clientname", node['clientName'] ]
-        print(' '.join(command));
+        jacktrip = "jacktrip -s -o {} -n {} --clientname {}".format(
+                node['portOffset'],
+                node['channelCount'],
+                node['clientName'])
+        print(jacktrip)
+        #p = subprocess.Popen(jacktrip)
+        # append p to a list
 else:
-    print("as client {}, i will start this session:".format(clientNumber))
+    print("as client {}, i will start this session:".format(clientName))
     node = configuration['node'][clientNumber]
-    command = ["jacktrip", "-c", node['ip'], "-o", str(node['portOffset']), "-n", str(node['channelCount']), "--clientname", node['clientName'] ]
-    print(' '.join(command))
+    jacktrip = "jacktrip -c {} -o {} -n {} --clientname {}".format(
+            node['ip'],
+            node['portOffset'],
+            node['channelCount'],
+            node['clientName'])
+    print(jacktrip)
+    #p = subprocess.Popen(jacktrip)
+    # append p to a list
+
+# wait for all subprocesses in the list
