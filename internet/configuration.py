@@ -7,11 +7,31 @@
 # for now. It's a proof of concept.
 #
 
+# default configuration url
+#
+url = 'https://raw.githubusercontent.com/create-ensemble/feedback/master/internet/configuration.json'
+
+# handle various command line arguments
+#
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument("-c", "--clientname", help = "the name of the thing your connecting to")
-parser.add_argument("-u", "--url", help = "url of the json configuration for the system")
-parser.add_argument("-t", "--test", help = "don't actually spawn processes, starting jacd and jacktrip")
+
+parser.add_argument("-c", "--clientname", help =
+'''If you are going to be a client, provide 'clientname' of the jacktrip
+session you are to connect to. Try anything. If you're wrong, we'll give you a
+list of possibilities.'''
+)
+
+parser.add_argument("-u", "--url", help =
+'''Provide the URL of the JSON configuration file for the system. If you do not
+provide this, the default will be {}'''.format(url)
+)
+
+parser.add_argument("-t", "--test", action = 'store_true', help =
+'''Show all the commands that would be run if this were not a test. Don't
+actually spawn any processes. Don't start jackd and jacktrip.'''
+)
+
 args = parser.parse_args()
 
 # are we the server? we assume so...
@@ -24,7 +44,6 @@ if (args.clientname):
 
 # where online can we find the configuration file?
 #
-url = 'https://raw.githubusercontent.com/create-ensemble/feedback/master/internet/configuration.json'
 if (args.url):
     url = args.url
 
@@ -36,41 +55,49 @@ if (args.test):
 
 # import library modules we'll use later
 #
-import json
-import shlex
-import signal
-import socket
-import subprocess
-import sys
-import urllib # install with: pip install urllib
+import shlex, signal, socket, subprocess, sys
+
+# try to import the 'requests' module
+#
+try:
+    import requests
+except ImportError:
+    print("You need the 'requests' module'. Try 'pip install requests' in your terminal.")
+    sys.exit(1)
 
 # download the current configuration and parse out various parameters
 #
 print("Downloading configuration...")
-#try:
-#    urllib.urlopen("http://example.com", timeout = 1)
-#    response = urllib.urlopen(url, timeout = 1)
-#except urllib.URLError, e:
-#    print("Error. We could not download the configuration file. Are you online?")
-#    sys.exit(2)
+try:
+    resp = requests.get(url, timeout = 1.0)
+except requests.exceptions.RequestException:
+    print(" ...download failed! Are you online?")
+    sys.exit(1)
+print(" ...download successful")
+data = resp.json()
 
-response = urllib.urlopen(url)
-print("...download successful")
-
-string = response.read()
-data = json.loads(string)
 configuration = data['configuration']
 
-# these will be used for jackd, i think...
+# these will be used for jackd, if we ever get that into this script
 #
 blockSize = configuration['blockSize']
 sampleRate = configuration['sampleRate']
 
+# a list of processes
+#
+process = []
+
 #
 #
 if (server):
+
     print("I am the server!")
     print("I should run these commands:")
+    command = []
+
+    #jackd = "jackd -d {} -p {} -r {}".format(jackBackend, blockSize, sampleRate)
+    #print(jackd)
+
     for client in configuration['node']:
         node = configuration['node'][client]
         jacktrip = "jacktrip -s -o {} -n {} --clientname {}".format(
@@ -78,16 +105,37 @@ if (server):
                 node['channelCount'],
                 client)
         print(jacktrip)
-        #p = subprocess.Popen(jacktrip)
-        # append p to a list
+
+        command.append(shlex.split(jacktrip))
+
+    if (not this_is_only_a_test):
+        from multiprocessing.dummy import Pool
+        pool = Pool(len(configuration['node']))
+
+        def signal_handler(signal, frame):
+            print('You pressed control-c. Terminating subprocess.')
+            pool.terminate()
+        signal.signal(signal.SIGINT, signal_handler)
+
+        def work(c):
+            return subprocess.Popen(c, shell=False)
+
+        r = pool.map_async(work, command)
+        r.wait()
+
 else:
+
     if (args.clientname not in configuration['node']):
         print("Client name '" + args.clientname + "' was not found in the list of configurations. The choices were:")
         print("  " + ", ".join(configuration['node'].keys()))
         sys.exit(1)
 
-    print("I am client {}!".format(args.clientname))
-    print("I should run this command:")
+    print("I am client '{}'!".format(args.clientname))
+    print("I should run these commands:")
+
+    #jackd = "jackd -d {} -p {} -r {}".format(jackBackend, blockSize, sampleRate)
+    #print(jackd)
+
     node = configuration['node'][args.clientname]
     jacktrip = "jacktrip -c {} -o {} -n {} --clientname {}".format(
             node['ipAddress'],
@@ -95,7 +143,16 @@ else:
             node['channelCount'],
             args.clientname)
     print(jacktrip)
-    #p = subprocess.Popen(jacktrip)
-    # append p to a list
 
-# wait for all subprocesses in the list
+    if (not this_is_only_a_test):
+        p = subprocess.Popen(shlex.split(jacktrip), shell=False)
+        #p = subprocess.Popen(shlex.split(jacktrip))
+
+        def signal_handler(signal, frame):
+            print('You pressed control-c. Terminating subprocess.')
+            p.terminate()
+        signal.signal(signal.SIGINT, signal_handler)
+
+        p.wait()
+
+# fin
