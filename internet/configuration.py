@@ -7,36 +7,31 @@
 # for now. It's a proof of concept.
 #
 
-# default configuration url
+# default configuration url (this could be delivered via OSC someday?)
 #
 url = 'https://raw.githubusercontent.com/create-ensemble/feedback/master/internet/configuration.json'
 
 # handle various command line arguments
 #
 import argparse
-parser = argparse.ArgumentParser()
-
-# clientname
-#
+parser = argparse.ArgumentParser(description =
+        '''This script will start jacktrip the right way, given some infomation
+        about 1) where to find a configuration file and 2) your role in the
+        system: server (default) or client (if you provide a clientname).'''
+        )
 parser.add_argument("-c", "--clientname", help =
-'''If you are going to be a client, provide the 'clientname' of the jacktrip
-session you are to connect to. Try anything. If you're wrong, we'll give you a
-list of possibilities.'''
-)
-
-# (configuration) url
-#
+        '''If you are going to be a client, provide the 'clientname' of the
+        jacktrip session you are to connect to. Try anything. If you're wrong,
+        we'll give you a list of possibilities.'''
+        )
 parser.add_argument("-u", "--url", help =
-'''Provide the URL of the JSON configuration file for the system. If you do not
-provide this, the default will be {}'''.format(url)
-)
-
-# test
-#
+        '''Provide the URL of the JSON configuration file for the system. If
+        you do not provide this, the default will be {}'''.format(url)
+        )
 parser.add_argument("-t", "--test", action = 'store_true', help =
-'''Show all the commands that would be run if this were not a test. Don't
-actually spawn any processes. Don't start jackd and jacktrip.'''
-)
+        '''Show all the commands that would be run if this were not a test.
+        Don't actually spawn any processes. Don't start jackd and jacktrip.'''
+        )
 
 # parse and process the command line arguments
 #
@@ -103,7 +98,7 @@ if (server):
 
     for client in configuration['node']:
         node = configuration['node'][client]
-        jacktrip = "jacktrip -s -o {} -n {} --clientname {}".format(
+        jacktrip = "jacktrip -s -o {} -n {} --nojackportsconnect --clientname {}".format(
                 node['portOffset'],
                 node['channelCount'],
                 client)
@@ -121,7 +116,7 @@ if (server):
         signal.signal(signal.SIGINT, signal_handler)
 
         def work(c):
-            return subprocess.Popen(c, shell=False)
+            return subprocess.Popen(c) #, shell=True)
 
         r = pool.map_async(work, command)
         r.wait()
@@ -142,7 +137,7 @@ else:
     #print(jackd)
 
     node = configuration['node'][args.clientname]
-    jacktrip = "jacktrip -c {} -o {} -n {} --clientname {}".format(
+    jacktrip = "jacktrip -c {} -o {} -n {} --nojackportsconnect --clientname {}".format(
             node['serverAddress'],
             node['portOffset'],
             node['channelCount'],
@@ -150,8 +145,7 @@ else:
     print(jacktrip)
 
     if (not this_is_only_a_test):
-        p = subprocess.Popen(shlex.split(jacktrip), shell=False)
-        #p = subprocess.Popen(shlex.split(jacktrip))
+        p = subprocess.Popen(shlex.split(jacktrip))
 
         def signal_handler(signal, frame):
             print('You pressed control-c. Terminating subprocess.')
