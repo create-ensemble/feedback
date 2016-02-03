@@ -33,19 +33,19 @@ panel.add(e);
     // send a message to the address '/button'
     a1 = new Interface.Button({ bounds:[0,.25,.12,.25],   mode:'contact', name:'top_0', label:'forward ring',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [0]); }  })
-    a2 = new Interface.Button({ bounds:[.12,.25,.12,.25], mode:'contact', name:'top_1', label:'backwards ring',
+    a2 = new Interface.Button({ bounds:[.12,.25,.12,.25], mode:'contact', name:'top_1', label:'forward ring',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [1]); }  })
-    a3 = new Interface.Button({ bounds:[.25,.25,.12,.25], mode:'contact', name:'top_2', label:'top 2',
+    a3 = new Interface.Button({ bounds:[.25,.25,.12,.25], mode:'contact', name:'top_2', label:'4+3',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [2]); }  })
-    a4 = new Interface.Button({ bounds:[.37,.25,.12,.25], mode:'contact', name:'top_3', label:'top 3',
+    a4 = new Interface.Button({ bounds:[.37,.25,.12,.25], mode:'contact', name:'top_3', label:'2+2+3',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [3]); }  })
-    a5 = new Interface.Button({ bounds:[.5,.25,.12,.25],  mode:'contact', name:'top_4', label:'top 4',
+    a5 = new Interface.Button({ bounds:[.5,.25,.12,.25],  mode:'contact', name:'top_4', label:'bidirectional ring',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [4]); }  })
-    a6 = new Interface.Button({ bounds:[.62,.25,.12,.25], mode:'contact', name:'top_5', label:'top 7',
+    a6 = new Interface.Button({ bounds:[.62,.25,.12,.25], mode:'contact', name:'top_5', label:'3+2+2',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [5]); }  })
-    a7 = new Interface.Button({ bounds:[.75,.25,.12,.25], mode:'contact', name:'top_6', label:'top 6',
+    a7 = new Interface.Button({ bounds:[.75,.25,.12,.25], mode:'contact', name:'top_6', label:'3+4',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [6]); }  })
-    a8 = new Interface.Button({ bounds:[.87,.25,.12,.25], mode:'contact', name:'top_7', label:'top 7',
+    a8 = new Interface.Button({ bounds:[.87,.25,.12,.25], mode:'contact', name:'top_7', label:'backward ring',
       onvaluechange:function(){ Interface.OSC.send('/test', 'f', [7]); }  })
     
     
