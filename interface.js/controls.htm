@@ -14,7 +14,8 @@
     
     panel = new Interface.Panel({ useRelativeSizesAndPositions: true });
  
-var e = new Interface.Patchbay({ 
+    var e = new Interface.Patchbay({ 
+      name:"matrix",
   bounds:[0,0,1,.25],
   points:[ 
     {name:0, name2:'matt'},{name:1, name2:'hafiz'},{name:2, name2:'tim'},{name:3, name2:'anis'}, 
@@ -84,16 +85,29 @@ panel.add(h0,h1,h2,h3,h4,h5,h6,s0,s1,s2,s3,s4,s5,s6);
       for( var j = 0; j < Interface.panels[0].children.length; j++) {
         var child = Interface.panels[0].children[j];
         cname = child.name.split("_");
+        if(name == "verbose_matrix" && cname[0] == "matrix"){
+          child.connections = [];
+          for( var m = 0; m < parameters.length; m += 3) {
+            if (parameters[m] < 7 && parameters[m+1] < 7){
+              console.log(parameters[m], parameters[m+1], parameters[m+2]);
+              if (parameters[m+2] > 0){
+                child.createConnection([parameters[m],parameters[m+1]]);
+              }
+            }
+          }
+          child.draw();
+        }
         if(name == "say_levels" && cname[0] == "say"){
-          console.log(name,cname,parameters);
+     //     console.log(name,cname,parameters);
           child.setValue(parameters[cname[1]]);
         }
         if(name == "hear_levels" && cname[0] == "hear"){
-          console.log(name,cname,parameters);
+    //      console.log(name,cname,parameters);
           child.setValue(parameters[cname[1]]);
         }
       }
-    //  console.log( address, typetags, parameters )
+    
+      console.log( address, typetags, parameters )
     }
   </script>
 </body>
