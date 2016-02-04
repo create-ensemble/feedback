@@ -52,20 +52,20 @@ panel.add(e);
     
 panel.add(a1,a2,a3,a4,a5,a6,a7,a8);
 
-h0 = new Interface.Slider({ min:"-200", max:"10", bounds:[.00,.5,.05,.5], fill:'red',   name:"hear_0" });
-s0 = new Interface.Slider({ min:"-200", max:"10", bounds:[.05,.5,.05,.5], fill:'green', name:"say_0" });
-h1 = new Interface.Slider({ min:"-200", max:"10", bounds:[.15,.5,.05,.5], fill:'red',   name:"hear_1" });
-s1 = new Interface.Slider({ min:"-200", max:"10", bounds:[.20,.5,.05,.5], fill:'green', name:"say_1" });
-h2 = new Interface.Slider({ min:"-200", max:"10", bounds:[.30,.5,.05,.5], fill:'red',   name:"hear_2" });
-s2 = new Interface.Slider({ min:"-200", max:"10", bounds:[.35,.5,.05,.5], fill:'green', name:"say_2" });
-h3 = new Interface.Slider({ min:"-200", max:"10", bounds:[.45,.5,.05,.5], fill:'red',   name:"hear_3" });
-s3 = new Interface.Slider({ min:"-200", max:"10", bounds:[.50,.5,.05,.5], fill:'green', name:"say_3" });
-h4 = new Interface.Slider({ min:"-200", max:"10", bounds:[.60,.5,.05,.5], fill:'red',   name:"hear_4" });
-s4 = new Interface.Slider({ min:"-200", max:"10", bounds:[.65,.5,.05,.5], fill:'green', name:"say_4" });
-h5 = new Interface.Slider({ min:"-200", max:"10", bounds:[.75,.5,.05,.5], fill:'red',   name:"hear_5" });
-s5 = new Interface.Slider({ min:"-200", max:"10", bounds:[.80,.5,.05,.5], fill:'green', name:"say_5" });
-h6 = new Interface.Slider({ min:"-200", max:"10", bounds:[.90,.5,.05,.5], fill:'red',   name:"hear_6" });
-s6 = new Interface.Slider({ min:"-200", max:"10", bounds:[.95,.5,.05,.5], fill:'green', name:"say_6" });
+h0 = new Interface.Slider({ min:"-200", max:"200", bounds:[.00,.5,.05,.5], fill:'red',   name:"hear_0" });
+s0 = new Interface.Slider({ min:"-200", max:"200", bounds:[.05,.5,.05,.5], fill:'green', name:"say_0" });
+h1 = new Interface.Slider({ min:"-200", max:"200", bounds:[.15,.5,.05,.5], fill:'red',   name:"hear_1" });
+s1 = new Interface.Slider({ min:"-200", max:"200", bounds:[.20,.5,.05,.5], fill:'green', name:"say_1" });
+h2 = new Interface.Slider({ min:"-200", max:"200", bounds:[.30,.5,.05,.5], fill:'red',   name:"hear_2" });
+s2 = new Interface.Slider({ min:"-200", max:"200", bounds:[.35,.5,.05,.5], fill:'green', name:"say_2" });
+h3 = new Interface.Slider({ min:"-200", max:"200", bounds:[.45,.5,.05,.5], fill:'red',   name:"hear_3" });
+s3 = new Interface.Slider({ min:"-200", max:"200", bounds:[.50,.5,.05,.5], fill:'green', name:"say_3" });
+h4 = new Interface.Slider({ min:"-200", max:"200", bounds:[.60,.5,.05,.5], fill:'red',   name:"hear_4" });
+s4 = new Interface.Slider({ min:"-200", max:"200", bounds:[.65,.5,.05,.5], fill:'green', name:"say_4" });
+h5 = new Interface.Slider({ min:"-200", max:"200", bounds:[.75,.5,.05,.5], fill:'red',   name:"hear_5" });
+s5 = new Interface.Slider({ min:"-200", max:"200", bounds:[.80,.5,.05,.5], fill:'green', name:"say_5" });
+h6 = new Interface.Slider({ min:"-200", max:"200", bounds:[.90,.5,.05,.5], fill:'red',   name:"hear_6" });
+s6 = new Interface.Slider({ min:"-200", max:"200", bounds:[.95,.5,.05,.5], fill:'green', name:"say_6" });
 
 
 
@@ -98,12 +98,16 @@ panel.add(h0,h1,h2,h3,h4,h5,h6,s0,s1,s2,s3,s4,s5,s6);
           child.draw();
         }
         if(name == "say_levels" && cname[0] == "say"){
-     //     console.log(name,cname,parameters);
-          child.setValue(parameters[cname[1]]);
+          //     console.log(name,cname,parameters);
+          var value = parameters[cname[1]];
+          if (value == 0) {value = -200;}
+          child.setValue(value);
         }
         if(name == "hear_levels" && cname[0] == "hear"){
+          var value = parameters[cname[1]];
+          if (value == 0) {value = -200;}
     //      console.log(name,cname,parameters);
-          child.setValue(parameters[cname[1]]);
+          child.setValue(value);
         }
       }
     
