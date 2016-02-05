@@ -1,3 +1,8 @@
+// This is a key feature of the whole system: when the matrix connects
+// one "say" to multiple "hear"s then everything easily becomes
+// unstable, so we compensate by dividing the gain by the square root
+// of the reciprocal of the number of connections, mumble mumble,
+// Conservation of Energy, mumble mumble.  it works.
 
 var N = 12;
 inlets = 1;
