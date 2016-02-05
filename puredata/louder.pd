@@ -1,0 +1,16 @@
+#N canvas 197 130 374 458 10;
+#X obj 27 38 adc~ 1;
+#X obj 27 89 dac~ 1;
+#X obj 27 64 *~ 50;
+#X obj 93 17 scope~ 130 130 256 3 128 -1 1 0 0 0 0 102 255 51 135 135
+135 0;
+#X obj 94 151 scope~ 130 130 256 3 128 -1 1 0 0 0 0 102 255 51 135
+135 135 0;
+#X text 32 315 The point of this patch is to work around some other
+software's bizarre inability to make things loud enough \; this is
+meant to be used in the context of routing signals between programs
+via Jack.;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 2 0 4 0;
