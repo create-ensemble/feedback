@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2155.0, 318.0, 828.0, 662.0 ],
+		"rect" : [ 603.0, 307.0, 828.0, 662.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,33 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2.5, 585.0, 478.0, 47.0 ],
+					"presentation_rect" : [ 2.5, 585.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Note that this patch also uses Max's \"send\" mechanism to report the three db values (current hear and say and estimarted gain) to the rest of the patch.  In each case it's a list of two numbers:  instrument number and a float for the value (in dB)."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 23.5, 11.0, 740.0, 33.0 ],
+					"style" : "",
+					"text" : "The display patch for a single instrument, showing spectrum, hear/say meters, and the estimate (also computed here) of this instrument's current gain.   Designed to be used inside a bpatcher whose argument is the instrument number (an int)."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
