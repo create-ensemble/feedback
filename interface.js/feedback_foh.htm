@@ -1,0 +1,142 @@
+<html>
+<head>
+  <script src='interface.js'></script>
+</head>
+<body>
+  <script>
+    var panel = new Interface.Panel({ useRelativeSizesAndPositions: true });
+
+    var f1 = new Interface.Slider({
+      bounds:[0,.1,0.07,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'if', ['1', this.value] )
+      },
+      target:null
+    })
+
+    var f2 = new Interface.Slider({
+      bounds:[0.11,.1,0.07,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'if', ['2', this.value] )
+      },
+      target:null
+    })
+
+    var f3 = new Interface.Slider({
+      bounds:[0.22,.1,0.07,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'if', ['3', this.value] )
+      },
+      target:null
+    })
+
+    var f4 = new Interface.Slider({
+      bounds:[0.33,.1,0.07,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'if', ['4', this.value] )
+      },
+      target:null
+    })
+
+    var f5 = new Interface.Slider({
+      bounds:[0.44,.1,0.07,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'if', ['5', this.value] )
+      },
+      target:null
+    })
+
+    var f6 = new Interface.Slider({
+      bounds:[0.55,.1,0.07,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'if', ['6', this.value] )
+      },
+      target:null
+    })
+
+    var f7 = new Interface.Slider({
+      bounds:[0.66,.1,0.07,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'if', ['7', this.value] )
+      },
+      target:null
+    })
+
+    var l1 = new Interface.Slider({
+      min:"-80", max:"18", name:'say_1', fill:'green', bounds:[f1.x + f1.width,.1,0.02,.9]
+    })
+
+    var l2 = new Interface.Slider({
+      min:"-80", max:"18", name:'say_2', fill:'green', bounds:[f2.x + f2.width,.1,0.02,.9]
+    })
+
+    var l3 = new Interface.Slider({
+      min:"-80", max:"18", name:'say_3', fill:'green', bounds:[f3.x + f3.width,.1,0.02,.9]
+    })
+
+    var l4 = new Interface.Slider({
+      min:"-80", max:"18", name:'say_4', fill:'green', bounds:[f4.x + f4.width,.1,0.02,.9]
+    })
+
+    var l5 = new Interface.Slider({
+      min:"-80", max:"18", name:'say_5', fill:'green', bounds:[f5.x + f5.width,.1,0.02,.9]
+    })
+
+    var l6 = new Interface.Slider({
+      min:"-80", max:"18", name:'say_6', fill:'green', bounds:[f6.x + f6.width,.1,0.02,.9]
+    })
+
+    var l7 = new Interface.Slider({
+      min:"-80", max:"18", name:'say_7', fill:'green', bounds:[f7.x + f7.width,.1,0.02,.9]
+    })
+
+    var subFader = new Interface.Slider({
+      bounds:[0.8,.1,0.1,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/subwoofer', 'f', this.value )
+      },
+      target:null,
+      label:'subwoofer'
+    })
+
+    // XXX TODO: 'reset' to unity gain
+
+    var masterFader = new Interface.Slider({
+      bounds:[0.9,.1,0.1,.9],
+      onvaluechange: function() {
+        Interface.OSC.send( '/master', 'f', this.value )
+      },
+      target:null,
+      label:'master'
+    })
+
+
+    panel.add( f1, f2, f3, f4, f5, f6, f7 );
+    panel.add( l1, l2, l3, l4, l5, l6, l7 );
+    panel.add( subFader, masterFader)
+
+    panel.background = 'black';
+
+    // override to process OSC messages. By default, if a message is received with the
+    // same address as the key of one of the widgets (here /button and /slider) the value
+    // of that widget will be set using the parameters of the received OSC message.
+
+    Interface.OSC.receive = function( address, typetags, parameters ) {
+      var name = address.split("/")[1];
+      for( var j = 0; j < Interface.panels[0].children.length; j++) {
+        var child = Interface.panels[0].children[j];
+        cname = child.name.split("_");
+
+        if(name == "say_levels" && cname[0] == "say"){
+          //     console.log(name,cname,parameters);
+          var value = parameters[cname[1]-1];
+          // if (value == 0) {value = -200;}
+          child.setValue(value);
+        }
+      }
+      console.log( address, typetags, parameters )
+    }
+
+  </script>
+</body>
+</html>
