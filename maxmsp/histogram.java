@@ -1,3 +1,4 @@
+// Has nothing to do with histograms.   Sums the amplitudes (who not energy?) of all magnitude
 // Make a list of floats out of an FFT input signal.
 //
 // This code makes some big assumptions:
@@ -26,13 +27,11 @@ public class histogram extends MSPPerformer {
   };
 
   int find_index(float frequency, float[] split_list) {
-    if (frequency < split_list[0])
-      return 0;
-
+      // index (zero-origin) of the first frequency in split_list greater than the given frequency.
     if (frequency >= split_list[split_list.length - 1])
       return split_list.length;
 
-    for (int i = 1; i < split_list.length; i++)
+    for (int i = 0; i < split_list.length; i++)
       if (frequency < split_list[i])
         return i;
 
@@ -44,19 +43,29 @@ public class histogram extends MSPPerformer {
     declareInlets(new int[]{SIGNAL});
     // XXX eventually remove the output signal, if possible
     //declareOutlets(new int[]{DataTypes.ALL});
+
+    // MW: Why not remove the SIGNAL outlet here?
     declareOutlets(new int[]{SIGNAL, DataTypes.ALL});
     //declareOutlets(new int[]{SIGNAL, DataTypes.ALL, DataTypes.ALL, DataTypes.ALL});
     createInfoOutlet(false);  // XXX
+
     setInletAssist(INLET_ASSIST);
     setOutletAssist(OUTLET_ASSIST);
 
+
+    // MW: Why these numbers?   7Hz seems pretty useless; why not 20Hz to separate infrasound from audible bass?
     float[] split_list = {7,    100,  200,   300,  400,  510,  630,
                              770,  920,  1080,  1270, 1480, 1720, 2000,
                              2320, 2700, 3150,  3700, 4400, 5300, 6400,
                              7700, 9500, 12000, 15500};
-    index = new int[fftSize];
-    magnitude = new float[split_list.length + 1];
+
+    magnitude = new float[split_list.length + 1]; // Will be our output
+
+    index = new int[fftSize]; // Which output index each input FFT bin should contribute to
+
+    // Initialize index
     for (int i = 0; i < fftSize; i++) {
+      // The frequency of the lower edge of this FFT bin:
       float frequency = i * sampleRate / (fftSize * 2);
       //post("" + frequency);
       index[i] = find_index(frequency, split_list);
@@ -68,7 +77,6 @@ public class histogram extends MSPPerformer {
 
  public void perform(MSPSignal[] in, MSPSignal[] out) {
     // we can test this assumption, at least
-    //
     assert in[0].vec.length == 512;
 
     float[] _in = in[0].vec;
