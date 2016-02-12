@@ -40,12 +40,18 @@ public class histogram extends MSPPerformer {
   }
 
  public histogram(float gain) {
-    declareInlets(new int[]{SIGNAL});
-    // XXX eventually remove the output signal, if possible
-    //declareOutlets(new int[]{DataTypes.ALL});
+	post("Hello, world4");
+
+        declareInlets(new int[]{SIGNAL});
+ 
+   // XXX eventually remove the output signal, if possible
+   declareOutlets(new int[]{DataTypes.ALL});
 
     // MW: Why not remove the SIGNAL outlet here?
-    declareOutlets(new int[]{SIGNAL, DataTypes.ALL});
+   // declareOutlets(new int[]{SIGNAL, DataTypes.ALL});
+
+    // declareOutlets(new int[]{DataTypes.ALL});
+
     //declareOutlets(new int[]{SIGNAL, DataTypes.ALL, DataTypes.ALL, DataTypes.ALL});
     createInfoOutlet(false);  // XXX
 
@@ -64,13 +70,12 @@ public class histogram extends MSPPerformer {
     index = new int[fftSize]; // Which output index each input FFT bin should contribute to
 
     // Initialize index
-    for (int i = 0; i < fftSize; i++) {
+    for (int i = 0; i < fftSize/2; i++) {
       // The frequency of the lower edge of this FFT bin:
-      float frequency = i * sampleRate / (fftSize * 2);
-      //post("" + frequency);
+      float frequency = i * sampleRate / (fftSize);
       index[i] = find_index(frequency, split_list);
+      post("i" + i + ": freq " + frequency + " -> index " + index[i]);
     }
-    //	post("" + index[0]);
   }
 
  public void dspsetup(MSPSignal[] in, MSPSignal[] out) {}
@@ -79,24 +84,43 @@ public class histogram extends MSPPerformer {
     // we can test this assumption, at least
     assert in[0].vec.length == 512;
 
-    float[] _in = in[0].vec;
-    float[] _out = out[0].vec;
+	//post("pp");
 
+    float[] _in = in[0].vec;
+  //  float[] _out = out[0].vec;
+
+//	post("1");
     // XXX eventually remove the output signal, if possible
-    for (int i = 0; i < in.length; i++) _out[i] = _in[i];
+   //for (int i = 0; i < in.length; i++) _out[i] = 0.f;
+
+//	post("2");
 
     for (int i = 0; i < magnitude.length; i++)
-      magnitude[i] = 0.0f;
+      magnitude[i] = -0.1f;
 
+///	post("3");
+
+    int imax = -1;
     //for (int i = 0; i < magnitude.length; i++)
-    for (int i = 0; i < fftSize / 2 + 1; i++)
-      if (_in[i] > magnitude[index[i]])
+    for (int i = 0; i < fftSize / 2; i++) {
+      imax = i;
+      if (_in[i] > magnitude[index[i]]) {
         magnitude[index[i]] = _in[i];
+      }
+    }
 
-    outlet(1, magnitude);
+//	post("4:" + imax);
+
+    outlet(0, magnitude);
     //outlet(2, index);
     //outlet(3, _in);
+
+//	post("5");
+
   }
 }
+
+
+
 
 
