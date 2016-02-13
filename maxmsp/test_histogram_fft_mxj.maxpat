@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2053.0, 279.0, 1111.0, 720.0 ],
+		"rect" : [ 2357.0, 207.0, 1111.0, 720.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,35 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"interpinlet" : 1,
+					"maxclass" : "gain~",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 461.0, 173.0, 209.5, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 461.0, 143.0, 73.0, 22.0 ],
+					"style" : "",
+					"text" : "noise~ 440."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "comment",
@@ -189,7 +218,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 47.0, 644.0, 1022.0, 35.0 ],
-					"presentation_rect" : [ 50.0, 576.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "42.591259 11.957726 3.531619 2.098867 1.495443 1.162086 0.950511 0.746862 0.615285 0.523289 0.436511 0.374619 0.328273 0.28452 0.245555 0.212042 0.183793 0.15802 0.137423 0.117426 0.099459 0.085946 0.075502 0.067577 -0.1 -0.1"
 				}
@@ -207,7 +235,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 4.0, 337.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 10.0, 318.0, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -384,7 +411,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 47.0, 596.0, 1022.0, 35.0 ],
 					"style" : "",
-					"text" : "0.355733 0.276849 0.058672 0.031586 0.02171 0.016628 0.01352 0.021303 0.00873 0.014901 0.012439 0.010683 0.013652 0.01158 0.01006 0.011649 0.012461 0.012722 0.012634 0.015155 0.015099 0.014744 0.016722 0.018955 0.022898 0.04459"
+					"text" : "0.000429 0.088485 0.335661 0.142007 0.174705 0.195686 0.4079 0.206835 0.23459 0.204572 0.10894 0.318012 0.210226 0.144099 0.148087 0.186578 0.124362 0.093262 0.088631 0.057937 0.052056 0.05064 0.035109 0.020565 0.019442 0.00854"
 				}
 
 			}
@@ -489,6 +516,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -529,6 +565,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}

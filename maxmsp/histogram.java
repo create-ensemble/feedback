@@ -15,7 +15,9 @@ public class histogram extends MSPPerformer {
   int fftSize = 512;
 
   float[] magnitude;
+  float[] scale_factors; // so outputs can be averages instead of sums
   int[] index;
+
 
   static final String[] INLET_ASSIST = new String[] {
     "An input signal assumed to be the output of an [fft~ 512 512 0]"
@@ -40,7 +42,7 @@ public class histogram extends MSPPerformer {
   }
 
  public histogram(float gain) {
-	post("Hello, world4");
+	post("Hello, world5");
 
         declareInlets(new int[]{SIGNAL});
  
@@ -76,6 +78,19 @@ public class histogram extends MSPPerformer {
       index[i] = find_index(frequency, split_list);
       // post("i" + i + ": freq " + frequency + " -> index " + index[i]);
     }
+
+    // Count #FFT bins contributing to each output bin
+   	float[] numcontributors; 
+    numcontributors = new float[magnitude.length]; 
+    for (int i = 0; i < index.length; i++) {
+        numcontributors[index[i]]++;
+    }
+
+    scale_factors = new float[magnitude.length];
+    for (int i = 0; i < magnitude.length; i++) {
+        scale_factors[i] = 1.0f / numcontributors[i];
+		post("scale " + i + " = " + scale_factors[i]);
+    }
   }
 
  public void dspsetup(MSPSignal[] in, MSPSignal[] out) {}
@@ -109,6 +124,11 @@ public class histogram extends MSPPerformer {
       }
     }
 
+    //rescale
+    for (int i = 0; i < magnitude.length; i++) {
+        magnitude[i] *= scale_factors[i];
+    }
+
 //	post("4:" + imax);
 
     outlet(0, magnitude);
@@ -119,6 +139,7 @@ public class histogram extends MSPPerformer {
 
   }
 }
+
 
 
 
