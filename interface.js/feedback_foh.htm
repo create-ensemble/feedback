@@ -4,10 +4,13 @@
 </head>
 <body>
   <script>
+
+    var fader_top = 0.25;
+
     var panel = new Interface.Panel({ useRelativeSizesAndPositions: true });
 
     var f1 = new Interface.Slider({
-      bounds:[0,.1,0.07,.9],
+      bounds:[0,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['1', this.value] )
       },
@@ -15,7 +18,7 @@
     })
 
     var f2 = new Interface.Slider({
-      bounds:[0.11,.1,0.07,.9],
+      bounds:[0.11,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['2', this.value] )
       },
@@ -23,7 +26,7 @@
     })
 
     var f3 = new Interface.Slider({
-      bounds:[0.22,.1,0.07,.9],
+      bounds:[0.22,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['3', this.value] )
       },
@@ -31,7 +34,7 @@
     })
 
     var f4 = new Interface.Slider({
-      bounds:[0.33,.1,0.07,.9],
+      bounds:[0.33,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['4', this.value] )
       },
@@ -39,7 +42,7 @@
     })
 
     var f5 = new Interface.Slider({
-      bounds:[0.44,.1,0.07,.9],
+      bounds:[0.44,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['5', this.value] )
       },
@@ -47,73 +50,130 @@
     })
 
     var f6 = new Interface.Slider({
-      bounds:[0.55,.1,0.07,.9],
+      bounds:[0.55,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['6', this.value] )
       },
       target:null
     })
 
-    var f7 = new Interface.Slider({
-      bounds:[0.66,.1,0.07,.9],
-      onvaluechange: function() {
-        Interface.OSC.send( '/speaker', 'if', ['7', this.value] )
-      },
-      target:null
-    })
+    // Pre-fader 'say' level meters
 
     var l1 = new Interface.Slider({
-      min:"-80", max:"18", name:'say_1', fill:'green', bounds:[f1.x + f1.width,.1,0.02,.9]
+      min:"-80", max:"18", name:'say_1', fill:'green', bounds:[f1.x + f1.width,fader_top,0.02,1 - fader_top]
     })
 
     var l2 = new Interface.Slider({
-      min:"-80", max:"18", name:'say_2', fill:'green', bounds:[f2.x + f2.width,.1,0.02,.9]
+      min:"-80", max:"18", name:'say_2', fill:'green', bounds:[f2.x + f2.width,fader_top,0.02,1 - fader_top]
     })
 
     var l3 = new Interface.Slider({
-      min:"-80", max:"18", name:'say_3', fill:'green', bounds:[f3.x + f3.width,.1,0.02,.9]
+      min:"-80", max:"18", name:'say_3', fill:'green', bounds:[f3.x + f3.width,fader_top,0.02,1 - fader_top]
     })
 
     var l4 = new Interface.Slider({
-      min:"-80", max:"18", name:'say_4', fill:'green', bounds:[f4.x + f4.width,.1,0.02,.9]
+      min:"-80", max:"18", name:'say_4', fill:'green', bounds:[f4.x + f4.width,fader_top,0.02,1 - fader_top]
     })
 
     var l5 = new Interface.Slider({
-      min:"-80", max:"18", name:'say_5', fill:'green', bounds:[f5.x + f5.width,.1,0.02,.9]
+      min:"-80", max:"18", name:'say_5', fill:'green', bounds:[f5.x + f5.width,fader_top,0.02,1 - fader_top]
     })
 
     var l6 = new Interface.Slider({
-      min:"-80", max:"18", name:'say_6', fill:'green', bounds:[f6.x + f6.width,.1,0.02,.9]
+      min:"-80", max:"18", name:'say_6', fill:'green', bounds:[f6.x + f6.width,fader_top,0.02,1 - fader_top]
     })
 
-    var l7 = new Interface.Slider({
-      min:"-80", max:"18", name:'say_7', fill:'green', bounds:[f7.x + f7.width,.1,0.02,.9]
+    // Master section
+
+    var dripFader = new Interface.Slider({
+      bounds:[0.7,fader_top,0.1,1 - fader_top],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'sf', ['drip', this.value] )
+      },
+      target:null,
+      label:'drip'
     })
 
     var subFader = new Interface.Slider({
-      bounds:[0.8,.1,0.1,.9],
+      bounds:[0.8,fader_top,0.1,1 - fader_top],
       onvaluechange: function() {
-        Interface.OSC.send( '/subwoofer', 'f', this.value )
+        Interface.OSC.send( '/speaker', 'sf', ['subwoofer', this.value] )
       },
       target:null,
-      label:'subwoofer'
+      label:'sub'
     })
 
     // XXX TODO: 'reset' to unity gain
-
     var masterFader = new Interface.Slider({
-      bounds:[0.9,.1,0.1,.9],
+      bounds:[0.9,fader_top,0.1,1 - fader_top],
       onvaluechange: function() {
-        Interface.OSC.send( '/master', 'f', this.value )
+        Interface.OSC.send( '/speaker', 'sf', ['master', this.value] )
       },
       target:null,
       label:'master'
     })
 
+    // Drip controls
 
-    panel.add( f1, f2, f3, f4, f5, f6, f7 );
-    panel.add( l1, l2, l3, l4, l5, l6, l7 );
-    panel.add( subFader, masterFader)
+    var rotationFader = new Interface.Crossfader({
+      bounds:[.02,.05,.4,.15],
+      min:-1, max:1,
+      crossfaderWidth:30,
+      onvaluechange: function() {
+        Interface.OSC.send( '/drip', 'sf', ['rotation', this.value] )
+      },
+      target:null,
+      label:'rotation'
+    });
+
+    var masterDelay = new Interface.Knob({
+      bounds:[.47,.03,.1],
+      // value:.9,
+      usesRotation:false,
+      centerZero: false,
+      onvaluechange: function() {
+        Interface.OSC.send( '/drip', 'sf', ['delay', this.value] )
+      },
+      target:null,
+      label:'delay'
+    });
+
+    var delayDispersion = new Interface.Knob({
+      bounds:[.6,.03,.1],
+      // value:.9,
+      usesRotation:false,
+      centerZero: false,
+      onvaluechange: function() {
+        Interface.OSC.send( '/drip', 'sf', ['dispersion', this.value] )
+      },
+      target:null,
+      label:'dispersion'
+    });
+
+    var rollDice = new Interface.Button({
+      bounds:[.72,.05,.08,.1],
+      mode:'contact',
+      onvaluechange: function() {
+        Interface.OSC.send( '/drip', 'sf', ['rolldice', this.value] )
+      },
+      target:null,
+      label:'roll dice'
+    });
+
+    var clearDelay = new Interface.Button({
+      bounds:[.8,.05,.08,.1],
+      mode:'contact',
+      onvaluechange: function() {
+        Interface.OSC.send( '/drip', 'sf', ['clear', this.value] )
+      },
+      target:null,
+      label:'clear'
+    });
+
+    panel.add( f1, f2, f3, f4, f5, f6 );
+    panel.add( l1, l2, l3, l4, l5, l6 );
+    panel.add( dripFader, subFader, masterFader);
+    panel.add( rotationFader, masterDelay, delayDispersion, rollDice, clearDelay );
 
     panel.background = 'black';
 
