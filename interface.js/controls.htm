@@ -18,8 +18,8 @@
       name:"matrix",
   bounds:[0,0,1,.25],
   points:[ 
-    {name:0, name2:'matt'},{name:1, name2:'hafiz'},{name:2, name2:'tim'},{name:3, name2:'anis'}, 
-    {name:4, name2:'fernando'},{ name:5,name2:'hannah'},{name:6, name2:'karl'}
+    {name:0, name2:'matt'},{name:1, name2:'hafiz'},{name:2, name2:'tim'}, 
+    {name:3, name2:'fernando'},{ name:4,name2:'hannah'},{name:5, name2:'karl'}
   ],
   onconnection: function( start, end ) {
   },
@@ -32,40 +32,40 @@ panel.add(e);
 
    
     // send a message to the address '/button'
-    a1 = new Interface.Button({ bounds:[0,.25,.12,.25],   mode:'contact', name:'top_0', label:'forward ring',
+    a1 = new Interface.Button({ bounds:[0,.25,.12,.25],   mode:'contact', name:'top_0', label:'no connections',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [0]); }  })
     a2 = new Interface.Button({ bounds:[.12,.25,.12,.25], mode:'contact', name:'top_1', label:'forward ring',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [1]); }  })
-    a3 = new Interface.Button({ bounds:[.25,.25,.12,.25], mode:'contact', name:'top_2', label:'4+3',
+    a3 = new Interface.Button({ bounds:[.25,.25,.12,.25], mode:'contact', name:'top_2', label:'backward ring',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [2]); }  })
-    a4 = new Interface.Button({ bounds:[.37,.25,.12,.25], mode:'contact', name:'top_3', label:'2+2+3',
+    a4 = new Interface.Button({ bounds:[.37,.25,.12,.25], mode:'contact', name:'top_3', label:'forward triples',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [3]); }  })
-    a5 = new Interface.Button({ bounds:[.5,.25,.12,.25],  mode:'contact', name:'top_4', label:'bidirectional ring',
+    a5 = new Interface.Button({ bounds:[.5,.25,.12,.25],  mode:'contact', name:'top_4', label:'backward triples',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [4]); }  })
-    a6 = new Interface.Button({ bounds:[.62,.25,.12,.25], mode:'contact', name:'top_5', label:'3+2+2',
+    a6 = new Interface.Button({ bounds:[.62,.25,.12,.25], mode:'contact', name:'top_5', label:'bi-ring triples',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [5]); }  })
-    a7 = new Interface.Button({ bounds:[.75,.25,.12,.25], mode:'contact', name:'top_6', label:'3+4',
+    a7 = new Interface.Button({ bounds:[.75,.25,.12,.25], mode:'contact', name:'top_6', label:'duets',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [6]); }  })
-    a8 = new Interface.Button({ bounds:[.87,.25,.12,.25], mode:'contact', name:'top_7', label:'backward ring',
+    a8 = new Interface.Button({ bounds:[.87,.25,.12,.25], mode:'contact', name:'top_7', label:'bi-ring',
       onvaluechange:function(){ Interface.OSC.send('/topology', 'f', [7]); }  })
     
     
 panel.add(a1,a2,a3,a4,a5,a6,a7,a8);
 
-h0 = new Interface.Slider({ min:"-200", max:"5", bounds:[.00,.5,.05,.5], fill:'red',   name:"hear_0" });
-s0 = new Interface.Slider({ min:"-200", max:"5", bounds:[.05,.5,.05,.5], fill:'green', name:"say_0" });
-h1 = new Interface.Slider({ min:"-200", max:"5", bounds:[.15,.5,.05,.5], fill:'red',   name:"hear_1" });
-s1 = new Interface.Slider({ min:"-200", max:"5", bounds:[.20,.5,.05,.5], fill:'green', name:"say_1" });
-h2 = new Interface.Slider({ min:"-200", max:"5", bounds:[.30,.5,.05,.5], fill:'red',   name:"hear_2" });
-s2 = new Interface.Slider({ min:"-200", max:"5", bounds:[.35,.5,.05,.5], fill:'green', name:"say_2" });
-h3 = new Interface.Slider({ min:"-200", max:"5", bounds:[.45,.5,.05,.5], fill:'red',   name:"hear_3" });
-s3 = new Interface.Slider({ min:"-200", max:"5", bounds:[.50,.5,.05,.5], fill:'green', name:"say_3" });
-h4 = new Interface.Slider({ min:"-200", max:"5", bounds:[.60,.5,.05,.5], fill:'red',   name:"hear_4" });
-s4 = new Interface.Slider({ min:"-200", max:"5", bounds:[.65,.5,.05,.5], fill:'green', name:"say_4" });
-h5 = new Interface.Slider({ min:"-200", max:"5", bounds:[.75,.5,.05,.5], fill:'red',   name:"hear_5" });
-s5 = new Interface.Slider({ min:"-200", max:"5", bounds:[.80,.5,.05,.5], fill:'green', name:"say_5" });
-h6 = new Interface.Slider({ min:"-200", max:"5", bounds:[.90,.5,.05,.5], fill:'red',   name:"hear_6" });
-s6 = new Interface.Slider({ min:"-200", max:"5", bounds:[.95,.5,.05,.5], fill:'green', name:"say_6" });
+h0 = new Interface.Slider({ min:"-100", max:"5", bounds:[.00,.5,.05,.5], fill:'red',   name:"hear_0" });
+s0 = new Interface.Slider({ min:"-100", max:"5", bounds:[.05,.5,.05,.5], fill:'green', name:"say_0" });
+h1 = new Interface.Slider({ min:"-100", max:"5", bounds:[.15,.5,.05,.5], fill:'red',   name:"hear_1" });
+s1 = new Interface.Slider({ min:"-100", max:"5", bounds:[.20,.5,.05,.5], fill:'green', name:"say_1" });
+h2 = new Interface.Slider({ min:"-100", max:"5", bounds:[.30,.5,.05,.5], fill:'red',   name:"hear_2" });
+s2 = new Interface.Slider({ min:"-100", max:"5", bounds:[.35,.5,.05,.5], fill:'green', name:"say_2" });
+h3 = new Interface.Slider({ min:"-100", max:"5", bounds:[.45,.5,.05,.5], fill:'red',   name:"hear_3" });
+s3 = new Interface.Slider({ min:"-100", max:"5", bounds:[.50,.5,.05,.5], fill:'green', name:"say_3" });
+h4 = new Interface.Slider({ min:"-100", max:"5", bounds:[.60,.5,.05,.5], fill:'red',   name:"hear_4" });
+s4 = new Interface.Slider({ min:"-100", max:"5", bounds:[.65,.5,.05,.5], fill:'green', name:"say_4" });
+h5 = new Interface.Slider({ min:"-100", max:"5", bounds:[.75,.5,.05,.5], fill:'red',   name:"hear_5" });
+s5 = new Interface.Slider({ min:"-100", max:"5", bounds:[.80,.5,.05,.5], fill:'green', name:"say_5" });
+h6 = new Interface.Slider({ min:"-100", max:"5", bounds:[.90,.5,.05,.5], fill:'red',   name:"hear_6" });
+s6 = new Interface.Slider({ min:"-100", max:"5", bounds:[.95,.5,.05,.5], fill:'green', name:"say_6" });
 
 
 
