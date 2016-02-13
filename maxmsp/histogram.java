@@ -74,7 +74,7 @@ public class histogram extends MSPPerformer {
       // The frequency of the lower edge of this FFT bin:
       float frequency = i * sampleRate / (fftSize);
       index[i] = find_index(frequency, split_list);
-      post("i" + i + ": freq " + frequency + " -> index " + index[i]);
+      // post("i" + i + ": freq " + frequency + " -> index " + index[i]);
     }
   }
 
