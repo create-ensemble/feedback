@@ -275,10 +275,26 @@
       label:'clear'
     });
 
+    var unityReset = new Interface.Button({
+      bounds:[.62,.32,.05,.06],
+      mode:'contact',
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'sf', ['unity_reset', this.value] );
+        f1.setValue(0.905);
+        f2.setValue(0.905);
+        f3.setValue(0.905);
+        f4.setValue(0.905);
+        f5.setValue(0.905);
+        f6.setValue(0.905);
+      },
+      target:null,
+      label:'ch unity'
+    });
+
     panel.add( f1, f2, f3, f4, f5, f6 );
     panel.add( l1, l2, l3, l4, l5, l6 );
     panel.add( dripFader, subFader, masterFader);
-    panel.add( rotationFader, masterDelay, delayDispersion, rollDice, clearDelay );
+    panel.add( rotationFader, masterDelay, delayDispersion, rollDice, clearDelay, unityReset );
     panel.add( rSlew0, rSlew1, rSlew2, dSlew0, dSlew1, dSlew2 );
 
     panel.background = 'black';
