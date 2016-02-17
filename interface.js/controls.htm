@@ -52,23 +52,23 @@ panel.add(e);
     
 panel.add(a1,a2,a3,a4,a5,a6,a7,a8);
 
-h0 = new Interface.Slider({ min:"-100", max:"5", bounds:[.01,.7,.05,.5], fill:'red',   name:"hear_0" });
-s0 = new Interface.Slider({ min:"-100", max:"5", bounds:[.07,.7,.05,.5], fill:'green', name:"say_0" });
-h1 = new Interface.Slider({ min:"-100", max:"5", bounds:[.17,.7,.05,.5], fill:'red',   name:"hear_1" });
-s1 = new Interface.Slider({ min:"-100", max:"5", bounds:[.24,.7,.05,.5], fill:'green', name:"say_1" });
-h2 = new Interface.Slider({ min:"-100", max:"5", bounds:[.35,.7,.05,.5], fill:'red',   name:"hear_2" });
-s2 = new Interface.Slider({ min:"-100", max:"5", bounds:[.42,.7,.05,.5], fill:'green', name:"say_2" });
-h3 = new Interface.Slider({ min:"-100", max:"5", bounds:[.51,.7,.05,.5], fill:'red',   name:"hear_3" });
-s3 = new Interface.Slider({ min:"-100", max:"5", bounds:[.58,.7,.05,.5], fill:'green', name:"say_3" });
-h4 = new Interface.Slider({ min:"-100", max:"5", bounds:[.67,.7,.05,.5], fill:'red',   name:"hear_4" });
-s4 = new Interface.Slider({ min:"-100", max:"5", bounds:[.74,.7,.05,.5], fill:'green', name:"say_4" });
-h5 = new Interface.Slider({ min:"-100", max:"5", bounds:[.85,.7,.05,.5], fill:'red',   name:"hear_5" });
-s5 = new Interface.Slider({ min:"-100", max:"5", bounds:[.92,.7,.05,.5], fill:'green', name:"say_5" });
+h0 = new Interface.Slider({ min:"-100", max:"5", bounds:[.01,.5,.07,.5], fill:'red',   name:"hear_0" });
+s0 = new Interface.Slider({ min:"-100", max:"5", bounds:[.08,.5,.07,.5], fill:'green', name:"say_0" });
+h1 = new Interface.Slider({ min:"-100", max:"5", bounds:[.17,.5,.07,.5], fill:'red',   name:"hear_1" });
+s1 = new Interface.Slider({ min:"-100", max:"5", bounds:[.24,.5,.07,.5], fill:'green', name:"say_1" });
+h2 = new Interface.Slider({ min:"-100", max:"5", bounds:[.35,.5,.07,.5], fill:'red',   name:"hear_2" });
+s2 = new Interface.Slider({ min:"-100", max:"5", bounds:[.42,.5,.07,.5], fill:'green', name:"say_2" });
+h3 = new Interface.Slider({ min:"-100", max:"5", bounds:[.51,.5,.07,.5], fill:'red',   name:"hear_3" });
+s3 = new Interface.Slider({ min:"-100", max:"5", bounds:[.58,.5,.07,.5], fill:'green', name:"say_3" });
+h4 = new Interface.Slider({ min:"-100", max:"5", bounds:[.67,.5,.07,.5], fill:'red',   name:"hear_4" });
+s4 = new Interface.Slider({ min:"-100", max:"5", bounds:[.74,.5,.07,.5], fill:'green', name:"say_4" });
+h5 = new Interface.Slider({ min:"-100", max:"5", bounds:[.83,.5,.07,.5], fill:'red',   name:"hear_5" });
+s5 = new Interface.Slider({ min:"-100", max:"5", bounds:[.90,.5,.07,.5], fill:'green', name:"say_5" });
 
 
 
 panel.background = "black";
-panel.add(h0,h1,h2,h3,h4,h5,h6,s0,s1,s2,s3,s4,s5,s6);
+panel.add(h0,h1,h2,h3,h4,h5,s0,s1,s2,s3,s4,s5);
 
 //to change topologies
 //  /topology 0  (number represents topology change)
@@ -99,13 +99,11 @@ panel.add(h0,h1,h2,h3,h4,h5,h6,s0,s1,s2,s3,s4,s5,s6);
           //     console.log(name,cname,parameters);
           var value = parameters[cname[1]];
           if (value == 0) {value = -200;}
-          if (value == Number.NEGATIVE_INFINITY) {value = -200;}
           child.setValue(value);
         }
         if(name == "hear_levels" && cname[0] == "hear"){
           var value = parameters[cname[1]];
           if (value == 0) {value = -200;}
-          if (value == Number.NEGATIVE_INFINITY) {value = -200;}
     //      console.log(name,cname,parameters);
           child.setValue(value);
         }
