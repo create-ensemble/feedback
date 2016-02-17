@@ -99,11 +99,13 @@ panel.add(h0,h1,h2,h3,h4,h5,s0,s1,s2,s3,s4,s5);
           //     console.log(name,cname,parameters);
           var value = parameters[cname[1]];
           if (value == 0) {value = -200;}
+          if (value == Number.NEGATIVE_INFINITY) {value = -200;}
           child.setValue(value);
         }
         if(name == "hear_levels" && cname[0] == "hear"){
           var value = parameters[cname[1]];
           if (value == 0) {value = -200;}
+          if (value == Number.NEGATIVE_INFINITY) {value = -200;}
     //      console.log(name,cname,parameters);
           child.setValue(value);
         }
