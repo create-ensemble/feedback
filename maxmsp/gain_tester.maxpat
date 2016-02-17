@@ -38,13 +38,39 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-35",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 236.0, 616.5, 61.0, 33.0 ],
+					"style" : "",
+					"text" : "current hear (dB)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "hear_db",
+					"id" : "obj-38",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 244.0, 656.5, 25.0, 25.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-37",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 621.0, 214.0, 313.0, 33.0 ],
-					"presentation_rect" : [ 621.0, 216.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Ideally the instrument gain estimation portion would be factored out of the two rather than duplicated..."
 				}
@@ -68,10 +94,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-31",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 258.0, 554.0, 96.0, 20.0 ],
+					"patching_rect" : [ 306.0, 569.5, 53.0, 33.0 ],
 					"style" : "",
 					"text" : "current say (dB)"
 				}
@@ -79,12 +106,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "say_db",
 					"id" : "obj-33",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 286.0, 588.0, 25.0, 25.0 ],
+					"patching_rect" : [ 320.0, 608.5, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -105,7 +132,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "gain_db",
 					"id" : "obj-32",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -173,7 +200,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 415.0, 646.0, 79.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 327.0, 61.5, 35.0 ],
+					"presentation_rect" : [ 0.0, 327.0, 62.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -268,7 +295,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 415.0, 533.0, 79.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 294.0, 61.5, 35.0 ],
+					"presentation_rect" : [ 0.0, 294.0, 62.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -331,7 +358,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 415.0, 417.0, 79.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 261.0, 61.5, 35.0 ],
+					"presentation_rect" : [ 0.0, 261.0, 62.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -507,7 +534,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 415.0, 300.0, 79.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 228.0, 61.5, 35.0 ],
+					"presentation_rect" : [ 0.0, 228.0, 62.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -606,6 +633,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
