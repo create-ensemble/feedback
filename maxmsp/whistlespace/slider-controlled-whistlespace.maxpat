@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2127.0, 432.0, 1257.0, 576.0 ],
+		"rect" : [ 296.0, 261.0, 1257.0, 576.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -97,7 +97,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2291.0, 467.0, 546.0, 290.0 ],
+						"rect" : [ 1235.0, 373.0, 546.0, 290.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -748,15 +748,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-80", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-53", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-81", 0 ]
 								}
 
 							}
@@ -1833,16 +1824,16 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-58::obj-7" : [ "AutoName", "AutoName", 0 ],
+			"obj-58::obj-52" : [ "Level[1]", "Level", 0 ],
 			"obj-57::obj-55" : [ "DSP", "DSP", 0 ],
-			"obj-58::obj-76" : [ "Record", "Record", 0 ],
-			"obj-57::obj-52" : [ "Level", "Level", 0 ],
+			"obj-58::obj-7" : [ "AutoName", "AutoName", 0 ],
 			"obj-57::obj-22" : [ "Mute", "Mute", 0 ],
 			"obj-58::obj-74" : [ "Channels", "Channels", 0 ],
-			"obj-58::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
+			"obj-57::obj-52" : [ "Level", "Level", 0 ],
 			"obj-57::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
+			"obj-58::obj-76" : [ "Record", "Record", 0 ],
 			"obj-58::obj-73" : [ "Format", "Format", 0 ],
-			"obj-58::obj-52" : [ "Level[1]", "Level", 0 ]
+			"obj-58::obj-77" : [ "getsamplelength", "getsamplelength", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
