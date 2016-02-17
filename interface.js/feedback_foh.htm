@@ -157,7 +157,14 @@
       bounds:[.02,.25,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
-        Interface.OSC.send( '/drip', 'sf', ['slew_r', 0] )
+        if (this.value == 1) {
+          Interface.OSC.send( '/drip', 'sf', ['slew_r', 0] );
+          rSlew1.setValue(0);
+          rSlew2.setValue(0);
+        }
+        else {
+          this.setValue(1);
+        }
       },
       target:null,
       label:'short'
@@ -167,7 +174,14 @@
       bounds:[.07,.25,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
-        Interface.OSC.send( '/drip', 'sf', ['slew_r', 1] )
+        if (this.value == 1) {
+          Interface.OSC.send( '/drip', 'sf', ['slew_r', 1] );
+          rSlew0.setValue(0);
+          rSlew2.setValue(0);
+        }
+        else {
+          this.setValue(1);
+        }
       },
       target:null,
       label:'med'
@@ -177,7 +191,14 @@
       bounds:[.12,.25,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
-        Interface.OSC.send( '/drip', 'sf', ['slew_r', 2] )
+        if (this.value == 1) {
+          Interface.OSC.send( '/drip', 'sf', ['slew_r', 2] );
+          rSlew0.setValue(0);
+          rSlew1.setValue(0);
+        }
+        else {
+          this.setValue(1);
+        }
       },
       target:null,
       label:'long'
@@ -187,7 +208,14 @@
       bounds:[.2,.25,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
-        Interface.OSC.send( '/drip', 'sf', ['slew_d', 0] )
+        if (this.value == 1) {
+          Interface.OSC.send( '/drip', 'sf', ['slew_d', 0] );
+          dSlew1.setValue(0);
+          dSlew2.setValue(0);
+        }
+        else {
+          this.setValue(1);
+        }
       },
       target:null,
       label:'short'
@@ -197,7 +225,14 @@
       bounds:[.25,.25,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
-        Interface.OSC.send( '/drip', 'sf', ['slew_d', 1] )
+        if (this.value == 1) {
+          Interface.OSC.send( '/drip', 'sf', ['slew_d', 1] );
+          dSlew0.setValue(0);
+          dSlew2.setValue(0);
+        }
+        else {
+          this.setValue(1);
+        }
       },
       target:null,
       label:'med'
@@ -207,7 +242,14 @@
       bounds:[.3,.25,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
-        Interface.OSC.send( '/drip', 'sf', ['slew_d', 2] )
+        if (this.value == 1) {
+          Interface.OSC.send( '/drip', 'sf', ['slew_d', 2] );
+          dSlew0.setValue(0);
+          dSlew1.setValue(0);
+        }
+        else {
+          this.setValue(1);
+        }
       },
       target:null,
       label:'long'
