@@ -83,7 +83,7 @@ panel.add(h0,h1,h2,h3,h4,h5,s0,s1,s2,s3,s4,s5);
       for( var j = 0; j < Interface.panels[0].children.length; j++) {
         var child = Interface.panels[0].children[j];
         cname = child.name.split("_");
-        if(name == "verbose_matrix" && cname[0] == "matrix"){
+        if(name == "sparse_matrix" && cname[0] == "matrix"){
           child.connections = [];
           for( var m = 0; m < parameters.length; m += 3) {
             if (parameters[m] < 7 && parameters[m+1] < 7){
