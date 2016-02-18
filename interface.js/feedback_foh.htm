@@ -5,7 +5,7 @@
 <body>
   <script>
 
-    var fader_top = 0.4;
+    var fader_top = 0.5;
     fader_top_master = 0.25;
 
     var panel = new Interface.Panel({ useRelativeSizesAndPositions: true });
@@ -20,7 +20,7 @@
     })
 
     var f2 = new Interface.Slider({
-      bounds:[0.11,fader_top,0.07,1 - fader_top],
+      bounds:[0.1,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['2', this.value] )
       },
@@ -29,7 +29,7 @@
     })
 
     var f3 = new Interface.Slider({
-      bounds:[0.22,fader_top,0.07,1 - fader_top],
+      bounds:[0.2,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['3', this.value] )
       },
@@ -38,7 +38,7 @@
     })
 
     var f4 = new Interface.Slider({
-      bounds:[0.33,fader_top,0.07,1 - fader_top],
+      bounds:[0.3,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['4', this.value] )
       },
@@ -47,7 +47,7 @@
     })
 
     var f5 = new Interface.Slider({
-      bounds:[0.44,fader_top,0.07,1 - fader_top],
+      bounds:[0.4,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['5', this.value] )
       },
@@ -56,7 +56,7 @@
     })
 
     var f6 = new Interface.Slider({
-      bounds:[0.55,fader_top,0.07,1 - fader_top],
+      bounds:[0.5,fader_top,0.07,1 - fader_top],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'if', ['6', this.value] )
       },
@@ -92,17 +92,26 @@
 
     // Master section
 
-    var dripFader = new Interface.Slider({
-      bounds:[0.7,fader_top_master,0.1,1 - fader_top_master],
+    var dripFaderLower = new Interface.Slider({
+      bounds:[0.64,fader_top_master,0.09,1 - fader_top_master],
       onvaluechange: function() {
-        Interface.OSC.send( '/speaker', 'sf', ['drip', this.value] )
+        Interface.OSC.send( '/speaker', 'sf', ['drip_l', this.value] )
       },
       target:null,
-      label:'drip'
+      label:'lower drip'
+    })
+
+    var dripFaderMiddle = new Interface.Slider({
+      bounds:[0.73,fader_top_master,0.09,1 - fader_top_master],
+      onvaluechange: function() {
+        Interface.OSC.send( '/speaker', 'sf', ['drip_m', this.value] )
+      },
+      target:null,
+      label:'middle drip'
     })
 
     var subFader = new Interface.Slider({
-      bounds:[0.8,fader_top_master,0.1,1 - fader_top_master],
+      bounds:[0.82,fader_top_master,0.09,1 - fader_top_master],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'sf', ['subwoofer', this.value] )
       },
@@ -110,9 +119,8 @@
       label:'sub'
     })
 
-    // XXX TODO: 'reset' to unity gain
     var masterFader = new Interface.Slider({
-      bounds:[0.9,fader_top_master,0.1,1 - fader_top_master],
+      bounds:[0.91,fader_top_master,0.09,1 - fader_top_master],
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'sf', ['master', this.value] )
       },
@@ -122,15 +130,26 @@
 
     // Drip controls
 
-    var rotationFader = new Interface.Crossfader({
+    var rotationFaderMiddle = new Interface.Crossfader({
       bounds:[.02,.05,.35,.15],
       min:-1, max:1,
       crossfaderWidth:30,
       onvaluechange: function() {
-        Interface.OSC.send( '/drip', 'sf', ['rotation', this.value] )
+        Interface.OSC.send( '/drip', 'sf', ['rotation_m', this.value] )
       },
       target:null,
-      label:'rotation'
+      label:'middle'
+    });
+
+    var rotationFaderLower = new Interface.Crossfader({
+      bounds:[.02,.22,.35,.15],
+      min:-1, max:1,
+      crossfaderWidth:30,
+      onvaluechange: function() {
+        Interface.OSC.send( '/drip', 'sf', ['rotation_l', this.value] )
+      },
+      target:null,
+      label:'lower'
     });
 
     var masterDelay = new Interface.Slider({
@@ -153,8 +172,11 @@
       label:'dispersion'
     })
 
+    var rSlew_left = 0.02;
+    var rSlew_top = 0.4;
+
     var rSlew0 = new Interface.Button({
-      bounds:[.02,.25,.05,.08],
+      bounds:[rSlew_left,rSlew_top,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
         if (this.value == 1) {
@@ -171,7 +193,7 @@
     });
 
     var rSlew1 = new Interface.Button({
-      bounds:[.07,.25,.05,.08],
+      bounds:[rSlew_left + 0.05,rSlew_top,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
         if (this.value == 1) {
@@ -188,7 +210,7 @@
     });
 
     var rSlew2 = new Interface.Button({
-      bounds:[.12,.25,.05,.08],
+      bounds:[rSlew_left + 0.1,rSlew_top,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
         if (this.value == 1) {
@@ -204,8 +226,11 @@
       label:'long'
     });
 
+    var dSlew_left = 0.4;
+    var dSlew_top = 0.35;
+
     var dSlew0 = new Interface.Button({
-      bounds:[.2,.25,.05,.08],
+      bounds:[dSlew_left,dSlew_top,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
         if (this.value == 1) {
@@ -222,7 +247,7 @@
     });
 
     var dSlew1 = new Interface.Button({
-      bounds:[.25,.25,.05,.08],
+      bounds:[dSlew_left + 0.05,dSlew_top,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
         if (this.value == 1) {
@@ -239,7 +264,7 @@
     });
 
     var dSlew2 = new Interface.Button({
-      bounds:[.3,.25,.05,.08],
+      bounds:[dSlew_left + 0.1,dSlew_top,.05,.08],
       mode:'toggle',
       onvaluechange: function() {
         if (this.value == 1) {
@@ -256,7 +281,7 @@
     });
 
     var rollDice = new Interface.Button({
-      bounds:[.4,.25,.08,.1],
+      bounds:[.4,.22,.08,.1],
       mode:'contact',
       onvaluechange: function() {
         Interface.OSC.send( '/drip', 'sf', ['rolldice', this.value] )
@@ -266,7 +291,7 @@
     });
 
     var clearDelay = new Interface.Button({
-      bounds:[.5,.25,.08,.1],
+      bounds:[.5,.22,.08,.1],
       mode:'contact',
       onvaluechange: function() {
         Interface.OSC.send( '/drip', 'sf', ['clear', this.value] )
@@ -276,7 +301,7 @@
     });
 
     var unityReset = new Interface.Button({
-      bounds:[.62,.32,.05,.06],
+      bounds:[.26,.4,.05,.06],
       mode:'contact',
       onvaluechange: function() {
         Interface.OSC.send( '/speaker', 'sf', ['unity_reset', this.value] );
@@ -293,8 +318,8 @@
 
     panel.add( f1, f2, f3, f4, f5, f6 );
     panel.add( l1, l2, l3, l4, l5, l6 );
-    panel.add( dripFader, subFader, masterFader);
-    panel.add( rotationFader, masterDelay, delayDispersion, rollDice, clearDelay, unityReset );
+    panel.add( dripFaderLower, dripFaderMiddle, subFader, masterFader);
+    panel.add( rotationFaderMiddle, rotationFaderLower, masterDelay, delayDispersion, rollDice, clearDelay, unityReset );
     panel.add( rSlew0, rSlew1, rSlew2, dSlew0, dSlew1, dSlew2 );
 
     panel.background = 'black';
