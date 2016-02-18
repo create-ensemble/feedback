@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 285.0, 252.0, 1472.0, 752.0 ],
+		"rect" : [ 186.0, 237.0, 1472.0, 752.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -142,6 +142,43 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"coll_data" : 									{
+										"count" : 8,
+										"data" : [ 											{
+												"key" : 1,
+												"value" : [ 200 ]
+											}
+, 											{
+												"key" : 2,
+												"value" : [ 300 ]
+											}
+, 											{
+												"key" : 3,
+												"value" : [ 450 ]
+											}
+, 											{
+												"key" : 4,
+												"value" : [ 275 ]
+											}
+, 											{
+												"key" : 5,
+												"value" : [ 500 ]
+											}
+, 											{
+												"key" : 6,
+												"value" : [ 375 ]
+											}
+, 											{
+												"key" : 7,
+												"value" : [ 600 ]
+											}
+, 											{
+												"key" : 8,
+												"value" : [ 50 ]
+											}
+ ]
+									}
+,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-57",
@@ -151,7 +188,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 50.0, 150.0, 77.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"embed" : 0
+										"embed" : 1
 									}
 ,
 									"style" : "",
@@ -750,7 +787,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 120.0, 36.0, 53.0, 29.0 ],
+					"patching_rect" : [ 120.0, 36.0, 54.0, 29.0 ],
 					"style" : ""
 				}
 
