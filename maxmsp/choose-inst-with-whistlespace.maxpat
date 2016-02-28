@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 66.0, 78.0, 842.0, 771.0 ],
+		"rect" : [ 66.0, 78.0, 891.0, 914.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,57 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-58",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 665.892517, 377.0, 139.5, 87.0 ],
+					"presentation_rect" : [ 592.392517, 596.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Workaround for Max bug where it fails to notice that the poly~ contains tapin~/tapout~.  So one signal vector of extra latency here."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 690.392517, 454.0, 61.0, 22.0 ],
+					"style" : "",
+					"text" : "tapout~ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "tapconnect" ],
+					"patching_rect" : [ 690.392517, 422.0, 54.0, 22.0 ],
+					"style" : "",
+					"text" : "tapin~ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-56",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 512.392517, 649.0, 280.0, 74.0 ],
+					"patching_rect" : [ 435.392517, 661.0, 283.0, 74.0 ],
 					"style" : "",
 					"text" : "This is the original choose-inst, offering the option of \"whistlespace\" (Matt's instrument) running inside the Matrix computer, which was removed in a panic during rehearsal because of Problems.  Needs to be re-integrated with the overall patch."
 				}
@@ -58,33 +103,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 603.392517, 434.0, 122.0, 22.0 ],
+					"patching_rect" : [ 690.392517, 497.0, 122.0, 22.0 ],
 					"style" : "",
 					"text" : "poly~ whistlespace 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-54",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 163.0, 398.0, 70.0, 22.0 ],
-					"style" : "",
-					"text" : "print all-tap"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 182.5, 438.0, 91.0, 22.0 ],
-					"style" : "",
-					"text" : "print from-tapin"
 				}
 
 			}
@@ -103,25 +124,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-55",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 163.0, 310.0, 51.0, 22.0 ],
-					"style" : "",
-					"text" : "r all-tap"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-48",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 709.0, 403.0, 63.0, 22.0 ],
+					"patching_rect" : [ 796.0, 466.0, 63.0, 22.0 ],
 					"style" : "",
 					"text" : "/power $1"
 				}
@@ -134,7 +142,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 709.0, 370.0, 35.0, 22.0 ],
+					"patching_rect" : [ 796.0, 433.0, 35.0, 22.0 ],
 					"style" : "",
 					"text" : "== 3"
 				}
@@ -158,13 +166,15 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
 					"id" : "obj-50",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 508.392517, 334.0, 217.0, 20.0 ],
+					"patching_rect" : [ 506.264404, 328.0, 129.0, 37.0 ],
 					"style" : "",
-					"text" : "Time for hear-channel-offset to be sent"
+					"text" : "Time to receive hear-channel-offset "
 				}
 
 			}
@@ -454,20 +464,6 @@
 					"patching_rect" : [ 14.0, -14.0, 109.0, 22.0 ],
 					"style" : "",
 					"text" : "r choose-inst-OSC"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 661.892517, 394.0, 20.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 43.0, 71.0, 20.0, 20.0 ],
-					"style" : ""
 				}
 
 			}
@@ -874,15 +870,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1018,7 +1005,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-57", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-24", 2 ]
@@ -1126,15 +1113,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-16", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1234,6 +1212,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1243,19 +1230,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-51", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
+					"source" : [ "obj-57", 0 ]
 				}
 
 			}
