@@ -38,13 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 657.892517, 479.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 45.0, 71.0, 18.0, 18.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-58",
 					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 665.892517, 377.0, 139.5, 87.0 ],
-					"presentation_rect" : [ 592.392517, 596.0, 0.0, 0.0 ],
+					"patching_rect" : [ 665.892517, 377.0, 143.0, 87.0 ],
 					"style" : "",
 					"text" : "Workaround for Max bug where it fails to notice that the poly~ contains tapin~/tapout~.  So one signal vector of extra latency here."
 				}
@@ -88,7 +101,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 435.392517, 661.0, 283.0, 74.0 ],
+					"patching_rect" : [ 435.392517, 661.0, 284.0, 74.0 ],
 					"style" : "",
 					"text" : "This is the original choose-inst, offering the option of \"whistlespace\" (Matt's instrument) running inside the Matrix computer, which was removed in a panic during rehearsal because of Problems.  Needs to be re-integrated with the overall patch."
 				}
@@ -172,7 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 506.264404, 328.0, 129.0, 37.0 ],
+					"patching_rect" : [ 506.264404, 328.0, 132.0, 37.0 ],
 					"style" : "",
 					"text" : "Time to receive hear-channel-offset "
 				}
@@ -475,7 +488,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.0, 183.0, 50.0, 20.0 ],
+					"patching_rect" : [ 117.0, 183.0, 34.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 71.0, 50.0, 20.0 ],
 					"style" : "",
@@ -1225,6 +1238,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-53", 0 ]
 				}
 
 			}
