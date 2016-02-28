@@ -9,6 +9,21 @@ if (jsarguments.length > 1) {
 }
 var L = N * N * 3
 
+var names = new Array(N);
+
+for (i=0; i<N; ++i) {
+	names[i] = (i+1).toString();
+}
+
+function name(num, name) {
+	if (num >= 1 && num <= N) {
+		names[num-1] = name;
+		post("Name " + num + " is now " + name + "\n");
+	} else {
+		post("Bad number " + num + " for name message - must be 1 to " + N);
+	}
+}
+
 function list() {
   var a = arrayfromargs(arguments)
   if (a.length != N * N * 3) {
@@ -25,7 +40,7 @@ function list() {
 
   // set some drawing parameters
   //
-  dot += "  node [shape=circle, fixedsize=true, penwidth=2, width=0.6, height=0.6, fontsize=24]\n"
+  dot += "  node [shape=circle, fixedsize=true, penwidth=2, width=1.5, height=0.6, fontsize=24]\n"
   var i
   for (i = 2; i < L; i += 3) {
     // if the gain indicates that the previous (row, column) pair is "connected"
@@ -34,7 +49,7 @@ function list() {
       row = a[i-2]+1;
       col = a[i-1]+1;
       // make a line in the file with an arrow: row -> column
-      dot += "  " + row + " -> " + col + "\n"
+      dot += "  " + names[row-1] + " -> " + names[col-1] + "\n"
     }
   }
   dot += "}\n"
