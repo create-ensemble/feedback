@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+my @line = <>;
+my $firstLine = shift @line;
+my ($serverIp, $sampleRate, $blockSize) = split(',', $firstLine);
+
+print "on the server side...\n";
+for (@line) {
+  chomp;
+  my ($clientName, $portOffset) = split(',');
+  print<<EOF;
+jacktrip --server --portoffset $portOffset --numchannels 2 --nojackportsconnect --clientname $clientName
+EOF
+}
+
+print "on the client side...\n";
+for (@line) {
+  chomp;
+  my ($clientName, $portOffset) = split(',');
+  print<<EOF;
+jacktrip --client $serverIp --portoffset $portOffset --numchannels 2 --nojackportsconnect --clientname $clientName
+EOF
+}
+# jacktrip --client 171.64.197.17 --portoffset 0 --numchannels 2 --nojackportsconnect --clientname Karl
