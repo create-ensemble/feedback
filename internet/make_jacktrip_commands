@@ -41,25 +41,3 @@ print "\n# on the server side...\n";
 for my $clientName (@clientName) {
   print "jacktrip --server --portoffset $portOffset{$clientName} --numchannels 2 --nojackportsconnect --clientname $clientName\n";
 }
-
-print "\n# hook up client says to the system outputs...\n";
-for my $clientName (@clientName) {
-  print "jack_connect $clientName:receive_1 system:playback_$clientNumber{$clientName}\n";
-}
-
-print "\n# hook up client says to the matrix...\n";
-for my $clientName (@clientName) {
-  print "jack_connect $clientName:receive_1 Max:in$clientNumber{$clientName}\n";
-}
-
-print "\n# hook up matrix to client hears...\n";
-for my $clientName (@clientName) {
-  print "jack_connect Max:out$clientNumber{$clientName} $clientName:send_1\n";
-}
-
-print "\n# send mono mix to each client...\n";
-for my $to (@clientName) {
-  for my $from (@clientName) {
-    print "jack_connect $from:receive_1 $to:send_2\n";
-  }
-}
