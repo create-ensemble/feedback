@@ -1,17 +1,14 @@
 #!/bin/sh
 
-# hook up my "hear" to HFG
-jack_connect 2_HFG_matrix-Karl:receive_1 Max:in1
-jack_connect 2_HFG_matrix-Karl:receive_2 Max:in2
+# hook up my "hear" to CCRMA
+jack_connect Karl:receive_1 Max:in1
 
-# hook up my "say" to HFG
-jack_connect Max:out1 2_HFG_matrix-Karl:send_1
-jack_connect Max:out2 2_HFG_matrix-Karl:send_2
+# hook up my "say" to CCRMA
+jack_connect Max:out1 Karl:send_1
 
 # so i can hear what i'm saying...
 jack_connect Max:out1 system:playback_1
-jack_connect Max:out2 system:playback_2
 
-# so i can hear what they're saying...
-jack_connect 2_HFG_matrix-Karl:receive_1 system:playback_1
-jack_connect 2_HFG_matrix-Karl:receive_2 system:playback_2
+# so i can hear what they're saying (mono mix)
+jack_connect Karl:receive_2 system:playback_2
+
