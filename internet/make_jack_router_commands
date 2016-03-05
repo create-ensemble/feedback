@@ -1,0 +1,55 @@
+#!/usr/bin/perl
+#
+# use this with the configuration file like this:
+#
+#   ./make_jacktrip_commands star.conf
+#
+use strict;
+use warnings;
+
+# read in all the lines from the configuration file
+# separate into first line and the rest
+my @line = <>;
+my $firstLine = shift @line;
+
+# glean server data...
+#
+$firstLine =~ /^\d+\.\d+\.\d+\.\d+,\d+,\d+$/ or die "configuration file is broken";
+my ($serverIp, $sampleRate, $blockSize) = $firstLine =~ /^(\d+\.\d+\.\d+\.\d+),(\d+),(\d+)$/;
+
+# glean client data...
+#
+my @clientName = ();
+my %portOffset = ();
+my %clientNumber = ();
+my $n = 1;
+for my $line (@line) {
+  $line =~ m/^\w+,\d+$/ or die "configuration file is broken";
+  my ($clientName, $portOffset) = $line =~ /^(\w+),(\d+)$/;
+  push @clientName, $clientName;
+  $portOffset{$clientName} = $portOffset;
+  $clientNumber{$clientName} = $n;
+  $n++;
+}
+
+print "\n# hook up client says to the system outputs...\n";
+for my $clientName (@clientName) {
+  print "jack_connect $clientName:receive_1 system:playback_$clientNumber{$clientName}\n";
+}
+
+print "\n# hook up client says to the matrix...\n";
+for my $clientName (@clientName) {
+  print "jack_connect $clientName:receive_1 Max:in$clientNumber{$clientName}\n";
+}
+
+print "\n# hook up matrix to client hears...\n";
+for my $clientName (@clientName) {
+  print "jack_connect Max:out$clientNumber{$clientName} $clientName:send_1\n";
+}
+
+print "\n# send mono mix to each client...\n";
+for my $to (@clientName) {
+  for my $from (@clientName) {
+    print "jack_connect $from:receive_1 $to:send_2\n";
+  }
+}
