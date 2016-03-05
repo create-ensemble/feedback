@@ -1329,7 +1329,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 482.0, 474.0, 68.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend /1"
+					"text" : "prepend /5"
 				}
 
 			}
@@ -1397,7 +1397,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 15.0, 113.0, 89.0, 22.0 ],
 					"style" : "",
-					"text" : "whistlespace 1"
+					"text" : "whistlespace 5"
 				}
 
 			}
@@ -1824,16 +1824,16 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-58::obj-52" : [ "Level[1]", "Level", 0 ],
-			"obj-57::obj-55" : [ "DSP", "DSP", 0 ],
-			"obj-58::obj-7" : [ "AutoName", "AutoName", 0 ],
-			"obj-57::obj-22" : [ "Mute", "Mute", 0 ],
-			"obj-58::obj-74" : [ "Channels", "Channels", 0 ],
-			"obj-57::obj-52" : [ "Level", "Level", 0 ],
-			"obj-57::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
 			"obj-58::obj-76" : [ "Record", "Record", 0 ],
+			"obj-57::obj-55" : [ "DSP", "DSP", 0 ],
+			"obj-57::obj-52" : [ "Level", "Level", 0 ],
+			"obj-58::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
+			"obj-57::obj-22" : [ "Mute", "Mute", 0 ],
+			"obj-58::obj-52" : [ "Level[1]", "Level", 0 ],
+			"obj-57::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
+			"obj-58::obj-74" : [ "Channels", "Channels", 0 ],
 			"obj-58::obj-73" : [ "Format", "Format", 0 ],
-			"obj-58::obj-77" : [ "getsamplelength", "getsamplelength", 0 ]
+			"obj-58::obj-7" : [ "AutoName", "AutoName", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

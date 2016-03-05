@@ -607,7 +607,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 671.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "matt6"
+					"text" : "dummy"
 				}
 
 			}
@@ -639,7 +639,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 608.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "matt5"
+					"text" : "dummy"
 				}
 
 			}
@@ -671,7 +671,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 545.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "matt4"
+					"text" : "dummy"
 				}
 
 			}
@@ -703,7 +703,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 482.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "matt3"
+					"text" : "Matt"
 				}
 
 			}
@@ -727,15 +727,16 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-18",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.018341, 168.5, 54.0, 22.0 ],
+					"patching_rect" : [ 213.018341, 168.5, 54.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 419.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "matt2"
+					"text" : "Fernando"
 				}
 
 			}
@@ -767,7 +768,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 356.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "matt1"
+					"text" : "Hannah"
 				}
 
 			}
@@ -799,7 +800,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 293.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "IO2"
+					"text" : "Hafiz"
 				}
 
 			}
@@ -831,7 +832,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 278.75, -1.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "IO"
+					"text" : "Karl"
 				}
 
 			}
@@ -15926,7 +15927,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-5",
@@ -19026,7 +19026,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
@@ -27818,7 +27817,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -28038,7 +28036,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -30829,9 +30826,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 307.0, 47.0, 129.0, 129.0 ],
+									"patching_rect" : [ 307.0, 47.0, 113.0, 129.0 ],
 									"style" : "",
-									"text" : ";\r1-name Matt;\r2-name Hafiz;\r3-name Tim?!?;\r4-name Fernando?!?;\r5-name Hannah;\r6-name Karl;\r7-name Anis?!?;\r8-name Kalrsruhe?!?"
+									"text" : ";\r1-name Karl;\r2-name Hafiz;\r3-name Hannah;\r4-name Fernando;\r5-name Matt;\r6-name dummy;\r7-name dummy;\r8-name dummy"
 								}
 
 							}
