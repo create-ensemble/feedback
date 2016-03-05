@@ -57,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 665.892517, 377.0, 143.0, 87.0 ],
+					"patching_rect" : [ 665.892517, 377.0, 144.0, 87.0 ],
 					"style" : "",
 					"text" : "Workaround for Max bug where it fails to notice that the poly~ contains tapin~/tapout~.  So one signal vector of extra latency here."
 				}
@@ -116,9 +116,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 690.392517, 497.0, 122.0, 22.0 ],
+					"patching_rect" : [ 690.392517, 498.0, 177.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ whistlespace 1"
+					"text" : "poly~ whistlespace 1 @args #1"
 				}
 
 			}
