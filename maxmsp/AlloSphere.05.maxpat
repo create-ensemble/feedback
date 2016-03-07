@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 103.0, 406.0, 421.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -130,9 +130,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 69.0, 134.0, 49.0, 22.0 ],
+									"patching_rect" : [ 69.0, 134.0, 79.0, 22.0 ],
 									"style" : "",
-									"text" : "zl iter 3"
+									"text" : "zl 4096 iter 3"
 								}
 
 							}
@@ -34551,6 +34551,18 @@
 				"name" : "cnmat_blue.gif",
 				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
 				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "near-jog.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jog-scale-semitones.coll.txt",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
