@@ -50,7 +50,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 24.0, 757.125, 45.0, 19.0 ],
-					"presentation_rect" : [ 51.0, 759.0, 0.0, 0.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
@@ -70,7 +69,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 59.5, 461.0, 57.0, 22.0 ],
-					"presentation_rect" : [ 11.0, 399.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -260,10 +258,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 433.0, 998.0, 36.0, 19.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -280,10 +274,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 284.0, 103.0, 30.0, 19.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in~ 1"
 				}
@@ -300,10 +290,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 351.0, 13.0, 25.0, 19.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -2483,7 +2469,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-125",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -3665,15 +3650,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-71", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-127", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4737,7 +4713,63 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "gain~.1cyb.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mod-delay~.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "boring.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "boring~.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "nothing.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
+				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mattrms~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "OSC-route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "fiddle~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
