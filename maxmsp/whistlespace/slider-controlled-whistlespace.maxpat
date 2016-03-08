@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 107.0, 143.0, 1599.0, 616.0 ],
+		"rect" : [ 2285.0, 370.0, 1599.0, 616.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-55",
+					"id" : "obj-47",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 0.0, 168.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 120.0, 32.0, 68.0, 22.0 ],
+					"patching_rect" : [ 26.0, 168.0, 61.0, 22.0 ],
 					"style" : "",
-					"text" : "cycle~ 440"
+					"text" : "gate~ 1 0"
 				}
 
 			}
@@ -60,9 +76,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1374.5, 438.0, 98.0, 35.0 ],
-					"presentation_rect" : [ 1093.5, 743.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "/delay/blip 0.5 500."
+					"text" : "/delay/blip 2. 500."
 				}
 
 			}
@@ -101,7 +116,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1450.5, 252.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 1168.0, 557.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -125,9 +139,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1340.0, 318.0, 131.0, 20.0 ],
+					"patching_rect" : [ 1340.0, 318.0, 107.0, 20.0 ],
 					"style" : "",
-					"text" : "Row (from MIDI key #)"
+					"text" : "speed (transpose)"
 				}
 
 			}
@@ -257,9 +271,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1332.0, 141.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 754.0, 88.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "5 5"
+					"text" : "2 5"
 				}
 
 			}
@@ -286,7 +299,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1356.5, 399.0, 98.0, 22.0 ],
-					"presentation_rect" : [ 768.5, 78.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "/delay/blip $1 $2"
 				}
@@ -320,29 +332,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 63.0, 314.0, 372.0, 116.0 ],
+					"patching_rect" : [ 26.0, 339.0, 372.0, 116.0 ],
 					"varname" : "bp.Recordr",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"extract" : 1,
-					"id" : "obj-57",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bp.Stereo.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 629.0, 288.0, 148.0, 116.0 ],
-					"varname" : "bp.Stereo",
 					"viewvisibility" : 1
 				}
 
@@ -1649,7 +1640,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 169.0, 45.0, 45.0 ],
+					"patching_rect" : [ 51.0, 230.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -1715,34 +1706,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-58", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
+					"destination" : [ "obj-32", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
@@ -1994,6 +1958,33 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2174,6 +2165,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2205,15 +2205,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
 				}
 
 			}
@@ -2309,15 +2300,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-57::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
 			"obj-58::obj-52" : [ "Level[1]", "Level", 0 ],
 			"obj-58::obj-73" : [ "Format", "Format", 0 ],
 			"obj-58::obj-7" : [ "AutoName", "AutoName", 0 ],
-			"obj-57::obj-52" : [ "Level", "Level", 0 ],
 			"obj-58::obj-76" : [ "Record", "Record", 0 ],
-			"obj-57::obj-55" : [ "DSP", "DSP", 0 ],
 			"obj-58::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
-			"obj-57::obj-22" : [ "Mute", "Mute", 0 ],
 			"obj-58::obj-74" : [ "Channels", "Channels", 0 ]
 		}
 ,
@@ -2396,12 +2383,6 @@
 , 			{
 				"name" : "APC20-faders.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.Stereo.maxpat",
-				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Output",
 				"type" : "JSON",
 				"implicit" : 1
 			}
