@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -135,7 +135,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 151.0, 92.0, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "16"
+					"text" : "8"
 				}
 
 			}
@@ -1147,12 +1147,11 @@
 		"dependency_cache" : [ 			{
 				"name" : "sequence",
 				"bootpath" : "~/Documents/max_path/enabled/CNMAT_recommended_3rd_party_externals/MZ_Enabled/RTC-lib_461.1/put content into patches/RTC-lib/Chance",
-				"patcherrelativepath" : "../../../Documents/max_path/enabled/CNMAT_recommended_3rd_party_externals/MZ_Enabled/RTC-lib_461.1/put content into patches/RTC-lib/Chance",
 				"type" : "maxb",
 				"implicit" : 1
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
