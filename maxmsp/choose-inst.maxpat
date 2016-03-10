@@ -56,8 +56,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 257.0, 737.0, 89.0, 16.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 255.0, 700.562012, 16.0, 84.0 ],
 					"style" : ""
 				}
 
@@ -1442,15 +1440,29 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "near-jog.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jog-scale-semitones.coll.txt",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "slew-blipper.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "OSC-route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "mattrms~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "fiddle~.mxo",
 				"type" : "iLaX"
 			}
  ],
