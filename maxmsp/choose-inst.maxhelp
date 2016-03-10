@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2336.0, 428.0, 640.0, 480.0 ],
+		"rect" : [ 2336.0, 428.0, 562.0, 611.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,8 +42,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 444.0, 198.0, 176.0, 20.0 ],
-					"presentation_rect" : [ 444.0, 198.0, 0.0, 0.0 ],
+					"patching_rect" : [ 375.0, 190.0, 176.0, 20.0 ],
 					"style" : "",
 					"text" : "matt = whistlespace patch"
 				}
@@ -55,8 +54,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 444.0, 182.0, 176.0, 20.0 ],
-					"presentation_rect" : [ 444.0, 182.0, 0.0, 0.0 ],
+					"patching_rect" : [ 375.0, 174.0, 176.0, 20.0 ],
 					"style" : "",
 					"text" : "I/O = say from adc, hear to dac"
 				}
@@ -68,7 +66,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 444.0, 167.0, 145.0, 20.0 ],
+					"patching_rect" : [ 375.0, 159.0, 145.0, 20.0 ],
 					"style" : "",
 					"text" : "bypass = just a delay line"
 				}
@@ -82,8 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 296.0, 182.0, 129.0, 37.0 ],
-					"presentation_rect" : [ 304.0, 187.0, 0.0, 0.0 ],
+					"patching_rect" : [ 227.0, 174.0, 129.0, 37.0 ],
 					"style" : "",
 					"text" : "button opens whistlespace UI"
 				}
@@ -96,8 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 296.0, 162.0, 146.0, 24.0 ],
-					"presentation_rect" : [ 296.0, 170.0, 0.0, 0.0 ],
+					"patching_rect" : [ 227.0, 154.0, 146.0, 24.0 ],
 					"style" : "",
 					"text" : "Select instrument type"
 				}
@@ -110,8 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 296.0, 140.0, 205.0, 24.0 ],
-					"presentation_rect" : [ 296.0, 140.0, 0.0, 0.0 ],
+					"patching_rect" : [ 227.0, 132.0, 205.0, 24.0 ],
 					"style" : "",
 					"text" : "Delay (for both bypass and I/O)"
 				}
@@ -124,7 +119,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 296.0, 118.0, 164.0, 24.0 ],
+					"patching_rect" : [ 227.0, 110.0, 164.0, 24.0 ],
 					"style" : "",
 					"text" : "Voice number (argument)"
 				}
@@ -136,7 +131,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 308.5, 429.0, 45.0, 45.0 ],
+					"patching_rect" : [ 228.5, 531.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -149,8 +144,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 320.0, 269.0, 22.0, 140.0 ],
-					"presentation_rect" : [ 322.0, 269.0, 0.0, 0.0 ],
+					"patching_rect" : [ 240.0, 371.0, 22.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -162,8 +156,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 205.0, 220.0, 123.0, 33.0 ],
-					"presentation_rect" : [ 205.0, 219.0, 0.0, 0.0 ],
+					"patching_rect" : [ 125.0, 322.0, 123.0, 33.0 ],
 					"style" : "",
 					"text" : "Say signal coming out of this instrument"
 				}
@@ -175,7 +168,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 177.0, 269.0, 130.0, 130.0 ],
+					"patching_rect" : [ 97.0, 371.0, 130.0, 130.0 ],
 					"style" : ""
 				}
 
@@ -187,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 228.0, 70.0, 114.0, 33.0 ],
+					"patching_rect" : [ 159.0, 62.0, 114.0, 33.0 ],
 					"style" : "",
 					"text" : "Hear signal going into this instrument"
 				}
@@ -202,7 +195,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 99.0, 28.0, 50.0, 22.0 ],
+					"patching_rect" : [ 30.0, 20.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -215,7 +208,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 99.0, 107.0, 22.0, 140.0 ],
+					"patching_rect" : [ 30.0, 99.0, 22.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -227,7 +220,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 99.0, 60.0, 68.0, 22.0 ],
+					"patching_rect" : [ 30.0, 52.0, 68.0, 22.0 ],
 					"style" : "",
 					"text" : "cycle~ 220"
 				}
@@ -249,7 +242,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 228.0, 118.0, 63.0, 91.0 ],
+					"patching_rect" : [ 159.0, 110.0, 64.0, 175.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -4.0, 50.0, 63.0, 180.0 ],
 					"viewvisibility" : 1
