@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# in this setup...
+# 1) only Hannah is "remote". She needs a mono mix of everyone
+# 2) only Hafiz is connected analog. He is system:{capture,playback}_8
+# 3) Matt's instrument is "built in" to the Max/MSP matrix mixer. He does not need say/hear routed using jack.
+#
+
+# connect "says" to matrix
+jack_connect Karl:receive_1 Max:in1
+jack_connect system:capture_8 Max:in2
+jack_connect Hannah:receive_1 Max:in3
+
+# connect "says" to house speakers
+jack_connect Karl:receive_1 system:playback_1
+jack_connect system:capture_8 system:playback_2
+jack_connect Hannah:receive_1 system:playback_3
+jack_connect Max:out5 system:playback_5
+
+# connect "hears"
+jack_connect Max:out1 Karl:send_1
+jack_connect Max:out2 system:playback_8
+jack_connect Max:out3 Hannah:send_1
+
+# send Hannah a mono mix
+
+jack_connect Karl:receive_1 Hannah:send_2
+jack_connect system:capture_8 Hannah:send_2
+jack_connect Hannah:receive_1 Hannah:send_2
+jack_connect Max:out5 Hannah:send_2
+
