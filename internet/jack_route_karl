@@ -9,6 +9,9 @@ jack_connect Max:out1 Karl:send_1
 # so i can hear what i'm saying...
 jack_connect Max:out1 system:playback_1
 
+# so i can hear what my instrument hears...
+jack_connect Karl:receive_1 system:playback_2
+
 # so i can hear what they're saying (mono mix)
-jack_connect Karl:receive_2 system:playback_2
+#jack_connect Karl:receive_2 system:playback_2
 
