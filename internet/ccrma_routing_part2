@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# in this setup...
+# 1) Hannah, Tim, and Fernando are together at UCSB plugged into an echo audio box via analog...
+# 2) Hafiz is connected analog: system:{capture,playback}_8
+# 3) Matt's is connected analog locally: system:playback_9 system:capture_3
+# 4) Karl is connected analog locally: system:capture_7 and system:playback_10
+#
+
+# connect "says" to matrix
+jack_connect system:capture_7 Max:in1 # Karl
+jack_connect system:capture_8 Max:in2 # Hafiz
+jack_connect   UCSB:receive_1 Max:in3 # Hannah
+jack_connect   UCSB:receive_2 Max:in4 # Fernando
+jack_connect system:capture_3 Max:in5 # Matt
+jack_connect   UCSB:receive_3 Max:in6 # Tim
+
+# connect "says" to house speakers
+jack_connect system:capture_7 system:playback_1 # Karl
+jack_connect system:capture_8 system:playback_2 # Hafiz
+jack_connect   UCSB:receive_1 system:playback_3 # Hannah
+jack_connect   UCSB:receive_2 system:playback_4 # Fernando
+jack_connect system:capture_3 system:playback_5 # Matt
+jack_connect   UCSB:receive_3 system:playback_6 # Tim
+
+# connect "hears"
+#jack_connect Max:out1 Karl:send_1
+jack_connect Max:out1 system:playback_10 # Karl
+jack_connect Max:out2 system:playback_8  # Hafiz
+jack_connect Max:out3   UCSB:send_1      # Hannah
+jack_connect Max:out4   UCSB:send_2      # Fernando
+jack_connect Max:out5 system:playback_9  # Matt
+jack_connect Max:out6   UCSB:send_3      # Tim
+
+# send UCSB a mono mix of everyone
+
+jack_connect system:capture_7 UCSB:send_4
+jack_connect system:capture_8 UCSB:send_4
+jack_connect   UCSB:receive_1 UCSB:send_4
+jack_connect   UCSB:receive_2 UCSB:send_4
+jack_connect system:capture_3 UCSB:send_4
+jack_connect   UCSB:receive_3 UCSB:send_4
