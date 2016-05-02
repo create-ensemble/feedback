@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 736.0, 197.0, 1150.0, 713.0 ],
+		"rect" : [ 334.0, 112.0, 1150.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -3026,7 +3026,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 671.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "bypass"
+					"text" : "Matt2"
 				}
 
 			}
@@ -3058,7 +3058,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 608.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "bypass"
+					"text" : "Trijeet"
 				}
 
 			}
@@ -3090,7 +3090,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 545.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "Karl"
+					"text" : "Ben"
 				}
 
 			}
@@ -3122,7 +3122,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 482.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "Hannah"
+					"text" : "Kitty"
 				}
 
 			}
@@ -3146,16 +3146,15 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-18",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.018341, 168.5, 54.0, 35.0 ],
+					"patching_rect" : [ 213.018341, 168.5, 54.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 419.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "Fernando"
+					"text" : "Matt1"
 				}
 
 			}
@@ -3187,7 +3186,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 356.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "Tim"
+					"text" : "Nate"
 				}
 
 			}
@@ -3219,7 +3218,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 293.75, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "Hafiz"
+					"text" : "Ludwig"
 				}
 
 			}
@@ -3251,7 +3250,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 278.75, -1.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "Matt"
+					"text" : "Jack"
 				}
 
 			}
@@ -5885,7 +5884,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 944.0, 434.0, 926.0, 737.0 ],
+						"rect" : [ 944.0, 425.0, 926.0, 737.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -17338,9 +17337,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 307.0, 47.0, 113.0, 129.0 ],
+									"patching_rect" : [ 307.0, 47.0, 99.0, 129.0 ],
 									"style" : "",
-									"text" : ";\r1-name Karl;\r2-name Hafiz;\r3-name Hannah;\r4-name Fernando;\r5-name Matt;\r6-name dummy;\r7-name dummy;\r8-name dummy"
+									"text" : ";\r1-name Jack;\r2-name Ludwig;\r3-name Nate;\r4-name Matt1;\r5-name Kitty;\r6-name Ben;\r7-name Trijeet;\r8-name Matt2"
 								}
 
 							}
