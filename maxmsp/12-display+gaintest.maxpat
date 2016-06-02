@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 583.0, 132.0, 198.0, 87.0 ],
-					"presentation_rect" : [ 614.0, 138.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "If you open the \"inspector\" for each you'll see that each has as its argument the corresponding integer 1-12; this is used inside display+gaintest so that each instance knows which channel it is."
 				}
@@ -134,7 +133,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 19.806484, 15.055937, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -1.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, -1.0, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -156,7 +155,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 184.806488, 598.055969, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 1044.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 998.168823, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -178,7 +177,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 169.806488, 545.055969, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 949.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 907.335266, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -200,7 +199,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 154.806488, 492.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 854.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 816.50177, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -222,7 +221,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 139.806488, 439.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 759.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 725.668213, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -244,7 +243,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 124.806488, 386.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 664.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 634.834656, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -266,7 +265,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 109.806488, 333.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 569.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 544.00116, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -288,7 +287,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 94.806488, 280.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 474.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 453.167633, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -310,7 +309,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 79.806488, 227.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 379.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 362.334106, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -332,7 +331,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 64.806488, 174.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 284.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 271.50058, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -354,7 +353,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 49.806484, 121.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 189.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 180.667053, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -376,7 +375,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 34.806484, 68.055939, 428.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 94.0, 717.0, 95.0 ],
+					"presentation_rect" : [ 0.0, 89.833527, 717.0, 94.0 ],
 					"viewvisibility" : 1
 				}
 
