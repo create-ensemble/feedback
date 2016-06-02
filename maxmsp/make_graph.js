@@ -36,11 +36,12 @@ function list() {
   // dot file.
   //
   dot = "digraph foo {\n"
-  dot += "  edge [penwidth=2]"
+  dot += "    graph [bgcolor=\"#53585F\"]\n"
+  dot += "  edge [penwidth=6]\n"
 
   // set some drawing parameters
   //
-  dot += "  node [shape=circle, fixedsize=true, penwidth=2, width=1.5, height=0.6, fontsize=24]\n"
+  dot += "  node [shape=circle, style=filled, color=\"#DDDDDD\", fixedsize=true, penwidth=2, width=1.5, height=0.6, fontsize=30]\n"
   var i
   for (i = 2; i < L; i += 3) {
     // if the gain indicates that the previous (row, column) pair is "connected"

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 831.0, 337.0, 420.0, 662.0 ],
+		"rect" : [ 831.0, 337.0, 758.0, 390.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -108,16 +108,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontname" : "Baskerville",
+					"fontsize" : 14.0,
 					"id" : "obj-20",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 381.0, 147.5, 84.0, 22.0 ],
+					"patching_rect" : [ 381.0, 147.5, 87.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 278.75, -1.0, 155.0, 22.0 ],
+					"presentation_rect" : [ 265.0, 12.0, 160.0, 25.0 ],
 					"style" : "",
 					"text" : "anonymous"
 				}
@@ -243,16 +243,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontname" : "Baskerville",
+					"fontsize" : 14.0,
 					"id" : "obj-47",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 332.0, 154.0, 42.0, 22.0 ],
+					"patching_rect" : [ 332.0, 154.0, 48.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 239.25, -1.0, 39.5, 22.0 ],
+					"presentation_rect" : [ 223.5, 12.0, 46.0, 25.0 ],
 					"style" : "",
 					"text" : "#1"
 				}
@@ -260,15 +260,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
+					"fontname" : "Baskerville",
 					"fontsize" : 12.0,
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 401.0, 201.0, 29.0, 20.0 ],
+					"patching_rect" : [ 401.0, 201.0, 26.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 371.0, 74.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 371.0, 74.0, 26.0, 20.0 ],
 					"style" : "",
 					"text" : "say"
 				}
@@ -366,15 +366,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
+					"fontname" : "Baskerville",
 					"fontsize" : 12.0,
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.0, 199.0, 35.0, 20.0 ],
+					"patching_rect" : [ 44.0, 199.0, 32.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 12.0, 35.0, 20.0 ],
+					"presentation_rect" : [ -1.0, 12.0, 32.0, 20.0 ],
 					"style" : "",
 					"text" : "hear"
 				}
@@ -427,15 +427,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
+					"fontname" : "Baskerville",
 					"fontsize" : 12.0,
 					"id" : "obj-13",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.0, 231.0, 29.0, 20.0 ],
+					"patching_rect" : [ 64.0, 231.0, 26.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 51.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 51.0, 26.0, 20.0 ],
 					"style" : "",
 					"text" : "say"
 				}
@@ -443,7 +443,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
+					"fontname" : "Baskerville",
 					"fontsize" : 20.0,
 					"format" : 6,
 					"id" : "obj-12",
@@ -452,9 +452,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 496.0, 419.0, 63.0, 31.0 ],
+					"patching_rect" : [ 496.0, 419.0, 60.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 644.0, 51.0, 71.0, 31.0 ],
+					"presentation_rect" : [ 644.0, 51.0, 67.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -640,7 +640,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
+					"fontname" : "Baskerville",
 					"fontsize" : 20.0,
 					"format" : 6,
 					"id" : "obj-8",
@@ -649,9 +649,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 496.0, 186.0, 71.0, 31.0 ],
+					"patching_rect" : [ 496.0, 186.0, 67.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 644.0, 12.0, 71.0, 31.0 ],
+					"presentation_rect" : [ 644.0, 12.0, 67.0, 31.0 ],
 					"style" : ""
 				}
 
