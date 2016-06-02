@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 603.0, 307.0, 828.0, 662.0 ],
+		"rect" : [ 831.0, 337.0, 420.0, 662.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2.5, 585.0, 478.0, 47.0 ],
-					"presentation_rect" : [ 2.5, 585.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Note that this patch also uses Max's \"send\" mechanism to report the three db values (current hear and say and estimarted gain) to the rest of the patch.  In each case it's a list of two numbers:  instrument number and a float for the value (in dB)."
 				}
@@ -726,7 +725,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 202.0, 201.0, 228.0, 56.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.0, -1.0, 515.0, 95.0 ],
+					"presentation_rect" : [ 128.0, 0.0, 515.0, 93.0 ],
 					"style" : ""
 				}
 
