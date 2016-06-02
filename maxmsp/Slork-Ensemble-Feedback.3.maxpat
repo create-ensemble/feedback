@@ -66,7 +66,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 100.0, 99.0, 1694.0, 1062.0 ],
+						"rect" : [ 101.0, 78.0, 1150.0, 1062.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -124,7 +124,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 745.0, 722.0, 617.0, 254.0 ],
+									"patching_rect" : [ 745.0, 722.0, 1175.0, 315.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 733.0, 696.0, 1181.0, 320.0 ],
 									"viewvisibility" : 1
@@ -6273,7 +6273,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -22429,6 +22428,36 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-46",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 487.5, 48.5, 69.0, 22.0 ],
+									"style" : "",
+									"text" : "delay 5000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-40",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 487.5, 22.5, 60.0, 22.0 ],
+									"style" : "",
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-37",
 									"linecount" : 13,
 									"maxclass" : "message",
@@ -22600,7 +22629,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 354.0, 13.5, 108.0, 183.0 ],
 									"style" : "",
-									"text" : ";\r1-name Trijeet;\r2-name Jack;\r3-name Arushi;\r4-name Giuliano;\r5-name Nate;\r6-name Ben;\r7-name Ludwig;\r8-name Allison;\r9-name Chryssie;\r10-name Sanjay;\r11-name Paul;\r12-name Kitty"
+									"text" : ";\r1-name Trijeet;\r2-name Jack;\r3-name Arushi;\r4-name Giuliano;\r5-name Nate;\r6-name Ben;\r7-name Ludwig;\r8-name Alison;\r9-name Chryssie;\r10-name Sanjay;\r11-name Paul;\r12-name Kitty"
 								}
 
 							}
@@ -23377,6 +23406,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-39", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -23417,6 +23455,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-46", 0 ]
 								}
 
 							}
