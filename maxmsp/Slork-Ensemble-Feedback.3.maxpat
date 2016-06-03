@@ -116,7 +116,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1047.666748, 1416.333374, 372.0, 61.0 ],
+									"patching_rect" : [ 1047.666748, 1416.333374, 377.0, 61.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 1056.81665, 1031.0, 594.0, 34.0 ],
 									"style" : "",
@@ -171,9 +171,9 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1387.333374, 622.0, 557.0, 63.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 1175.333374, 621.0, 557.0, 63.0 ],
+									"presentation_rect" : [ 1075.31665, 616.0, 557.0, 63.0 ],
 									"style" : "",
-									"text" : "backward-12ring",
+									"text" : "four-reverse-trios",
 									"textjustification" : 1
 								}
 
