@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 683.0, 403.0, 43.0, 22.0 ],
+					"style" : "",
+					"text" : "sig~ 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "message",
@@ -88,64 +101,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 657.892517, 479.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 45.0, 71.0, 18.0, 18.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-58",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 665.892517, 377.0, 144.0, 87.0 ],
-					"style" : "",
-					"text" : "Workaround for Max bug where it fails to notice that the poly~ contains tapin~/tapout~.  So one signal vector of extra latency here."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-51",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 690.392517, 454.0, 61.0, 22.0 ],
-					"style" : "",
-					"text" : "tapout~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-57",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "tapconnect" ],
-					"patching_rect" : [ 690.392517, 422.0, 54.0, 22.0 ],
-					"style" : "",
-					"text" : "tapin~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-56",
 					"linecount" : 5,
 					"maxclass" : "comment",
@@ -159,21 +114,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 690.392517, 498.0, 177.0, 22.0 ],
-					"style" : "",
-					"text" : "poly~ whistlespace 1 @args #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -182,32 +122,6 @@
 					"patching_rect" : [ 295.5, 328.0, 43.0, 22.0 ],
 					"style" : "",
 					"text" : "sig~ 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 796.0, 466.0, 63.0, 22.0 ],
-					"style" : "",
-					"text" : "/power $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-46",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 796.0, 433.0, 35.0, 22.0 ],
-					"style" : "",
-					"text" : "== 3"
 				}
 
 			}
@@ -538,11 +452,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.0, 183.0, 34.0, 20.0 ],
+					"patching_rect" : [ 117.0, 183.0, 48.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 71.0, 50.0, 20.0 ],
 					"style" : "",
-					"text" : "matt"
+					"text" : "silence"
 				}
 
 			}
@@ -908,7 +822,7 @@
 					"presentation_rect" : [ 2.0, 41.0, 18.0, 50.0 ],
 					"size" : 3,
 					"style" : "",
-					"value" : 1
+					"value" : 0
 				}
 
 			}
@@ -1086,15 +1000,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-24", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1105,15 +1010,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-26", 0 ]
@@ -1230,15 +1126,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1252,15 +1139,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -1302,28 +1180,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-52", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-53", 0 ]
 				}
 
 			}
@@ -1342,15 +1202,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-54", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-57", 0 ]
 				}
 
 			}
@@ -1392,77 +1243,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "whistlespace.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gain~.1cyb.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mod-delay~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "boring.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "boring~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "nothing.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "uc_license.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
-				"type" : "GIFf",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "near-jog.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "jog-scale-semitones.coll.txt",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "slew-blipper.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "OSC-route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mattrms~.mxo",
 				"type" : "iLaX"
 			}
  ],
