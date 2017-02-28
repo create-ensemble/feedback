@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 409.0, 79.0, 654.0, 333.0 ],
+		"rect" : [ 295.0, 79.0, 654.0, 333.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 79.0, 249.5, 80.0, 13.0 ],
-					"presentation_rect" : [ 104.0, 204.5, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -82,7 +81,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 79.0, 160.5, 80.0, 13.0 ],
-					"presentation_rect" : [ 91.0, 164.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -483,54 +481,63 @@
 		"dependency_cache" : [ 			{
 				"name" : "whistlespace.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gain~.1cyb.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mod-delay~.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "boring.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "boring~.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nothing.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "near-jog.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jog-scale-semitones.coll.txt",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "slew-blipper.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
