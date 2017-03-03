@@ -296,9 +296,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 30.5, 3.0, 97.0, 22.0 ],
+					"patching_rect" : [ 30.5, 3.0, 137.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ 1 2 3 4 5 6"
+					"text" : "adc~ 99 99 99 99 99 99"
 				}
 
 			}
