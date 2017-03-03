@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 203.0, 186.0, 1043.0, 576.0 ],
+		"rect" : [ 175.0, 123.0, 1043.0, 576.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -261,7 +261,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1.0, 81.0, 1852.0, 967.0 ],
+						"rect" : [ 1329.0, 243.0, 1145.0, 641.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -291,6 +291,41 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Baskerville",
+									"fontsize" : 24.0,
+									"id" : "obj-11",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 269.0, 33.0, 419.0, 34.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 603.0, 44.0, 145.0, 34.0 ],
+									"style" : "",
+									"text" : "gain estimates",
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Baskerville",
+									"fontsize" : 24.0,
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 112.483154, 42.333332, 419.0, 61.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.0, 44.0, 514.0, 34.0 ],
+									"style" : "",
+									"text" : "Our \"hear\" and \"say\" meters and \"say\" spectroscope",
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"attr" : "bgfillcolor",
 									"displaymode" : 3,
 									"id" : "obj-6",
@@ -313,8 +348,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1047.666748, 1416.333374, 377.0, 61.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 1056.81665, 1031.0, 594.0, 34.0 ],
 									"style" : "",
 									"text" : "Our physical arrangement on stage.    SLOrk @ Bing 2016",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -329,6 +362,7 @@
 									"clickthrough" : 0,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
+									"hidden" : 1,
 									"id" : "obj-10",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
@@ -337,8 +371,6 @@
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 756.666016, 759.0, 1163.333984, 321.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 743.332703, 710.902649, 1170.667236, 318.097382 ],
 									"viewvisibility" : 1
 								}
 
@@ -366,10 +398,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1387.333374, 622.0, 557.0, 63.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 1075.31665, 616.0, 557.0, 63.0 ],
 									"style" : "",
-									"text" : "four-reverse-trios",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -408,7 +438,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 1403.0, 11.0, 424.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 1421.666748, 8.333333, 424.0, 34.0 ],
+									"presentation_rect" : [ 1421.666748, 38.333332, 424.0, 34.0 ],
 									"style" : "",
 									"text" : "Matrix view of our audio interconnections",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -425,7 +455,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 808.0, 11.0, 419.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 855.483154, 8.333333, 419.0, 34.0 ],
+									"presentation_rect" : [ 855.483154, 38.333332, 419.0, 34.0 ],
 									"style" : "",
 									"text" : "Graph view of our audio interconnections",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -736,7 +766,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1349.333374, 54.0, 560.0, 560.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 1353.333374, 50.0, 552.0, 552.0 ],
+									"presentation_rect" : [ 1353.333374, 80.0, 552.0, 552.0 ],
 									"rows" : 12,
 									"style" : ""
 								}
@@ -759,7 +789,7 @@
 									"outlettype" : [ "list", "list" ],
 									"patching_rect" : [ 0.0, 0.0, 723.333313, 1121.333374 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 780.333313, 1139.666626 ],
+									"presentation_rect" : [ 0.0, 80.0, 786.332703, 547.666626 ],
 									"viewvisibility" : 1
 								}
 
@@ -2442,7 +2472,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 776.99939, 54.0, 560.00061, 560.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 788.332703, 50.0, 552.300964, 552.0 ]
+									"presentation_rect" : [ 788.332703, 80.0, 552.300964, 552.0 ]
 								}
 
 							}
@@ -2488,7 +2518,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 0.0, 0.0, 1920.0, 1200.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 1920.0, 1200.0 ],
+									"presentation_rect" : [ 0.0, 30.0, 1920.0, 1200.0 ],
 									"proportion" : 0.39,
 									"style" : ""
 								}
