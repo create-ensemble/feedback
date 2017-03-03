@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 246.0, 186.0, 1043.0, 576.0 ],
+		"rect" : [ 203.0, 186.0, 1043.0, 576.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -261,7 +261,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1324.0, 94.0, 1852.0, 967.0 ],
+						"rect" : [ 1.0, 81.0, 1852.0, 967.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -369,7 +369,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 1075.31665, 616.0, 557.0, 63.0 ],
 									"style" : "",
-									"text" : "upper+lower",
+									"text" : "four-reverse-trios",
 									"textjustification" : 1
 								}
 
@@ -3674,7 +3674,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 248.018341, 93.5, 57.0, 22.0 ],
 					"style" : "",
-					"text" : "Mark"
+					"text" : "Justin"
 				}
 
 			}
@@ -3704,7 +3704,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 187.018341, 93.5, 57.0, 22.0 ],
 					"style" : "",
-					"text" : "Justin"
+					"text" : "Julie"
 				}
 
 			}
@@ -3734,7 +3734,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 126.018341, 93.5, 57.0, 22.0 ],
 					"style" : "",
-					"text" : "Julie"
+					"text" : "Mark"
 				}
 
 			}
@@ -6428,7 +6428,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 94.0, 79.0, 1156.0, 964.0 ],
+						"rect" : [ 90.0, 79.0, 1156.0, 964.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -10964,7 +10964,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ -78.0, 300.0, 877.0, 684.0 ],
+										"rect" : [ 335.0, 169.0, 877.0, 684.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -22985,7 +22985,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 72.0, 118.0, 965.0, 601.0 ],
+						"rect" : [ 153.0, 136.0, 965.0, 601.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 36.0,
@@ -23219,7 +23219,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 354.0, 13.5, 107.0, 183.0 ],
 									"style" : "",
-									"text" : ";\r1-name Matt;\r2-name Jette;\r3-name Julie;\r4-name Justin;\r5-name Mark;\r6-name Alex;\r7-name dummy;\r8-name dummy;\r9-name dummy;\r10-name dummy;\r11-name dummy;\r12-name dummy"
+									"text" : ";\r1-name Matt;\r2-name Jette;\r3-name Mark;\r4-name Julie;\r5-name Justin;\r6-name Alex;\r7-name dummy;\r8-name dummy;\r9-name dummy;\r10-name dummy;\r11-name dummy;\r12-name dummy"
 								}
 
 							}
@@ -26883,91 +26883,78 @@
 		"dependency_cache" : [ 			{
 				"name" : "mymatrix~.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "calculate_matrix_output_gains.js",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gain_slew.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "choose-12-instruments.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "choose-inst.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nothing.maxpat",
 				"bootpath" : "/Users/slork/matt/Jog-Meend/insides",
-				"patcherrelativepath" : "../../../../../../../../../Users/slork/matt/Jog-Meend/insides",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "goldenmeanpoints-10minutes.coll.txt",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "goldenmeanpoints-10minutes-backwards.coll.txt",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "make_graph.js",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "graphviz_string_to_jitter_image.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "12-display+gaintest.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display+gaintest.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display-Slork-Bing-seating-layout.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
