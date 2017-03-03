@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 295.0, 79.0, 654.0, 333.0 ],
+		"rect" : [ 258.0, 305.0, 654.0, 333.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,69 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 243.0, 202.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "/delay/clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 243.0, 166.5, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 294.0, 139.5, 43.0, 20.0 ],
+					"style" : "",
+					"text" : "delete"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 243.0, 139.5, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "sel 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "int", "int", "int" ],
+					"patching_rect" : [ 243.0, 114.0, 50.5, 22.0 ],
+					"style" : "",
+					"text" : "key"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "meter~",
@@ -461,6 +524,42 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -481,63 +580,54 @@
 		"dependency_cache" : [ 			{
 				"name" : "whistlespace.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gain~.1cyb.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mod-delay~.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "boring.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "boring~.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nothing.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "near-jog.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jog-scale-semitones.coll.txt",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "slew-blipper.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../../../../../../../../../Users/matt/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}

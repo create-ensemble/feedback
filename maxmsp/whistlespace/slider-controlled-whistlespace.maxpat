@@ -45,10 +45,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.0, 336.0, 73.0, 22.0 ],
-					"presentation_rect" : [ 383.0, 336.0, 0.0, 0.0 ],
+					"patching_rect" : [ 384.0, 336.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "/delay/fb $1"
+					"text" : "/delay/feedback-db $1"
 				}
 
 			}
@@ -173,7 +172,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 310.0, 324.0, 30.0, 30.0 ],
-									"presentation_rect" : [ 311.0, 324.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
