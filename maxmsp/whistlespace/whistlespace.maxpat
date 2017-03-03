@@ -60,7 +60,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 762.0, 478.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 762.0, 478.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -214,7 +213,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 694.25, 300.5, 64.0, 20.0 ],
+					"patching_rect" : [ 694.25, 351.0, 64.0, 20.0 ],
 					"style" : "",
 					"text" : "slew-blipper"
 				}
@@ -524,6 +523,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 433.0, 998.0, 36.0, 19.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -540,6 +543,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 284.0, 103.0, 30.0, 19.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in~ 1"
 				}
@@ -556,6 +563,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 351.0, 13.0, 25.0, 19.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -665,11 +676,11 @@
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 9,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 320.5, 293.5, 264.0, 20.0 ],
+					"numoutlets" : 10,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 320.5, 293.5, 325.0, 20.0 ],
 					"style" : "",
-					"text" : "OSC-route /delay /slew /rate /depth /clear /goal /gain /blip"
+					"text" : "OSC-route /delay /slew /rate /depth /clear /goal /gain /blip /feedback-db"
 				}
 
 			}
@@ -4424,6 +4435,15 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-38", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-149", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-38", 8 ]
 				}
 
 			}
