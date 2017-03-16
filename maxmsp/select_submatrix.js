@@ -1,3 +1,10 @@
+// We care only about connections within the following "communities"; 
+// we wish to ignore all connections that aare not between members of one of these groups
+// groups = [[0, 1, 2, 3], [4, 5, 6, 7], [0, 4]]
+var groups = [[0, 4], [1, 5], [2, 6], [3,7]]
+
+
+
 
 inlets = 1
 outlets = 1
@@ -13,10 +20,6 @@ var L = N * N * 3
 
 
 
-  // We care only about connections within the following "communities"; 
-  // we wish to ignore all connections that aare not between members of one of these groups
-// groups = [[0, 1, 2, 3], [4, 5, 6, 7], [0, 4]]
-var groups = [[0, 1, 2, 3]]
 
 post('Select submatrix working with')
 post(groups.length)
