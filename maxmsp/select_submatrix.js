@@ -16,33 +16,26 @@ var L = N * N * 3
   // We care only about connections within the following "communities"; 
   // we wish to ignore all connections that aare not between members of one of these groups
 // groups = [[0, 1, 2, 3], [4, 5, 6, 7], [0, 4]]
- groups = [[10, 11, 12]]
+var groups = [[0, 1, 2, 3]]
 
-post('Hi!')
+post('Select submatrix working with')
 post(groups.length)
-    post()
+post('groups; first is: ')
+post(groups[0])
+post()
 
 function any_shared_group(x, y) {
 	
-	/*post(x)
-	post(y)
-    post()*/
-		
+	// post('X and Y:'); post(x); post(y); post()
 		
 	// Forget self-loops
-	if (x==y) return false;
+	// if (x==y) return false;
 	
 	for (i = 0; i < groups.length; i++) {
 		var g = groups[i]
-		post(g); post()
-		if ((g.indexOf(x) > 0) && (g.indexOf(y) > 0)) { 
-			/*post(x)
-			post(y)
-			post(g)
-		    post()*/
+		if ((g.indexOf(x) >= 0) && (g.indexOf(y) >= 0)) { 
 			return true
 		}
-
 	}
 	return false;
 }
