@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 258.0, 305.0, 654.0, 333.0 ],
+		"rect" : [ 58.0, 558.0, 654.0, 333.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -120,7 +120,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 59.0, 217.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ 1"
+					"text" : "adc~ 3"
 				}
 
 			}
@@ -132,7 +132,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 156.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "dac~ 1"
+					"text" : "dac~ 3"
 				}
 
 			}
@@ -156,7 +156,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 59.0, 269.0, 100.0, 22.0 ],
 					"style" : "",
-					"text" : "send~ moresay1"
+					"text" : "send~ moresay3"
 				}
 
 			}
@@ -181,7 +181,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 139.0, 35.0, 90.0, 22.0 ],
 					"style" : "",
-					"text" : "receive~ hear1"
+					"text" : "receive~ hear3"
 				}
 
 			}
@@ -611,6 +611,18 @@
 				"name" : "nothing.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
+				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
