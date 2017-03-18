@@ -631,7 +631,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1680.0, 0.0, 1920.0, 1080.0 ],
+						"rect" : [ 34.0, 79.0, 1211.0, 696.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -669,7 +669,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 496.483154, 489.0, 419.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 720.483154, 599.666687, 225.0, 34.0 ],
+									"presentation_rect" : [ 234.483154, 877.666687, 225.0, 34.0 ],
 									"style" : "",
 									"text" : "Topology preset name",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -927,7 +927,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 612.0, 0.0, 145.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 1650.0, 39.0, 145.0, 34.0 ],
+									"presentation_rect" : [ 1777.0, 31.0, 145.0, 34.0 ],
 									"style" : "",
 									"text" : "gain estimates",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -945,7 +945,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 5.483154, 43.333328, 514.0, 61.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 1047.0, 39.0, 522.0, 34.0 ],
+									"presentation_rect" : [ 1201.0, 31.0, 522.0, 34.0 ],
 									"style" : "",
 									"text" : "Our \"hear\" and \"say\" meters and \"say\" spectroscopes",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1011,9 +1011,9 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1387.333374, 623.0, 557.0, 63.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 619.333374, 645.0, 414.0, 63.0 ],
+									"presentation_rect" : [ 133.333374, 923.0, 414.0, 63.0 ],
 									"style" : "",
-									"text" : "no-connections",
+									"text" : "overwriteme",
 									"textjustification" : 1
 								}
 
@@ -1053,7 +1053,7 @@
 									"patching_rect" : [ 1403.0, 11.0, 424.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 742.833374, 104.0, 233.0, 61.0 ],
+									"presentation_rect" : [ 869.833374, 206.0, 233.0, 61.0 ],
 									"style" : "",
 									"text" : "Matrix view of our audio interconnections",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -1380,7 +1380,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1349.333374, 54.0, 560.0, 560.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 704.333374, 171.666687, 310.0, 310.0 ],
+									"presentation_rect" : [ 794.333374, 273.666687, 384.0, 384.0 ],
 									"rows" : 8,
 									"style" : ""
 								}
@@ -1396,14 +1396,14 @@
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "12-display+gaintest.maxpat",
+									"name" : "12-display+gaintest-taller.maxpat",
 									"numinlets" : 0,
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "list", "list" ],
 									"patching_rect" : [ 0.0, 0.0, 723.333313, 1121.333374 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 1047.0, 75.0, 752.332703, 738.666626 ],
+									"presentation_rect" : [ 1201.0, 67.0, 752.332703, 970.666626 ],
 									"viewvisibility" : 1
 								}
 
@@ -3086,7 +3086,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 762.749084, 77.0, 560.00061, 560.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 113.832672, 81.666687, 552.300964, 552.0 ]
+									"presentation_rect" : [ 15.832672, 91.666687, 760.300964, 760.0 ]
 								}
 
 							}
@@ -3114,7 +3114,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ -26.0, -15.0, 1920.0, 1080.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 2.0, 2.0, 1920.0, 1080.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 1920.0, 1080.0 ],
 									"proportion" : 0.39,
 									"style" : ""
 								}
@@ -32050,13 +32050,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "12-display+gaintest.maxpat",
+				"name" : "12-display+gaintest-taller.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
-				"type" : "JSON",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "display+gaintest.maxpat",
+				"name" : "display+gaintest-taller.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp",
 				"type" : "JSON",
 				"implicit" : 1
