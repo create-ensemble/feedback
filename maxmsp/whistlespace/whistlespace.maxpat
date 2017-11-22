@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1956.0, 79.0, 1158.0, 1064.0 ],
+		"rect" : [ 361.0, 79.0, 1158.0, 945.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,36 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 153.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 154.0, 67.0, 20.0 ],
+					"style" : "",
+					"text" : "from fiddle"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"hidden" : 1,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 926.5, 403.0, 65.0, 19.0 ],
+					"style" : "",
+					"text" : "loadmess -60"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"hidden" : 1,
@@ -47,7 +77,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 749.0, 206.0, 60.0, 22.0 ],
-					"presentation_rect" : [ 847.0, 170.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -78,7 +107,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 537.0, 761.125, 56.0, 22.0 ],
-					"presentation_rect" : [ 594.0, 580.25, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -1142,6 +1170,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ -109.75, 499.0, 22.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.5, 172.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1180,7 +1210,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 966.25, 430.0, 89.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 245.0, 216.0, 89.0, 22.0 ],
+					"presentation_rect" : [ 462.25, 233.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "dB feedback"
 				}
@@ -1195,7 +1225,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 913.0, 482.0, 50.0, 22.0 ],
+					"patching_rect" : [ 913.0, 482.0, 54.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1212,7 +1242,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 913.0, 430.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 213.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 412.25, 230.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1360,7 +1390,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ -117.5, 622.5, 60.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 174.0, 60.0, 24.0 ],
+					"presentation_rect" : [ 34.0, 172.0, 60.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -1588,7 +1618,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 196.0, 117.0, 640.0, 480.0 ],
+						"rect" : [ 47.0, 103.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1615,7 +1645,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"candicane2" : [ 0.145098, 0.203922, 0.356863, 1.0 ],
@@ -3161,8 +3190,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ -121.0, 441.0, 57.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 71.5, 160.0, 57.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -3452,8 +3479,6 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "float", "bang", "list", "float", "list" ],
 					"patching_rect" : [ -83.0, 404.0, 114.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 71.5, 140.0, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "fiddle~ 2048 1 20 1"
 				}
@@ -3647,7 +3672,8 @@
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ -75.75, 561.0, 392.0, 34.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 336.0, 53.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.25, 210.0, 392.0, 34.0 ],
 					"range" : 96,
 					"style" : "",
 					"whitekeycolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -4206,6 +4232,15 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-149", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
