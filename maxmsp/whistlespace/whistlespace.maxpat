@@ -38,6 +38,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 850.0, 313.0, 77.0, 22.0 ],
+					"style" : "",
+					"text" : "print to-1cyb"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-18",
 					"maxclass" : "comment",
@@ -1514,11 +1526,11 @@
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 10,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 469.0, 264.5, 389.0, 22.0 ],
+					"numoutlets" : 11,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 469.0, 264.5, 419.0, 22.0 ],
 					"style" : "",
-					"text" : "OSC-route /delay /slew /rate /depth /clear /goal /gain /blip /feedback-db"
+					"text" : "OSC-route /delay /slew /rate /depth /clear /goal /gain /blip /feedback-db /1cyb"
 				}
 
 			}
@@ -3527,7 +3539,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 513.5, 720.625, 75.0, 22.0 ],
+					"patching_rect" : [ 514.5, 720.625, 75.0, 22.0 ],
 					"style" : "",
 					"text" : "gain~.1cyb"
 				}
@@ -3708,9 +3720,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ -75.75, 814.625, 39.0, 22.0 ],
+					"patching_rect" : [ -75.75, 814.625, 45.0, 22.0 ],
 					"style" : "",
-					"text" : "saw~"
+					"text" : "cycle~"
 				}
 
 			}
@@ -4461,10 +4473,30 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-38", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-38", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-38", 9 ]
 				}
 
 			}
