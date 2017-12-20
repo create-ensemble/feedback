@@ -38,6 +38,48 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 122.0, 793.0, 54.0, 22.0 ],
+					"style" : "",
+					"text" : "ws-tolim"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-88",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 740.0, 811.0, 401.0, 49.0 ],
+					"presentation_rect" : [ 740.0, 811.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "/*/shoot 0.1, /*/1cyb/slew 200., /*/1cyb/sensor-win 200., /synth/gliss 200, /delay/slew 333., /delay/goal 0.2, /synth/goal 0.2, /delay/feedback-db -15, /delay/1cyb/clip/max 1.1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-95",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 740.0, 864.5, 81.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /[37]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-94",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -45,7 +87,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 692.0, 739.0, 455.0, 35.0 ],
-					"presentation_rect" : [ 693.5, 739.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "/*/shoot 5., /*/1cyb/slew 50., /*/1cyb/sensor-win 5., /synth/gliss 10, /delay/slew 222., /delay/goal 0.3, /synth/goal 0.1, /delay/feedback-db -10, /delay/1cyb/clip/max 1.5"
 				}
@@ -75,7 +116,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 586.5, 695.0, 529.0, 35.0 ],
-					"presentation_rect" : [ 756.0, 658.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "/*/shoot 1., /*/1cyb/slew 10., /*/1cyb/sensor-win 10., /synth/gliss 10, /delay/slew 2222., /*/goal 0.2, /delay/feedback-db -30"
 				}
@@ -105,7 +145,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 542.0, 877.5, 119.0, 22.0 ],
-					"presentation_rect" : [ 748.0, 664.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "s ws-OSC"
 				}
@@ -2158,6 +2197,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-88", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-83", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2221,6 +2269,15 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-95", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ws01.maxpat",
@@ -2266,6 +2323,12 @@
 			}
 , 			{
 				"name" : "boring.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ws-tolim.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
