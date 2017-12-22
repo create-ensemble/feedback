@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 383.0, 98.0, 1187.0, 905.0 ],
+		"rect" : [ 1867.0, 184.0, 1187.0, 905.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,10 +56,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 740.0, 811.0, 401.0, 49.0 ],
-					"presentation_rect" : [ 740.0, 811.0, 0.0, 0.0 ],
+					"patching_rect" : [ 740.0, 811.0, 425.0, 49.0 ],
 					"style" : "",
-					"text" : "/*/shoot 0.1, /*/1cyb/slew 200., /*/1cyb/sensor-win 200., /synth/gliss 200, /delay/slew 333., /delay/goal 0.2, /synth/goal 0.2, /delay/feedback-db -15, /delay/1cyb/clip/max 1.1"
+					"text" : "/*/1cyb/shoot 0.1, /*/1cyb/slew 200., /*/1cyb/sensor-win 200., /synth/gliss 200, /delay/slew 333., /delay/goal 0.2, /synth/goal 0.2, /delay/feedback-db -15, /delay/1cyb/clip/max 1.1"
 				}
 
 			}
@@ -86,9 +85,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 692.0, 739.0, 455.0, 35.0 ],
+					"patching_rect" : [ 692.0, 739.0, 484.0, 35.0 ],
 					"style" : "",
-					"text" : "/*/shoot 5., /*/1cyb/slew 50., /*/1cyb/sensor-win 5., /synth/gliss 10, /delay/slew 222., /delay/goal 0.3, /synth/goal 0.1, /delay/feedback-db -10, /delay/1cyb/clip/max 1.5"
+					"text" : "/*/1cyb/shoot 5., /*/1cyb/slew 50., /*/1cyb/sensor-win 5., /synth/gliss 10, /delay/slew 222., /delay/goal 0.3, /synth/goal 0.1, /delay/feedback-db -10, /delay/1cyb/clip/max 1.5"
 				}
 
 			}
@@ -115,9 +114,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 586.5, 695.0, 529.0, 35.0 ],
+					"patching_rect" : [ 586.5, 695.0, 558.0, 35.0 ],
 					"style" : "",
-					"text" : "/*/shoot 1., /*/1cyb/slew 10., /*/1cyb/sensor-win 10., /synth/gliss 10, /delay/slew 2222., /*/goal 0.2, /delay/feedback-db -30"
+					"text" : "/*/1cyb/shoot 1., /*/1cyb/slew 10., /*/1cyb/sensor-win 10., /synth/gliss 10, /delay/slew 2222., /*/goal 0.2, /delay/feedback-db -30"
 				}
 
 			}
@@ -2292,18 +2291,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mod-delay~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "slew-blipper.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "nothing.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
@@ -2319,6 +2306,18 @@
 				"name" : "cnmat_blue.gif",
 				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
 				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mod-delay~.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "slew-blipper.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
