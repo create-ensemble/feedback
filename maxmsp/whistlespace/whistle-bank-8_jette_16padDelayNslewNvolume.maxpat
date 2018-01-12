@@ -1189,7 +1189,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 149.0, 955.0, 563.0 ],
+						"rect" : [ 347.0, 287.0, 955.0, 563.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1219,13 +1219,42 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-15",
+									"format" : 6,
+									"id" : "obj-20",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 630.499939, 8.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 501.5, 151.0, 121.0, 22.0 ],
+									"style" : "",
+									"text" : "OSC-route /left /right"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 537.0, 228.0, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 554.0, 62.0, 67.0, 22.0 ],
+									"presentation_rect" : [ 555.0, 62.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "/mq/left $1"
 								}
 
 							}
@@ -1252,7 +1281,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 503.0, 176.0, 50.0, 22.0 ],
+									"patching_rect" : [ 497.0, 178.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1262,25 +1291,11 @@
 									"id" : "obj-9",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 497.0, 127.0, 154.0, 22.0 ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 497.0, 127.0, 143.0, 22.0 ],
 									"style" : "",
-									"text" : "OSC-route mq/left mq/right"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 458.0, 66.0, 50.0, 35.0 ],
-									"style" : "",
-									"text" : "/mq/right 23."
+									"text" : "OSC-route /mq /topology"
 								}
 
 							}
@@ -2373,6 +2388,27 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-17", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-101", 0 ],
 									"order" : 1,
 									"source" : [ "obj-2", 0 ]
@@ -2389,6 +2425,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-31", 0 ],
 									"source" : [ "obj-29", 0 ]
 								}
@@ -2396,16 +2439,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 1 ],
-									"order" : 1,
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
-									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -2550,16 +2584,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"order" : 1,
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 1 ],
-									"order" : 0,
+									"destination" : [ "obj-17", 0 ],
 									"source" : [ "obj-9", 0 ]
 								}
 
