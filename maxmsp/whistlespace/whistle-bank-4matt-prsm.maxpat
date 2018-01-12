@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 985.0, 169.0, 661.0, 430.0 ],
+		"rect" : [ 833.0, 347.0, 661.0, 430.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -80,7 +80,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 546.5, 91.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ 7"
+					"text" : "adc~ 1"
 				}
 
 			}
@@ -92,7 +92,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.5, 371.0, 403.0, 22.0 ],
 					"style" : "",
-					"text" : "dac~ 3 4 5 6"
+					"text" : "dac~ 1 2 3 4"
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 398.5, 9.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ 6"
+					"text" : "adc~ 8"
 				}
 
 			}
@@ -118,7 +118,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 270.5, 9.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ 5"
+					"text" : "adc~ 7"
 				}
 
 			}
@@ -131,7 +131,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 143.5, 9.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ 4"
+					"text" : "adc~ 6"
 				}
 
 			}
@@ -144,7 +144,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 14.5, 9.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ 3"
+					"text" : "adc~ 5"
 				}
 
 			}
