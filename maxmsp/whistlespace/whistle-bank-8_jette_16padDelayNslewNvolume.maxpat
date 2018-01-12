@@ -2074,7 +2074,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 50.0, 100.0, 61.0, 22.0 ],
+									"patching_rect" : [ 50.0, 44.0, 61.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -2373,16 +2373,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"midpoints" : [ 101.5, 126.333344, 381.166626, 126.333344 ],
-									"source" : [ "obj-121", 1 ]
+									"destination" : [ "obj-63", 0 ],
+									"source" : [ "obj-11", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-63", 0 ],
-									"source" : [ "obj-121", 0 ]
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-13", 0 ]
 								}
 
 							}
