@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 47.0, 79.0, 1064.0, 675.0 ],
+		"rect" : [ 47.0, 79.0, 879.0, 513.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -5595,7 +5595,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 63.0, 108.296875, 160.0, 22.0 ],
 									"style" : "",
-									"text" : "/topology 1"
+									"text" : "/mq/left 100."
 								}
 
 							}
@@ -10261,7 +10261,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "i"
+													"text" : "space"
 												}
 
 											}
@@ -10517,7 +10517,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "i"
+													"text" : "n"
 												}
 
 											}
@@ -10725,7 +10725,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 574.5, 97.800293, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "i"
+									"text" : "space"
 								}
 
 							}
@@ -29316,7 +29316,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 189.545151, 53.0, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "1"
+													"text" : "space"
 												}
 
 											}
@@ -46496,7 +46496,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -80.0, 150.0, 1170.0, 607.0 ],
+						"rect" : [ 34.0, 150.0, 1170.0, 607.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -46523,35 +46523,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-24",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 416.5, 504.0, 181.0, 33.0 ],
-									"style" : "",
-									"text" : "CCRMA-compatible \"ends in 4\" UDP port number"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-17",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 437.0, 474.0, 140.0, 22.0 ],
-									"style" : "",
-									"text" : "udpsend 127.0.0.1 9014"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-23",
 									"linecount" : 5,
@@ -47307,14 +47279,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"order" : 3,
-									"source" : [ "obj-100", 0 ]
 								}
 
 							}
