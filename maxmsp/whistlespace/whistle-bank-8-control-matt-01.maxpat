@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 465.0, 118.0, 1181.0, 858.0 ],
+		"rect" : [ 583.0, 79.0, 1181.0, 858.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -3552,7 +3552,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
+					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
 					"format" : 6,
 					"id" : "obj-68",
 					"maxclass" : "flonum",
@@ -3567,7 +3567,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
+					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
 					"format" : 6,
 					"id" : "obj-69",
 					"maxclass" : "flonum",
@@ -5831,7 +5831,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 256.5, 2.0, 88.0, 22.0 ],
+					"patching_rect" : [ 256.5, 1.0, 88.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
