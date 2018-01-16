@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 567.0, 441.0, 835.0, 401.0 ],
+		"rect" : [ 437.0, 324.0, 835.0, 401.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -393,7 +393,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 268.0, 364.0, 378.0, 22.0 ],
 									"style" : "",
-									"text" : "33330. 3330. 4995. 3600."
+									"text" : "24040.533203 2401.889404 3602.833984 2596.637207"
 								}
 
 							}
@@ -902,7 +902,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 268.0, 364.0, 378.0, 22.0 ],
 									"style" : "",
-									"text" : "4154.743164 415.1 622.650513 448.757111"
+									"text" : "33330. 3330. 4995. 3600."
 								}
 
 							}
@@ -1189,7 +1189,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 347.0, 287.0, 955.0, 563.0 ],
+						"rect" : [ 308.0, 301.0, 955.0, 563.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1216,18 +1216,16 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"format" : 6,
-									"id" : "obj-20",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 630.499939, 8.0, 50.0, 22.0 ],
-									"style" : ""
+									"id" : "obj-24",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 679.0, 163.666687, 50.0, 22.0 ],
+									"style" : "",
+									"text" : "0"
 								}
 
 							}
@@ -1241,20 +1239,6 @@
 									"patching_rect" : [ 501.5, 151.0, 121.0, 22.0 ],
 									"style" : "",
 									"text" : "OSC-route /left /right"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-16",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 554.0, 62.0, 67.0, 22.0 ],
-									"presentation_rect" : [ 555.0, 62.0, 0.0, 0.0 ],
-									"style" : "",
-									"text" : "/mq/left $1"
 								}
 
 							}
@@ -1306,7 +1290,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 490.499939, 24.0, 106.0, 22.0 ],
+									"patching_rect" : [ 497.0, 78.0, 106.0, 22.0 ],
 									"style" : "",
 									"text" : "udpreceive 12345"
 								}
@@ -2373,27 +2357,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-63", 0 ],
-									"source" : [ "obj-11", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-13", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-17", 0 ]
 								}
@@ -2419,13 +2382,6 @@
 									"destination" : [ "obj-6", 0 ],
 									"order" : 0,
 									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
-									"source" : [ "obj-20", 0 ]
 								}
 
 							}
@@ -2588,6 +2544,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 1 ],
+									"source" : [ "obj-9", 1 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -2715,7 +2678,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 489.0, 172.5, 22.0 ],
 									"style" : "",
-									"text" : "/4/delay/delay 18.168001"
+									"text" : "/4/delay/delay 19.303501"
 								}
 
 							}
@@ -4746,7 +4709,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
+					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
 					"format" : 6,
 					"id" : "obj-106",
 					"maxclass" : "flonum",
@@ -4773,7 +4736,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
+					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
 					"format" : 6,
 					"id" : "obj-89",
 					"maxclass" : "flonum",
