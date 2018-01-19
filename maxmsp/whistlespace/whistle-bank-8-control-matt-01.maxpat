@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 583.0, 79.0, 1181.0, 858.0 ],
+		"rect" : [ 384.0, 119.0, 1181.0, 858.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 880.5, 78.0, 146.0, 22.0 ],
+					"style" : "",
+					"text" : "quneo-leftright-topologies"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-71",
 					"maxclass" : "newobj",
@@ -2099,6 +2111,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -2121,7 +2134,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 167.5, 52.0, 74.0, 22.0 ],
-									"presentation_rect" : [ 168.5, 52.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "/mq/right $1"
 								}
@@ -2553,6 +2565,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-5",
@@ -3646,7 +3659,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 489.0, 172.5, 22.0 ],
 									"style" : "",
-									"text" : "/4/delay/delay 13456.432617"
+									"text" : "/4/delay/delay 3364.108154"
 								}
 
 							}
@@ -5847,7 +5860,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
+					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
 					"format" : 6,
 					"id" : "obj-106",
 					"maxclass" : "flonum",
@@ -5874,7 +5887,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
+					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
 					"format" : 6,
 					"id" : "obj-89",
 					"maxclass" : "flonum",
@@ -6781,6 +6794,18 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ws-tolim.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "quneo-leftright-topologies.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "left-right-both.maxpat",
 				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
