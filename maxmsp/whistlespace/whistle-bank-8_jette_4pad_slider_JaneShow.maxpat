@@ -4423,7 +4423,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 489.0, 172.5, 22.0 ],
 									"style" : "",
-									"text" : "/4/delay/delay 0.757"
+									"text" : "/4/delay/delay 151.4"
 								}
 
 							}
