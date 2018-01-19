@@ -38,6 +38,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 216.0, 19.5, 146.0, 22.0 ],
+					"style" : "",
+					"text" : "quneo-leftright-topologies"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -4352,7 +4364,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 68.0, 8.5, 213.0, 60.0 ],
+					"patching_rect" : [ 9.0, 8.5, 213.0, 60.0 ],
 					"style" : "",
 					"text" : "the first 2 collums of the\nquneo pads create and array of\ndelay times - \n2 different functions"
 				}
@@ -6426,7 +6438,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 48.0, 121.666656, 88.0, 22.0 ],
+					"patching_rect" : [ 31.0, 121.000061, 88.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6642,6 +6654,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ws-tolim.maxpat",
+				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "quneo-leftright-topologies.maxpat",
 				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
