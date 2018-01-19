@@ -2637,7 +2637,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 268.0, 364.0, 378.0, 22.0 ],
 									"style" : "",
-									"text" : "23405.042969 2338.397461 3507.596436 2527.997314"
+									"text" : "24695.087891 2467.286133 3700.929199 2667.336182"
 								}
 
 							}
@@ -4423,7 +4423,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 489.0, 172.5, 22.0 ],
 									"style" : "",
-									"text" : "/4/delay/delay 151.4"
+									"text" : "/4/delay/delay 3364.108154"
 								}
 
 							}
@@ -6661,6 +6661,13 @@
 			}
 , 			{
 				"name" : "quneo-leftright-topologies.maxpat",
+				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/whistlespace",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "left-right-both.maxpat",
 				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
