@@ -59,7 +59,6 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 385.0, 770.0, 60.0, 20.0 ],
-					"presentation_rect" : [ 551.0, 754.166687, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -2618,7 +2617,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-5",
@@ -5673,6 +5671,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -5707,9 +5706,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 203.5, 253.666626, 401.0, 49.0 ],
+									"patching_rect" : [ 209.5, 291.666626, 401.0, 49.0 ],
 									"style" : "",
-									"text" : "/*/shoot 0.1, /*/1cyb/slew 200., /*/1cyb/sensor-win 200., /synth/gliss 200, /delay/slew 333., /delay/goal 0.2, /synth/goal 0.2, /delay/feedback-db -15, /delay/1cyb/clip/max 1.1"
+									"text" : "/*/shoot 0.1, /*/1cyb/slew 200., /*/1cyb/sensor-win 200., /synth/gliss 200, /delay/slew 333., /delay/goal 0.2, /synth/goal 0.2, /delay/feedback-db -15, /delay/1cyb/clip/max 1.1, /delay/rate 3.4444"
 								}
 
 							}
@@ -5722,7 +5721,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 203.5, 307.166626, 81.0, 22.0 ],
+									"patching_rect" : [ 209.5, 345.166626, 81.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend /[37]"
 								}
@@ -5731,14 +5730,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-94",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 155.5, 181.666626, 455.0, 35.0 ],
+									"patching_rect" : [ 144.5, 204.666626, 455.0, 49.0 ],
 									"style" : "",
-									"text" : "/*/shoot 5., /*/1cyb/slew 50., /*/1cyb/sensor-win 5., /synth/gliss 10, /delay/slew 222., /delay/goal 0.3, /synth/goal 0.1, /delay/feedback-db -10, /delay/1cyb/clip/max 1.5"
+									"text" : "/*/shoot 5., /*/1cyb/slew 50., /*/1cyb/sensor-win 5., /synth/gliss 10, /delay/slew 222., /delay/goal 0.3, /synth/goal 0.1, /delay/feedback-db -10, /delay/1cyb/clip/max 1.5, /delay/rate 5.12, /delay/depth"
 								}
 
 							}
@@ -5751,7 +5750,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 155.5, 223.166626, 81.0, 22.0 ],
+									"patching_rect" : [ 155.5, 248.166626, 81.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend /[26]"
 								}
@@ -5765,9 +5764,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 137.666626, 529.0, 35.0 ],
+									"patching_rect" : [ 46.0, 134.666626, 529.0, 35.0 ],
 									"style" : "",
-									"text" : "/*/shoot 1., /*/1cyb/slew 10., /*/1cyb/sensor-win 10., /synth/gliss 10, /delay/slew 2222., /*/goal 0.2, /delay/feedback-db -30"
+									"text" : "/*/shoot 1., /*/1cyb/slew 10., /*/1cyb/sensor-win 10., /synth/gliss 10, /delay/slew 2222., /*/goal 0.2, /delay/feedback-db -30, /delay/rate 2.2"
 								}
 
 							}
@@ -5794,7 +5793,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 337.499939, 119.0, 22.0 ],
+									"patching_rect" : [ 50.0, 411.499939, 119.0, 22.0 ],
 									"style" : "",
 									"text" : "s ws-OSC"
 								}
