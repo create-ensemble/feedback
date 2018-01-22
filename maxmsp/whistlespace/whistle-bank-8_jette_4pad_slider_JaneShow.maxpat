@@ -2637,7 +2637,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 268.0, 364.0, 378.0, 22.0 ],
 									"style" : "",
-									"text" : "28274.464844 2824.901611 4237.352539 3053.947754"
+									"text" : "33330. 3330. 4995. 3600."
 								}
 
 							}
@@ -2940,7 +2940,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 308.0, 301.0, 955.0, 563.0 ],
+						"rect" : [ 308.0, 301.0, 586.0, 563.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4423,7 +4423,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 489.0, 172.5, 22.0 ],
 									"style" : "",
-									"text" : "/4/delay/delay 17998.431641"
+									"text" : "/4/delay/delay 1.8168"
 								}
 
 							}
@@ -6207,7 +6207,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 799.0, 159.0, 640.0, 480.0 ],
+						"rect" : [ 766.0, 159.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6355,7 +6355,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 337.499939, 119.0, 22.0 ],
+									"patching_rect" : [ 50.0, 340.499939, 119.0, 22.0 ],
 									"style" : "",
 									"text" : "s ws-OSC"
 								}
@@ -6454,7 +6454,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
+					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
 					"format" : 6,
 					"id" : "obj-106",
 					"maxclass" : "flonum",
@@ -6481,7 +6481,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.082031, 0.1875, 1.0 ],
+					"bgcolor" : [ 0.0, 0.875, 0.300781, 1.0 ],
 					"format" : 6,
 					"id" : "obj-89",
 					"maxclass" : "flonum",
