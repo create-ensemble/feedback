@@ -5911,7 +5911,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 63.0, 108.296875, 160.0, 22.0 ],
 									"style" : "",
-									"text" : "/topology b"
+									"text" : "/topology n"
 								}
 
 							}
@@ -8881,7 +8881,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 382.5, 110.800293, 100.0, 22.0 ],
 									"style" : "",
-									"text" : "b"
+									"text" : "n"
 								}
 
 							}
@@ -32521,7 +32521,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 189.545151, 53.0, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "b"
+													"text" : "n"
 												}
 
 											}
