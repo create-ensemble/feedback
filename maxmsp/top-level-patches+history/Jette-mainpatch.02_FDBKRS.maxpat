@@ -370,9 +370,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.333332, 593.666687, 132.0, 22.0 ],
+					"patching_rect" : [ 53.333332, 593.666687, 185.0, 22.0 ],
 					"style" : "",
-					"text" : "whistle-bank-8 whistler"
+					"text" : "whistle-bank-8-FDBKRS whistler"
 				}
 
 			}
@@ -382,9 +382,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.333332, 561.333374, 94.0, 22.0 ],
+					"patching_rect" : [ 53.333332, 561.333374, 149.0, 22.0 ],
 					"style" : "",
-					"text" : "routing_georgia"
+					"text" : "routing_georgia_FDBKRS"
 				}
 
 			}
@@ -10589,7 +10589,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "space"
+													"text" : "1"
 												}
 
 											}
@@ -10845,7 +10845,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "n"
+													"text" : "1"
 												}
 
 											}
@@ -11053,7 +11053,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 574.5, 97.800293, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "space"
+									"text" : "1"
 								}
 
 							}
@@ -50848,14 +50848,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "routing_georgia.maxpat",
+				"name" : "routing_georgia_FDBKRS.maxpat",
 				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/top-level-patches+history",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "whistle-bank-8.maxpat",
+				"name" : "whistle-bank-8-FDBKRS.maxpat",
 				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
