@@ -38,12 +38,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 17.5, 473.0, 50.0, 50.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 17.5, 445.5, 70.0, 22.0 ],
+					"style" : "",
+					"text" : "r micOPEN"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 162.0, 383.500031, 161.0, 20.0 ],
-					"presentation_rect" : [ 160.0, 384.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "lowest horizontal - slew time"
 				}
@@ -57,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 183.0, 441.333313, 128.0, 35.0 ],
+					"patching_rect" : [ 183.0, 458.333313, 128.0, 35.0 ],
 					"style" : "",
 					"text" : ";\rws-OSC /*/delay/clear"
 				}
@@ -2973,7 +2998,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 265.0, 356.166687, 91.0, 22.0 ],
+					"patching_rect" : [ 162.0, 430.166687, 91.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2996,7 +3021,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 19.0, 53.166687, 91.0, 44.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "21"
 				}
 
 			}
@@ -3660,7 +3686,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 162.0, 356.166687, 94.0, 17.666626 ],
+					"patching_rect" : [ 162.0, 324.166687, 181.0, 49.666626 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 136.166687, 94.0, 17.666626 ],
 					"style" : ""
@@ -3675,7 +3701,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 265.0, 331.0, 50.0, 22.0 ],
+					"patching_rect" : [ 162.0, 405.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 154.0, 50.0, 22.0 ],
 					"style" : ""
@@ -3689,7 +3715,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 162.0, 331.0, 99.0, 22.0 ],
+					"patching_rect" : [ 162.0, 285.0, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "ctlin QUNEO 3 1"
 				}
@@ -4049,8 +4075,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"midpoints" : [ 171.5, 379.833313, 358.0, 379.833313, 358.0, 320.0, 274.5, 320.0 ],
+					"midpoints" : [ 171.5, 388.916656, 171.5, 388.916656 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}

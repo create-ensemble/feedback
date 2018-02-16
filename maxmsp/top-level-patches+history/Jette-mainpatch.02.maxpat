@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 28.0, 79.0, 925.0, 542.0 ],
+		"rect" : [ 34.0, 79.0, 925.0, 542.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 323.999512, 374.333374, 123.0, 22.0 ],
 					"style" : "",
-					"text" : "georgia-section-timer"
+					"text" : "georgia-section-timer",
+					"textcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 
 			}
@@ -130,7 +131,7 @@
 							}
 , 							{
 								"key" : 19,
-								"value" : [ 54000, 10, 0 ]
+								"value" : [ 54000, 1, 10000 ]
 							}
 , 							{
 								"key" : 20,
@@ -384,7 +385,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 44.333332, 499.333374, 94.0, 22.0 ],
 					"style" : "",
-					"text" : "routing_georgia"
+					"text" : "routing_georgia",
+					"textcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 
 			}
@@ -5860,7 +5862,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 63.0, 108.296875, 160.0, 22.0 ],
 									"style" : "",
-									"text" : "/topology 6"
+									"text" : "/topology 3"
 								}
 
 							}
@@ -10526,7 +10528,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 													"style" : "",
-													"text" : ""
+													"text" : "space"
 												}
 
 											}
@@ -10782,7 +10784,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 													"style" : "",
-													"text" : ""
+													"text" : "a"
 												}
 
 											}
@@ -10990,7 +10992,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 574.5, 97.800293, 68.0, 22.0 ],
 									"style" : "",
-									"text" : ""
+									"text" : "space"
 								}
 
 							}
@@ -32470,7 +32472,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 189.545151, 53.0, 68.0, 22.0 ],
 													"style" : "",
-													"text" : ""
+													"text" : "0"
 												}
 
 											}
