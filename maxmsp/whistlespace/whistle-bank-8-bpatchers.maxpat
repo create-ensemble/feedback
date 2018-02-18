@@ -9,9 +9,9 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 79.0, 1510.0, 897.0 ],
+		"rect" : [ 39.0, 79.0, 1447.0, 837.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -52,9 +52,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1116.0, 3.0, 366.0, 473.0 ],
+					"patching_rect" : [ 1116.0, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1109.0, 3.0, 366.0, 473.0 ],
+					"presentation_rect" : [ 1072.5, 3.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -75,9 +75,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 746.0, 3.0, 366.0, 473.0 ],
+					"patching_rect" : [ 746.0, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 739.0, 3.0, 366.0, 473.0 ],
+					"presentation_rect" : [ 714.5, 3.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -98,9 +98,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 376.0, 3.0, 366.0, 473.0 ],
+					"patching_rect" : [ 376.0, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 369.0, 3.0, 366.0, 473.0 ],
+					"presentation_rect" : [ 356.5, 3.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -121,9 +121,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 4.5, 3.0, 366.0, 473.0 ],
+					"patching_rect" : [ 4.5, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -2.5, 3.0, 366.0, 473.0 ],
+					"presentation_rect" : [ -2.5, 3.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -144,9 +144,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1117.5, 488.0, 366.0, 473.0 ],
+					"patching_rect" : [ 1117.5, 473.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1110.5, 488.0, 366.0, 473.0 ],
+					"presentation_rect" : [ 1076.0, 416.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -167,9 +167,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 747.5, 488.0, 366.0, 473.0 ],
+					"patching_rect" : [ 747.5, 473.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 740.5, 488.0, 366.0, 473.0 ],
+					"presentation_rect" : [ 716.0, 416.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -190,9 +190,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 377.5, 488.0, 366.0, 473.0 ],
+					"patching_rect" : [ 377.5, 473.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 370.5, 488.0, 366.0, 473.0 ],
+					"presentation_rect" : [ 358.0, 416.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -213,9 +213,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 7.5, 488.0, 366.0, 473.0 ],
+					"patching_rect" : [ 7.5, 473.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.5, 488.0, 366.0, 473.0 ],
+					"presentation_rect" : [ 0.5, 416.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
