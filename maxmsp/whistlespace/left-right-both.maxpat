@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 84.0, 129.0, 452.0, 479.0 ],
+		"rect" : [ 84.0, 129.0, 490.0, 453.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 36.875, 34.0, 141.25, 60.0 ],
+					"style" : "",
+					"text" : "If both buttons go down then it locks through both releases, until a new button goes down"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-48",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 246.0, 198.0, 52.0, 22.0 ],
+					"patching_rect" : [ 222.0, 148.0, 52.0, 22.0 ],
 					"style" : "",
 					"text" : "select 0"
 				}
@@ -56,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 236.0, 279.0, 39.5, 22.0 ],
+					"patching_rect" : [ 212.0, 229.0, 39.5, 22.0 ],
 					"style" : "",
 					"text" : "#2"
 				}
@@ -69,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 279.0, 310.0, 39.5, 22.0 ],
+					"patching_rect" : [ 255.0, 260.0, 39.5, 22.0 ],
 					"style" : "",
 					"text" : "#3"
 				}
@@ -82,7 +95,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 203.0, 237.0, 29.5, 22.0 ],
+					"patching_rect" : [ 179.0, 187.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+ 1"
 				}
@@ -95,7 +108,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 244.0, 237.0, 54.0, 22.0 ],
+					"patching_rect" : [ 220.0, 187.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "gate 2 1"
 				}
@@ -109,7 +122,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 203.0, 198.0, 24.0, 24.0 ],
+					"patching_rect" : [ 179.0, 148.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -121,7 +134,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 93.0, 203.5, 52.0, 22.0 ],
+					"patching_rect" : [ 69.0, 153.5, 52.0, 22.0 ],
 					"style" : "",
 					"text" : "select 0"
 				}
@@ -134,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.0, 279.0, 39.5, 22.0 ],
+					"patching_rect" : [ 59.0, 229.0, 39.5, 22.0 ],
 					"style" : "",
 					"text" : "#1"
 				}
@@ -147,7 +160,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 310.0, 39.5, 22.0 ],
+					"patching_rect" : [ 102.0, 260.0, 39.5, 22.0 ],
 					"style" : "",
 					"text" : "#3"
 				}
@@ -160,7 +173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 50.0, 237.0, 29.5, 22.0 ],
+					"patching_rect" : [ 26.0, 187.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+ 1"
 				}
@@ -173,7 +186,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 91.0, 237.0, 54.0, 22.0 ],
+					"patching_rect" : [ 67.0, 187.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "gate 2 1"
 				}
@@ -187,7 +200,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 50.0, 198.0, 24.0, 24.0 ],
+					"patching_rect" : [ 26.0, 148.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -200,8 +213,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 93.0, 91.0, 30.0, 30.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 238.0, 29.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -214,8 +227,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 246.0, 91.0, 30.0, 30.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 391.0, 29.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -228,7 +241,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.5, 389.0, 30.0, 30.0 ],
+					"patching_rect" : [ 88.5, 378.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
