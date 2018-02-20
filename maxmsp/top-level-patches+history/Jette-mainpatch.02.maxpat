@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 925.0, 542.0 ],
+		"rect" : [ 34.0, 79.0, 958.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-63",
+					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 323.999512, 374.333374, 123.0, 22.0 ],
+					"patching_rect" : [ 822.0, 428.0, 75.0, 22.0 ],
 					"style" : "",
-					"text" : "georgia-section-timer",
-					"textcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+					"text" : "chat-system"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 617.018372, 351.666687, 150.0, 33.0 ],
+					"presentation_rect" : [ 617.018372, 349.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "<-Matt's UDP address\n"
 				}
 
 			}
@@ -55,7 +69,7 @@
 						"count" : 21,
 						"data" : [ 							{
 								"key" : 0,
-								"value" : [ 1, 30, 8000 ]
+								"value" : [ 1, 10000 ]
 							}
 , 							{
 								"key" : 1,
@@ -151,7 +165,8 @@
 					}
 ,
 					"style" : "",
-					"text" : "coll sections @embed 1"
+					"text" : "coll sections @embed 1",
+					"textcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 
 			}
@@ -3543,7 +3558,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 74.983124, 865.0, 610.0, 63.0 ],
 									"style" : "",
-									"text" : "overwriteme",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -5679,14 +5694,27 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 360.0, 297.0, 89.0, 22.0 ],
+									"style" : "",
+									"text" : "s chat-came-in"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ -1.0, 9.0, 145.0, 22.0 ],
+									"patching_rect" : [ 11.0, 8.0, 145.0, 22.0 ],
 									"style" : "",
 									"text" : "receive OSC-to-feedback"
 								}
@@ -5754,7 +5782,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 445.0, 100.0, 119.0, 22.0 ],
+									"patching_rect" : [ 445.0, 90.0, 119.0, 22.0 ],
 									"style" : "",
 									"text" : "/speaker unity_reset"
 								}
@@ -5862,7 +5890,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 63.0, 108.296875, 160.0, 22.0 ],
 									"style" : "",
-									"text" : "/topology 3"
+									"text" : "/topology backspace"
 								}
 
 							}
@@ -5874,11 +5902,11 @@
 									"id" : "obj-95",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 6,
-									"outlettype" : [ "", "", "", "", "", "" ],
-									"patching_rect" : [ 50.0, 222.296875, 316.0, 22.0 ],
+									"numoutlets" : 7,
+									"outlettype" : [ "", "", "", "", "", "", "" ],
+									"patching_rect" : [ 50.0, 222.296875, 345.0, 22.0 ],
 									"style" : "",
-									"text" : "OSC-route /speaker /drip /sync /topology /verbose_matrix"
+									"text" : "OSC-route /speaker /drip /sync /topology /verbose_matrix /chat"
 								}
 
 							}
@@ -6001,8 +6029,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-81", 0 ],
+									"destination" : [ "obj-8", 0 ],
 									"source" : [ "obj-95", 5 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"source" : [ "obj-95", 6 ]
 								}
 
 							}
@@ -8796,7 +8831,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 313.0, 400.0, 1013.0, 539.0 ],
+						"rect" : [ 313.0, 79.0, 1013.0, 860.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -8832,7 +8867,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 382.5, 110.800293, 100.0, 22.0 ],
 									"style" : "",
-									"text" : "0"
+									"text" : "backspace"
 								}
 
 							}
@@ -10528,7 +10563,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "space"
+													"text" : "n"
 												}
 
 											}
@@ -10784,7 +10819,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "a"
+													"text" : "n"
 												}
 
 											}
@@ -10992,7 +11027,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 574.5, 97.800293, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "space"
+									"text" : "n"
 								}
 
 							}
@@ -32472,7 +32507,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 189.545151, 53.0, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "0"
+													"text" : "n"
 												}
 
 											}
@@ -46804,7 +46839,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 535.0, 126.0, 1111.0, 601.0 ],
+						"rect" : [ 295.0, 126.0, 1111.0, 601.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 36.0,
@@ -50754,10 +50789,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "georgia-section-timer.maxpat",
-				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/top-level-patches+history",
-				"patcherrelativepath" : ".",
+				"name" : "chat-system.maxpat",
+				"bootpath" : "~/Documents/projects/PRSM_MattWright/feedback/maxmsp/util",
+				"patcherrelativepath" : "../util",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "messages.pat",
+				"bootpath" : "~/Documents/Max 7/jette_externals/CNMAT_lvlyWTHR/CNMATold/CNMAT_MMJ-Depot/tutorials/MaxMSPDaySchool07/In_class_patches/Wednesday06",
+				"patcherrelativepath" : "../../../../../Max 7/jette_externals/CNMAT_lvlyWTHR/CNMATold/CNMAT_MMJ-Depot/tutorials/MaxMSPDaySchool07/In_class_patches/Wednesday06",
+				"type" : "maxb",
 				"implicit" : 1
 			}
 , 			{
