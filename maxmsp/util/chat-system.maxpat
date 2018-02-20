@@ -151,7 +151,8 @@
 					"patching_rect" : [ 43.0, 672.0, 511.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 249.0, 589.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "name No"
 				}
 
 			}
@@ -204,7 +205,8 @@
 					"patching_rect" : [ 43.0, 628.0, 511.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 205.0, 589.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "name No"
 				}
 
 			}
@@ -245,7 +247,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 167.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name No"
+					"text" : "name Sorry"
 				}
 
 			}
@@ -286,7 +288,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 127.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name No",
+					"text" : "name Yes",
 					"textcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 
@@ -326,7 +328,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 292.0, 385.0, 261.0, 22.0 ],
 					"style" : "",
-					"text" : "name No"
+					"text" : "name Yes"
 				}
 
 			}
@@ -468,7 +470,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 423.0, 278.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "No"
+					"text" : "Yes"
 				}
 
 			}
@@ -481,7 +483,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 453.0, 126.0, 68.0, 22.0 ],
 					"style" : "",
-					"text" : "backspace"
+					"text" : "r"
 				}
 
 			}
@@ -551,7 +553,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "backspace"
+									"text" : "r"
 								}
 
 							}
@@ -811,7 +813,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "n"
+									"text" : "r"
 								}
 
 							}
@@ -1047,8 +1049,12 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 30,
+						"count" : 18,
 						"data" : [ 							{
+								"key" : "A",
+								"value" : [ "Are", "you", "ready?" ]
+							}
+, 							{
 								"key" : "B",
 								"value" : [ "Getting", "boring" ]
 							}
@@ -1081,8 +1087,12 @@
 								"value" : [ "Wow", "that", "stuff", "from", "Jane", "is", "really", "good" ]
 							}
 , 							{
-								"key" : "L",
+								"key" : "Look",
 								"value" : [ "Look", "up", "-", "let's", "make", "eye", "contact" ]
+							}
+, 							{
+								"key" : "L",
+								"value" : [ "Lets", "go", "-", "I", "am", "ready" ]
 							}
 , 							{
 								"key" : "N",
@@ -1111,62 +1121,6 @@
 , 							{
 								"key" : "/",
 								"value" : [ "Is", "this", "the", "ending?" ]
-							}
-, 							{
-								"key" : "b",
-								"value" : [ "Getting", "boring" ]
-							}
-, 							{
-								"key" : "c",
-								"value" : [ "More", "chaotic" ]
-							}
-, 							{
-								"key" : "d",
-								"value" : [ "What's", "for", "dinner", "after", "the", "show?" ]
-							}
-, 							{
-								"key" : "e",
-								"value" : [ "Let's", "move", "towards", "the", "ending" ]
-							}
-, 							{
-								"key" : "f",
-								"value" : [ "Bring", "more", "flute", "into", "the", "ring" ]
-							}
-, 							{
-								"key" : "g",
-								"value" : [ "Stay", "here", "this", "is", "good" ]
-							}
-, 							{
-								"key" : "h",
-								"value" : [ "Hold", "here" ]
-							}
-, 							{
-								"key" : "j",
-								"value" : [ "Wow", "that", "stuff", "from", "Jane", "is", "really", "good" ]
-							}
-, 							{
-								"key" : "l",
-								"value" : [ "Look", "up", "-", "let's", "make", "eye", "contact" ]
-							}
-, 							{
-								"key" : "n",
-								"value" : [ "No" ]
-							}
-, 							{
-								"key" : "o",
-								"value" : [ "Oh", "shit" ]
-							}
-, 							{
-								"key" : "s",
-								"value" : [ "Sorry" ]
-							}
-, 							{
-								"key" : "u",
-								"value" : [ "Other", "message", "-", "unspecified" ]
-							}
-, 							{
-								"key" : "y",
-								"value" : [ "Yes" ]
 							}
  ]
 					}
@@ -1583,7 +1537,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "messages.pat",
 				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/tutorials/MaxMSPDaySchool07/In_class_patches/Wednesday06",
-				"type" : "maxb",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
