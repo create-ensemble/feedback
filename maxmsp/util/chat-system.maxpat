@@ -9,9 +9,9 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 1021.0, 832.0 ],
+		"rect" : [ 59.0, 104.0, 861.0, 239.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -77,13 +77,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-46",
-					"linecount" : 15,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 599.0, 92.0, 239.0, 208.0 ],
+					"patching_rect" : [ 599.0, 92.0, 239.0, 221.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 16,
+					"presentation_rect" : [ 605.0, 1.0, 239.0, 221.0 ],
 					"style" : "",
-					"text" : "B, Getting boring;\rC, More chaotic;\rD, What's for dinner after the show?;\rE, Let's move towards the ending;\rF, Bring more flute into the ring;\rG, Stay here this is good;\rH, Hold here;\rJ, Wow that stuff from Jane is really good;\rL, Look up - let's make eye contact;\rN, No;\rO, Oh shit;\rS, Sorry;\rU, Other message - unspecified;\rY, Yes;\r?, Is this the ending?;"
+					"text" : "A, Are you ready?;\rB, Getting boring;\rC, More chaotic;\rD, What's for dinner after the show?;\rE, Let's move towards the ending;\rF, Bring more flute into the ring;\rG, Stay here this is good;\rH, Hold here;\rJ, Wow that stuff from Jane is really good;\rL, Lets go - I am ready;\rN, No;\rO, Oh shit;\rS, Sorry;\rU, Other message - unspecified;\rY, Yes;\r?, Is this the ending?;"
 				}
 
 			}
@@ -119,9 +122,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 102.0, 509.865601, 148.0, 20.0 ],
+					"patching_rect" : [ 120.0, 519.0, 148.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 102.0, 172.0, 20.0 ],
+					"presentation_rect" : [ 4.0, 1.0, 172.0, 20.0 ],
 					"style" : "",
 					"text" : "Last 5 messages:"
 				}
@@ -136,9 +139,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 713.0, 511.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 290.0, 589.0, 22.0 ],
+					"presentation_rect" : [ 4.0, 189.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name Oh shit"
+					"text" : "CJ:: Yes"
 				}
 
 			}
@@ -151,9 +154,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 672.0, 511.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 249.0, 589.0, 22.0 ],
+					"presentation_rect" : [ 4.0, 148.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name Oh shit"
+					"text" : "MW:: Bring more flute into the ring"
 				}
 
 			}
@@ -205,9 +208,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 628.0, 511.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 205.0, 589.0, 22.0 ],
+					"presentation_rect" : [ 4.0, 104.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name Oh shit"
+					"text" : "CJ:: Stay here this is good"
 				}
 
 			}
@@ -246,9 +249,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 590.0, 511.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 167.0, 589.0, 22.0 ],
+					"presentation_rect" : [ 4.0, 66.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name Oh shit"
+					"text" : "MW:: Lets go - I am ready"
 				}
 
 			}
@@ -287,9 +290,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 550.0, 511.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 127.0, 589.0, 22.0 ],
+					"presentation_rect" : [ 4.0, 26.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name Oh shit",
+					"text" : "CJ:: Stay here this is good",
 					"textcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 
@@ -329,7 +332,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 292.0, 385.0, 261.0, 22.0 ],
 					"style" : "",
-					"text" : "name Oh shit"
+					"text" : "MW:: Lets go - I am ready"
 				}
 
 			}
@@ -471,7 +474,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 423.0, 278.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "Oh shit"
+					"text" : "Lets go - I am ready"
 				}
 
 			}
@@ -484,7 +487,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 453.0, 126.0, 68.0, 22.0 ],
 					"style" : "",
-					"text" : "o"
+					"text" : "l"
 				}
 
 			}
@@ -554,7 +557,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "o"
+									"text" : "l"
 								}
 
 							}
@@ -814,7 +817,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "o"
+									"text" : "l"
 								}
 
 							}
