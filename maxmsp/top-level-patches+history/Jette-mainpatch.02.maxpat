@@ -42,7 +42,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 822.0, 428.0, 75.0, 22.0 ],
+					"patching_rect" : [ 824.5, 406.0, 75.0, 22.0 ],
 					"style" : "",
 					"text" : "chat-system"
 				}
@@ -5694,7 +5694,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -5890,7 +5889,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 63.0, 108.296875, 160.0, 22.0 ],
 									"style" : "",
-									"text" : "/topology backspace"
+									"text" : "/topology l"
 								}
 
 							}
@@ -8867,7 +8866,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 382.5, 110.800293, 100.0, 22.0 ],
 									"style" : "",
-									"text" : "backspace"
+									"text" : "0"
 								}
 
 							}
@@ -10563,7 +10562,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "n"
+													"text" : "g"
 												}
 
 											}
@@ -10819,7 +10818,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "n"
+													"text" : "g"
 												}
 
 											}
@@ -11027,7 +11026,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 574.5, 97.800293, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "n"
+									"text" : "g"
 								}
 
 							}
@@ -32507,7 +32506,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 189.545151, 53.0, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "n"
+													"text" : "g"
 												}
 
 											}
@@ -48132,6 +48131,33 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-29",
+									"linecount" : 6,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 476.0, 498.0, 50.0, 89.0 ],
+									"style" : "",
+									"text" : "/chat CJ:: Stay here this is good"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 476.0, 457.0, 71.0, 22.0 ],
+									"style" : "",
+									"text" : "r OSC-chat"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
@@ -49165,6 +49191,22 @@
 								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-100", 0 ],
+									"order" : 0,
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 1 ],
+									"order" : 1,
+									"source" : [ "obj-24", 0 ]
 								}
 
 							}
@@ -50799,7 +50841,7 @@
 				"name" : "messages.pat",
 				"bootpath" : "~/Documents/Max 7/jette_externals/CNMAT_lvlyWTHR/CNMATold/CNMAT_MMJ-Depot/tutorials/MaxMSPDaySchool07/In_class_patches/Wednesday06",
 				"patcherrelativepath" : "../../../../../Max 7/jette_externals/CNMAT_lvlyWTHR/CNMATold/CNMAT_MMJ-Depot/tutorials/MaxMSPDaySchool07/In_class_patches/Wednesday06",
-				"type" : "maxb",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
