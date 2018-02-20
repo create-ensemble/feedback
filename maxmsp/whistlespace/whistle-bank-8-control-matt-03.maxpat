@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 278.0, 151.0, 1269.0, 721.0 ],
+		"rect" : [ 70.0, 770.0, 804.0, 269.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 669.0, 80.0, 22.0 ],
-					"presentation_rect" : [ 40.0, 669.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "/*/delay/clear"
 				}
@@ -126,7 +125,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 459.0, 573.0, 60.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 530.0, 627.0, 60.0, 20.0 ],
+					"presentation_rect" : [ 569.0, 142.0, 107.0, 17.0 ],
 					"style" : ""
 				}
 
@@ -190,7 +189,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 427.5, 12.0, 97.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 618.0, 112.5, 97.0, 22.0 ],
+					"presentation_rect" : [ 585.0, 68.0, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "init personalities"
 				}
@@ -220,7 +219,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 338.5, 573.0, 60.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 618.0, 154.0, 60.0, 20.0 ],
+					"presentation_rect" : [ 569.0, 123.166687, 107.0, 17.666626 ],
 					"style" : ""
 				}
 
