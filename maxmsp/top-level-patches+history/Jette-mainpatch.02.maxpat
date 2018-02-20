@@ -56,8 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 617.018372, 351.666687, 150.0, 33.0 ],
-					"presentation_rect" : [ 617.018372, 349.5, 0.0, 0.0 ],
+					"patching_rect" : [ 617.018372, 351.666687, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "<-Matt's UDP address\n"
 				}
@@ -5889,7 +5888,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 63.0, 108.296875, 160.0, 22.0 ],
 									"style" : "",
-									"text" : "/topology l"
+									"text" : "/topology e"
 								}
 
 							}
@@ -10562,7 +10561,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "g"
+													"text" : "y"
 												}
 
 											}
@@ -10818,7 +10817,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "g"
+													"text" : "y"
 												}
 
 											}
@@ -11026,7 +11025,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 574.5, 97.800293, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "g"
+									"text" : "y"
 								}
 
 							}
@@ -32506,7 +32505,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 189.545151, 53.0, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "g"
+													"text" : "0"
 												}
 
 											}
@@ -48132,14 +48131,14 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-29",
-									"linecount" : 6,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 476.0, 498.0, 50.0, 89.0 ],
+									"patching_rect" : [ 476.0, 498.0, 50.0, 62.0 ],
 									"style" : "",
-									"text" : "/chat CJ:: Stay here this is good"
+									"text" : "/chat name Yes"
 								}
 
 							}
