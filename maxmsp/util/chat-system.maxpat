@@ -137,7 +137,8 @@
 					"patching_rect" : [ 43.0, 713.0, 511.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 290.0, 589.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "name Oh shit"
 				}
 
 			}
@@ -152,7 +153,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 249.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name No"
+					"text" : "name Oh shit"
 				}
 
 			}
@@ -206,7 +207,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 205.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name No"
+					"text" : "name Oh shit"
 				}
 
 			}
@@ -247,7 +248,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 167.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name Sorry"
+					"text" : "name Oh shit"
 				}
 
 			}
@@ -288,7 +289,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 127.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "name Yes",
+					"text" : "name Oh shit",
 					"textcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 
@@ -328,7 +329,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 292.0, 385.0, 261.0, 22.0 ],
 					"style" : "",
-					"text" : "name Yes"
+					"text" : "name Oh shit"
 				}
 
 			}
@@ -470,7 +471,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 423.0, 278.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "Yes"
+					"text" : "Oh shit"
 				}
 
 			}
@@ -483,7 +484,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 453.0, 126.0, 68.0, 22.0 ],
 					"style" : "",
-					"text" : "r"
+					"text" : "o"
 				}
 
 			}
@@ -553,7 +554,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 112.5, 273.95459, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "r"
+									"text" : "o"
 								}
 
 							}
@@ -813,7 +814,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 212.25, 204.554596, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "r"
+									"text" : "o"
 								}
 
 							}
@@ -1049,7 +1050,7 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 18,
+						"count" : 34,
 						"data" : [ 							{
 								"key" : "A",
 								"value" : [ "Are", "you", "ready?" ]
@@ -1121,6 +1122,70 @@
 , 							{
 								"key" : "/",
 								"value" : [ "Is", "this", "the", "ending?" ]
+							}
+, 							{
+								"key" : "a",
+								"value" : [ "Are", "you", "ready?" ]
+							}
+, 							{
+								"key" : "b",
+								"value" : [ "Getting", "boring" ]
+							}
+, 							{
+								"key" : "c",
+								"value" : [ "More", "chaotic" ]
+							}
+, 							{
+								"key" : "d",
+								"value" : [ "What's", "for", "dinner", "after", "the", "show?" ]
+							}
+, 							{
+								"key" : "e",
+								"value" : [ "Let's", "move", "towards", "the", "ending" ]
+							}
+, 							{
+								"key" : "f",
+								"value" : [ "Bring", "more", "flute", "into", "the", "ring" ]
+							}
+, 							{
+								"key" : "g",
+								"value" : [ "Stay", "here", "this", "is", "good" ]
+							}
+, 							{
+								"key" : "h",
+								"value" : [ "Hold", "here" ]
+							}
+, 							{
+								"key" : "j",
+								"value" : [ "Wow", "that", "stuff", "from", "Jane", "is", "really", "good" ]
+							}
+, 							{
+								"key" : "look",
+								"value" : [ "Look", "up", "-", "let's", "make", "eye", "contact" ]
+							}
+, 							{
+								"key" : "l",
+								"value" : [ "Lets", "go", "-", "I", "am", "ready" ]
+							}
+, 							{
+								"key" : "n",
+								"value" : [ "No" ]
+							}
+, 							{
+								"key" : "o",
+								"value" : [ "Oh", "shit" ]
+							}
+, 							{
+								"key" : "s",
+								"value" : [ "Sorry" ]
+							}
+, 							{
+								"key" : "u",
+								"value" : [ "Other", "message", "-", "unspecified" ]
+							}
+, 							{
+								"key" : "y",
+								"value" : [ "Yes" ]
 							}
  ]
 					}
