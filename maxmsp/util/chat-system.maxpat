@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 861.0, 239.0 ],
+		"rect" : [ 78.0, 319.0, 851.0, 236.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,45 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 515.0, 452.865601, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 515.0, 482.865601, 55.0, 22.0 ],
+					"style" : "",
+					"text" : "front-me"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 515.0, 508.865601, 69.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"style" : "",
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
@@ -141,7 +180,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 189.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "CJ:: Yes"
+					"text" : "MJW:: Lets go - I am ready"
 				}
 
 			}
@@ -156,7 +195,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 148.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "MW:: Bring more flute into the ring"
+					"text" : "MJW:: Lets go - I am ready"
 				}
 
 			}
@@ -210,7 +249,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 104.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "CJ:: Stay here this is good"
+					"text" : "MJW:: Lets go - I am ready"
 				}
 
 			}
@@ -251,7 +290,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 66.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "MW:: Lets go - I am ready"
+					"text" : "MJW:: Lets go - I am ready"
 				}
 
 			}
@@ -273,11 +312,11 @@
 					"id" : "obj-48",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "bang" ],
-					"patching_rect" : [ 652.0, 495.865601, 40.0, 22.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "", "", "bang" ],
+					"patching_rect" : [ 646.75, 491.865601, 50.5, 22.0 ],
 					"style" : "",
-					"text" : "t l l b"
+					"text" : "t b l l b"
 				}
 
 			}
@@ -292,7 +331,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 26.0, 589.0, 22.0 ],
 					"style" : "",
-					"text" : "CJ:: Stay here this is good",
+					"text" : "MJW:: Lets go - I am ready",
 					"textcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 
@@ -332,7 +371,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 292.0, 385.0, 261.0, 22.0 ],
 					"style" : "",
-					"text" : "MW:: Lets go - I am ready"
+					"text" : "MJW:: Lets go - I am ready"
 				}
 
 			}
@@ -410,7 +449,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 66.5, 265.0, 107.5, 22.0 ],
 					"style" : "",
-					"text" : "MW::"
+					"text" : "MJW::"
 				}
 
 			}
@@ -433,6 +472,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.5, 135.0, 109.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 367.5, 1.0, 109.0, 20.0 ],
 					"style" : "",
 					"text" : "Hello!  My name is"
 				}
@@ -447,8 +488,10 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 66.5, 157.0, 109.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 480.0, 1.0, 113.0, 20.0 ],
 					"style" : "",
-					"text" : "MW"
+					"text" : "MJW"
 				}
 
 			}
@@ -1247,6 +1290,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1522,7 +1574,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 1 ],
+					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-48", 0 ]
@@ -1531,10 +1583,19 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-44", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-48", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-48", 2 ]
+					"source" : [ "obj-48", 3 ]
 				}
 
 			}
@@ -1543,7 +1604,7 @@
 					"destination" : [ "obj-49", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-48", 1 ]
+					"source" : [ "obj-48", 2 ]
 				}
 
 			}
@@ -1594,6 +1655,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1624,6 +1694,12 @@
 				"name" : "cnmat_blue.gif",
 				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
 				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "front-me.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/util",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
