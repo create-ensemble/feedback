@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 285.0, 137.0, 472.0, 510.0 ],
+		"rect" : [ 735.0, 311.0, 472.0, 510.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 359.75, 123.0, 85.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 121"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "comment",
@@ -133,11 +146,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-31",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
+					"numinlets" : 4,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.349976, 447.0, 116.0, 22.0 ],
+					"patching_rect" : [ 109.349976, 447.0, 77.0, 22.0 ],
 					"style" : "",
-					"text" : "dac~ 7 8 9 10 11 12"
+					"text" : "dac~ 5 6 7 8"
 				}
 
 			}
@@ -322,7 +335,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 323.0, 400.0, 16.0, 64.0 ],
-					"presentation_rect" : [ 434.0, 572.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -335,7 +347,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 309.0, 400.0, 16.0, 64.0 ],
-					"presentation_rect" : [ 360.0, 521.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -683,24 +694,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 5 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-31", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -723,6 +716,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-113", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 575.0, 171.0, 981.0, 758.0 ],
+		"rect" : [ 296.0, 130.0, 796.0, 571.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -108,8 +108,18 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"bgcolor2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Baskerville",
 					"fontsize" : 36.0,
+					"gradient" : 1,
 					"id" : "obj-20",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -117,9 +127,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 381.0, 147.5, 210.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 265.0, 12.0, 385.0, 50.0 ],
+					"presentation_rect" : [ 408.0, -7.0, 235.0, 50.0 ],
 					"style" : "",
-					"text" : "anonymous"
+					"text" : "anonymous",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -243,8 +254,18 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"bgcolor2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
 					"fontname" : "Baskerville",
 					"fontsize" : 14.0,
+					"gradient" : 1,
 					"id" : "obj-47",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -252,9 +273,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 332.0, 154.0, 48.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 223.5, 12.0, 46.0, 25.0 ],
+					"presentation_rect" : [ 620.5, 0.0, 28.0, 25.0 ],
 					"style" : "",
-					"text" : "#1"
+					"text" : "#1",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -268,7 +290,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 401.0, 201.0, 26.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 371.0, 74.0, 26.0, 20.0 ],
+					"presentation_rect" : [ 134.0, 73.0, 26.0, 20.0 ],
 					"style" : "",
 					"text" : "say"
 				}
