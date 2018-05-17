@@ -3370,7 +3370,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 83.0, 1424.0, 732.0 ],
+						"rect" : [ 271.0, 79.0, 1424.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -3785,7 +3785,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 75.0, 865.0, 610.0, 63.0 ],
 									"style" : "",
-									"text" : "debug-trio",
+									"text" : "forward6",
 									"textjustification" : 1
 								}
 
@@ -11391,7 +11391,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 122.5, 242.95459, 68.0, 22.0 ],
 													"style" : "",
-													"text" : "backspace"
+													"text" : "1"
 												}
 
 											}
@@ -11482,7 +11482,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 187.25, 173.554596, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "c"
+													"text" : "1"
 												}
 
 											}
@@ -11724,7 +11724,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 572.5, 97.800293, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "backspace"
+									"text" : "1"
 								}
 
 							}
@@ -24490,7 +24490,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 132.0, 111.0, 104.0, 22.0 ],
 													"style" : "",
-													"text" : "backspace"
+													"text" : "1"
 												}
 
 											}
@@ -58186,6 +58186,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -58325,7 +58326,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 715.5, 138.0, 92.0, 183.0 ],
 									"style" : "",
-									"text" : ";\r1-name Matt1;\r2-name Matt2;\r3-name Matt3;\r4-name Matt4;\r5-name Kim;\r6-name Elena;\r7-name c3;\r8-name c4;\r9-name 9;\r10-name 10;\r11-name 11;\r12-name 12"
+									"text" : ";\r1-name Elena;\r2-name Matt1;\r3-name Matt2;\r4-name Kim;\r5-name Matt3;\r6-name Matt4;\r7-name c3;\r8-name c4;\r9-name 9;\r10-name 10;\r11-name 11;\r12-name 12"
 								}
 
 							}
@@ -58651,9 +58652,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 366.5, 96.0, 291.0, 22.0 ],
+									"patching_rect" : [ 366.5, 96.0, 294.0, 22.0 ],
 									"style" : "",
-									"text" : "/*/source 1, /[1-4]/source 3, /[5-6]/source 2, /*/delay 0"
+									"text" : "/*/source 1, /[1-6]/source 3, /[1\\,4]/source 2, /*/delay 0"
 								}
 
 							}
@@ -62663,6 +62664,10 @@
 			}
 , 			{
 				"name" : "OSC-route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "shell.mxo",
 				"type" : "iLaX"
 			}
  ],
