@@ -3794,7 +3794,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 75.0, 865.0, 610.0, 63.0 ],
 									"style" : "",
-									"text" : "rU-biring",
+									"text" : "debug-trio",
 									"textjustification" : 1
 								}
 
@@ -64691,7 +64691,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 234.0, 87.0, 1497.0, 734.0 ],
+						"rect" : [ -251.0, 87.0, 1497.0, 734.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -65200,7 +65200,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 366.5, 96.0, 68.0, 22.0 ],
 									"style" : "",
-									"text" : "/*/source 3"
+									"text" : "/*/source 2"
 								}
 
 							}
