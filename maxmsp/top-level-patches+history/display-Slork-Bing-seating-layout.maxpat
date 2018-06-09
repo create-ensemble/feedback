@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 103.0, 1192.0, 676.0 ],
+		"rect" : [ 432.0, 656.0, 598.0, 178.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,15 +56,16 @@
 					"fontname" : "Baskerville",
 					"fontsize" : 36.0,
 					"id" : "obj-23",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 775.0, 407.5, 86.0, 50.0 ],
+					"patching_rect" : [ 775.0, 407.5, 86.0, 91.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 261.0, 184.0, 50.0 ],
+					"presentation_rect" : [ 8.0, 222.0, 184.0, 50.0 ],
 					"style" : "",
-					"text" : "12",
+					"text" : "Charles",
 					"textjustification" : 1
 				}
 
@@ -95,9 +96,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 716.0, 282.0, 138.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 88.0, 171.5, 196.0, 50.0 ],
+					"presentation_rect" : [ 81.0, 139.5, 196.0, 50.0 ],
 					"style" : "",
-					"text" : "11",
+					"text" : "echo11",
 					"textjustification" : 1
 				}
 
@@ -128,9 +129,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 572.0, 192.0, 134.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 236.0, 72.0, 184.0, 50.0 ],
+					"presentation_rect" : [ 226.0, 53.0, 184.0, 50.0 ],
 					"style" : "",
-					"text" : "10",
+					"text" : "Kunwoo",
 					"textjustification" : 1
 				}
 
@@ -161,9 +162,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 423.0, 162.0, 134.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 495.166687, 12.0, 182.0, 50.0 ],
+					"presentation_rect" : [ 476.166687, 10.0, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "9",
+					"text" : "echo9",
 					"textjustification" : 1
 				}
 
@@ -194,9 +195,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 288.0, 183.0, 117.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 765.0, 72.0, 182.0, 50.0 ],
+					"presentation_rect" : [ 736.0, 53.0, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "8",
+					"text" : "echo8",
 					"textjustification" : 1
 				}
 
@@ -227,9 +228,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 148.0, 282.0, 136.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 889.0, 182.5, 182.0, 50.0 ],
+					"presentation_rect" : [ 856.0, 139.5, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "7",
+					"text" : "Kangrui",
 					"textjustification" : 1
 				}
 
@@ -254,15 +255,16 @@
 					"fontname" : "Baskerville",
 					"fontsize" : 36.0,
 					"id" : "obj-10",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 399.0, 122.0, 50.0 ],
+					"patching_rect" : [ 90.0, 399.0, 122.0, 91.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 968.0, 261.0, 182.0, 50.0 ],
+					"presentation_rect" : [ 931.0, 222.0, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "6",
+					"text" : "Rodrigo",
 					"textjustification" : 1
 				}
 
@@ -293,9 +295,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 237.0, 404.0, 94.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 722.0, 261.0, 182.0, 50.0 ],
+					"presentation_rect" : [ 696.0, 222.0, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "5",
+					"text" : "Juan",
 					"textjustification" : 1
 				}
 
@@ -326,9 +328,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 327.0, 328.5, 153.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 638.0, 182.5, 182.0, 50.0 ],
+					"presentation_rect" : [ 614.0, 157.5, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "4",
+					"text" : "Trijeet",
 					"textjustification" : 1
 				}
 
@@ -359,9 +361,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 423.0, 302.5, 117.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 487.666687, 114.5, 182.0, 50.0 ],
+					"presentation_rect" : [ 468.666687, 98.5, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "3",
+					"text" : "Avery",
 					"textjustification" : 1
 				}
 
@@ -386,15 +388,16 @@
 					"fontname" : "Baskerville",
 					"fontsize" : 36.0,
 					"id" : "obj-2",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 524.0, 328.5, 82.0, 50.0 ],
+					"patching_rect" : [ 524.0, 328.5, 82.0, 91.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 331.0, 182.5, 182.0, 50.0 ],
+					"presentation_rect" : [ 315.0, 157.5, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "2",
+					"text" : "echo2",
 					"textjustification" : 1
 				}
 
@@ -419,15 +422,16 @@
 					"fontname" : "Baskerville",
 					"fontsize" : 36.0,
 					"id" : "obj-20",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 612.0, 407.5, 89.0, 50.0 ],
+					"patching_rect" : [ 612.0, 407.5, 89.0, 91.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 277.0, 262.0, 182.0, 50.0 ],
+					"presentation_rect" : [ 264.0, 222.0, 182.0, 50.0 ],
 					"style" : "",
-					"text" : "1",
+					"text" : "echo1",
 					"textjustification" : 1
 				}
 
