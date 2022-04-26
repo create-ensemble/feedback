@@ -1,15 +1,43 @@
 # feedback
 
-[This][] is a collection of technology (software mostly) that was/is generated
-as a byproduct of the development of an improvised musical performance piece
-currently titled "feedback" by the [CREATE Ensemble][]. In this piece, each
-player performs with an instrument that processes an input signal which is a
-mix of other players output signals such that feedback is inevitable and
-central to the performance. So far, the topology of the signal digraph is a
-single ring--Each player processes the input of her immediate right (or left)
-neighbor. However, many different topologies are possible (and possibly
-interesting) and the one goal of the piece is to explore changing digraph
-topologies during the performance.
+[This][] is a collection of technology (software mostly) that was
+generated as a byproduct of the development of a series improvised
+musical performance pieces titled "feedback" by the [CREATE
+Ensemble][] and subsequently iterated by Matt Wright, Karl Yerkes,
+Christopher Jette, and others.
+
+In this piece, each player performs with an instrument
+that processes an input signal which is a mix of other players output
+signals such that feedback is inevitable and central to the
+performance. So far, the topology of the signal digraph is a single
+ring--Each player processes the input of her immediate right (or left)
+neighbor. However, many different topologies are possible (and
+possibly interesting) and the one goal of the piece is to explore
+changing digraph topologies during the performance.
+
+## Usage
+
+**Plug all of the players into the matrix mixer** such as by having
+analog "hear" and "say" signals to a central multichannel digital
+audio interface (or something more complicated such as jacktrip)
+
+**Use one of the Max/MSP "Top Level" patches** (such as any `.maxpat`
+inside `maxmsp/top-level-patches+history`) to implement the matrix mixer
+with changeable topologies along with many other features.
+
+
+
+## Installation
+
+The Max patches depend on some "externals" not distributed with Max:
+
+1. Max's third party (but maintained by a Cycling 74 employee) "shell"
+external lets you execute command-line commands from Max:
+<https://cycling74.com/forums/shell>
+
+
+
+
 
 ## DONE
 
