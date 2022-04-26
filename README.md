@@ -31,12 +31,15 @@ with changeable topologies along with many other features.
 
 The Max patches depend on some "externals" not distributed with Max:
 
-1. Max's third party (but maintained by a Cycling 74 employee) "shell"
+1. Max's third party (but maintained by a Cycling 74 employee) `shell`
 external lets you execute command-line commands from Max:
 <https://cycling74.com/forums/shell>
 
+2. Miller Puckette's venerable `fiddle~` external does pitch estimation;
+currently maintained by Volker Böhm: <https://vboehm.net/downloads>
 
-
+3. `OSC-route` from the `CNMAT Externals` package (available via Max's
+built-in Package Manager).
 
 
 ## DONE
