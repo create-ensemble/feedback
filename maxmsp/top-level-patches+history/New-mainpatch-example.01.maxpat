@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1119.249938999999813, 468.0, 127.0, 74.0 ],
+					"patching_rect" : [ 438.018340999999964, 470.0, 127.0, 74.0 ],
 					"text" : "Frame these as examples of a bunch of ways of formatting this patch's state into OSC.  "
 				}
 
@@ -80,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 641.499389999999948, 593.0, 127.0, 100.0 ],
+					"patching_rect" : [ 646.999389999999948, 669.0, 127.0, 100.0 ],
 					"text" : "Need a whole tutorial etc. about making your own matrix presets; maybe we should write a paper about the \"submatrix presets\"..."
 				}
 
@@ -92,7 +92,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.018349000000001, 433.5, 158.981589999999983, 127.0 ],
+					"patching_rect" : [ 29.036759000000018, 427.5, 158.981589999999983, 127.0 ],
 					"text" : "Change this from a general \"anything you need to configure, look right here\" area of the patch into more of an example of how to configure (this stuff for) one particular instance of a piece.  ALl \"source\" stuff should go away."
 				}
 
@@ -100,11 +100,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-74",
-					"linecount" : 10,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.018349000000001, 600.5, 127.0, 141.0 ],
+					"patching_rect" : [ 268.768310500000325, 544.5, 147.0, 114.0 ],
 					"text" : "Keep these but move to an example area, like a separate folder of max patches that contain all these historical topologies as well as one or more strategues for selecting them during performance"
 				}
 
@@ -140,7 +140,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 627.018348999999944, 389.5, 127.0, 127.0 ],
+					"patching_rect" : [ 625.018348999999944, 387.0, 127.0, 127.0 ],
 					"text" : "Fix this mess by not needing to feed the say signals back into choose-insts, because the \"bypass\" option uses receive~ hear4 instead of an explicit signal patch cord"
 				}
 
@@ -4848,7 +4848,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 647.999084000000039, 550.0, 24.0, 24.0 ]
+					"patching_rect" : [ 653.499084000000039, 626.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -4859,7 +4859,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.777526999999964, 560.5, 29.5, 22.0 ],
+					"patching_rect" : [ 540.277526999999964, 636.5, 29.5, 22.0 ],
 					"text" : "-"
 				}
 
@@ -4871,7 +4871,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 272.999451000000136, 593.0, 364.0, 22.0 ],
+					"patching_rect" : [ 278.499451000000136, 669.0, 364.0, 22.0 ],
 					"text" : "-"
 				}
 
@@ -4884,7 +4884,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 552.999451000000022, 533.0, 20.0, 20.0 ]
+					"patching_rect" : [ 558.499451000000022, 609.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -5135,7 +5135,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 569.999451000000022, 533.0, 86.0, 22.0 ],
+					"patching_rect" : [ 575.499451000000022, 609.0, 86.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5156,7 +5156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 547.999451000000136, 509.0, 139.0, 22.0 ],
+					"patching_rect" : [ 553.499451000000136, 585.0, 139.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "select_submatrix.js",
 						"parameter_enable" : 0
@@ -8058,7 +8058,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 358.999694999999974, 387.0, 89.0, 22.0 ],
+					"patching_rect" : [ 454.768341000000191, 380.0, 89.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8077,7 +8077,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1180.000000000000227, 711.0, 37.0, 22.0 ],
+					"patching_rect" : [ 1229.509144000000106, 498.0, 37.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -10409,7 +10409,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 179.518340999999964, 394.5, 167.5, 22.0 ],
+					"patching_rect" : [ 171.858063000000129, 394.5, 167.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -12276,7 +12276,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 122.5, 242.954589999999996, 68.0, 22.0 ],
-													"text" : ""
+													"text" : "w"
 												}
 
 											}
@@ -12360,7 +12360,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 187.25, 173.554596000000004, 50.0, 22.0 ],
-													"text" : ""
+													"text" : "w"
 												}
 
 											}
@@ -12561,7 +12561,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 572.5, 97.800292999999996, 68.0, 22.0 ],
-									"text" : ""
+									"text" : "w"
 								}
 
 							}
@@ -45956,7 +45956,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 161.545151000000004, 57.0, 68.0, 22.0 ],
-													"text" : ""
+													"text" : "w"
 												}
 
 											}
@@ -65390,7 +65390,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 160.999938999999983, 670.0, 97.0, 22.0 ],
+					"patching_rect" : [ 403.999931000000061, 609.0, 97.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -65421,7 +65421,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 699.0, 352.0, 947.0, 586.0 ],
+						"rect" : [ 607.0, 94.0, 947.0, 586.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -65449,15 +65449,39 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-5",
-									"linecount" : 3,
+									"id" : "obj-7",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 697.5, 401.0, 210.0, 47.0 ],
-									"text" : "This stuff should be pulled out and put into examples of how to control *banks* of instrumentsK"
+									"patching_rect" : [ 425.0, 24.0, 186.0, 20.0 ],
+									"presentation_linecount" : 2,
+									"text" : "need to declare  (this is a default)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 64.0, 24.0, 98.0, 20.0 ],
+									"text" : "need to declare "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 7.75, 421.0, 164.0, 20.0 ],
+									"presentation_linecount" : 2,
+									"text" : "utility to create channel offset"
 								}
 
 							}
@@ -65634,7 +65658,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 181.0, 337.0, 174.0, 74.0 ],
+									"patching_rect" : [ 176.0, 337.0, 174.0, 74.0 ],
 									"text" : "In case it's somewhere like the AlloSphere, where the speakers are already low DAC outputs (1-60), this makes the \"hear\" signals start at 61"
 								}
 
@@ -65648,194 +65672,13 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 186.0, 413.0, 72.0, 22.0 ],
+									"patching_rect" : [ 181.0, 413.0, 72.0, 22.0 ],
 									"text" : "loadmess 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-24",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 575.0, 397.0, 22.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-23",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 609.0, 507.0, 34.0, 22.0 ],
-									"text" : "print"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-22",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 597.0, 484.0, 113.0, 22.0 ],
-									"text" : "sprintf /%i/delay %f"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-21",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 715.0, 443.0, 158.0, 20.0 ],
-									"text" : "just some weird delay times"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-19",
-									"maxclass" : "number",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 643.0, 435.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"format" : 6,
-									"id" : "obj-17",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 732.0, 484.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 625.0, 459.0, 264.0, 22.0 ],
-									"text" : "expr 12.345 + 18.764999 * $f1 - 0.02 * ($f1*$f1)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-14",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 597.0, 426.0, 32.5, 22.0 ],
-									"text" : "t i i"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-13",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 3,
-									"outlettype" : [ "bang", "bang", "int" ],
-									"patching_rect" : [ 597.0, 397.0, 46.0, 22.0 ],
-									"text" : "uzi 12"
 								}
 
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-13", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-19", 0 ],
-									"source" : [ "obj-14", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"source" : [ "obj-14", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"order" : 0,
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 1 ],
-									"order" : 1,
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"source" : [ "obj-19", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-13", 0 ],
-									"source" : [ "obj-24", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
 									"order" : 0,
@@ -65889,7 +65732,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 184.233063000000129, 497.5, 81.0, 22.0 ],
+					"patching_rect" : [ 174.036759000000018, 510.5, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -67179,7 +67022,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1135.99993900000004, 438.0, 84.0, 22.0 ],
+					"patching_rect" : [ 454.768341000000191, 440.0, 84.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -67680,7 +67523,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 946.0, 382.0, 150.0, 47.0 ],
+					"patching_rect" : [ 941.0, 389.5, 150.0, 47.0 ],
 					"text" : "<- current state of matrix in a format that matrixctrl understands."
 				}
 
@@ -67733,7 +67576,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1145.000000000000227, 706.0, 33.0, 22.0 ],
+					"patching_rect" : [ 1194.509144000000106, 493.0, 33.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -67761,7 +67604,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1130.500000000000227, 687.0, 74.0, 22.0 ],
+					"patching_rect" : [ 1180.009144000000106, 474.0, 74.0, 22.0 ],
 					"text" : "startwindow"
 				}
 
@@ -67772,7 +67615,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1124.500000000000227, 739.0, 45.0, 45.0 ]
+					"patching_rect" : [ 1180.009144000000106, 526.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -67793,7 +67636,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.827450980392157, 0.062745098039216, 0.062745098039216, 1.0 ],
+					"bgcolor" : [ 0.062745098039216, 0.827450980392157, 0.345098039215686, 1.0 ],
 					"id" : "obj-61",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -67813,7 +67656,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1098.999939000000268, 411.0, 159.000060999999732, 148.5 ],
+					"patching_rect" : [ 396.768310500000325, 376.75, 180.000091499999826, 348.75 ],
 					"proportion" : 0.5
 				}
 
@@ -68072,30 +67915,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-142", 0 ],
-					"order" : 0,
-					"source" : [ "obj-25", 12 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"order" : 2,
-					"source" : [ "obj-25", 12 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 1 ],
-					"order" : 1,
-					"source" : [ "obj-25", 12 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
 					"order" : 4,
 					"source" : [ "obj-25", 12 ]
 				}
@@ -68103,8 +67922,32 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-89", 1 ],
+					"destination" : [ "obj-50", 0 ],
+					"order" : 1,
+					"source" : [ "obj-25", 12 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 1 ],
+					"order" : 0,
+					"source" : [ "obj-25", 12 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
 					"order" : 3,
+					"source" : [ "obj-25", 12 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-89", 1 ],
+					"order" : 2,
 					"source" : [ "obj-25", 12 ]
 				}
 
@@ -68255,15 +68098,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "12-display+gaintest-taller.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "12-display+gaintest.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -68273,36 +68116,36 @@
 			}
 , 			{
 				"name" : "calculate_matrix_output_gains.js",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
+				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "choose-12-instruments.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "choose-inst.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display+gaintest-taller.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display+gaintest.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -68315,43 +68158,43 @@
 			}
 , 			{
 				"name" : "gain_slew.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
+				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "goldenmeanpoints-10minutes-backwards.coll.txt",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/top-level-patches+history",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "goldenmeanpoints-10minutes.coll.txt",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/top-level-patches+history",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "graphviz_string_to_jitter_image.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/display",
+				"patcherrelativepath" : "../display",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "make_graph.js",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/display",
+				"patcherrelativepath" : "../display",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mymatrix~.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
+				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -68368,8 +68211,8 @@
 			}
 , 			{
 				"name" : "select_submatrix.js",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
+				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

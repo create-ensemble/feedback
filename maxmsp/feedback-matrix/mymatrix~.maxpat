@@ -47,7 +47,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 922.5, -1.5, 150.0, 52.0 ],
+					"patching_rect" : [ 922.5, -1.5, 153.0, 52.0 ],
 					"text" : "the slew time of the matrix can be set  here"
 				}
 
@@ -331,7 +331,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 925.5, 241.0, 24.0, 24.0 ]
+					"patching_rect" : [ 906.5, 215.0, 34.0, 34.0 ]
 				}
 
 			}
