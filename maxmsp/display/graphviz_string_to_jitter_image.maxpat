@@ -40,6 +40,20 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 279.0, 653.0, 499.0, 22.0 ],
+					"text" : "nice -n 20 /opt/homebrew/bin/dot -Kcirco -Tpng -Gsize=3\\,3\\\\! -Gdpi=200 -Gratio=fill $1 -o $2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -108,7 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 360.0, 390.0, 535.0, 127.0 ],
-					"text" : "this patch makes some assumptions:\n\n- you're running this patch from the maxmsp/ folder of a clone of the create-ensemble feedback git repo (https://github.com/create-ensemble/feedback)\n- you're using a mac\n- you have homebrew installed (http://brew.sh)\n- your homebrew puts things in /opt/homebrew (not /usr/local/bin like in the old days)\n- you installed graphviz using brew (brew install graphviz)\n- you don't use the files /tmp/graph.dot and /tmp/graph.png elsewhere"
+					"text" : "this patch makes some assumptions:\n\n- you're running this patch from the maxmsp/ folder of a clone of the create-ensemble feedback git repo (https://github.com/create-ensemble/feedback)\n- you're using a mac\n- you have homebrew installed (http://brew.sh)\n- your homebrew puts things in /opt/homebrew/bin (newer MacOS) or /usr/local/bin (older MacOS)\n- you installed graphviz using brew (brew install graphviz)\n- you don't use the files /tmp/graph.dot and /tmp/graph.png elsewhere"
 				}
 
 			}
@@ -177,7 +191,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 453.0, 120.0, 155.0, 22.0 ],
-					"text" : "/tmp/graph_0ceef0.png"
+					"text" : "/tmp/graph_897bf2.png"
 				}
 
 			}
@@ -205,7 +219,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 278.0, 120.0, 165.0, 22.0 ],
-					"text" : "/tmp/graph_0ceef0.dot"
+					"text" : "/tmp/graph_897bf2.dot"
 				}
 
 			}
@@ -333,8 +347,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 540.0, 499.0, 22.0 ],
-					"text" : "nice -n 20 /opt/homebrew/bin/dot -Kcirco -Tpng -Gsize=3\\,3\\\\! -Gdpi=200 -Gratio=fill $1 -o $2"
+					"patching_rect" : [ 15.0, 540.0, 654.0, 22.0 ],
+					"text" : "PATH=$PATH:/opt/homebrew/bin:/usr/local/bin\\; nice -n 20 dot -Kcirco -Tpng -Gsize=3\\,3\\\\! -Gdpi=200 -Gratio=fill $1 -o $2"
 				}
 
 			}
@@ -444,7 +458,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -457,7 +471,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -724,7 +738,13 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
