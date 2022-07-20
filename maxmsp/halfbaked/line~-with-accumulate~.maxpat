@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1732.0, 114.0, 1212.0, 836.0 ],
+		"rect" : [ 34.0, 114.0, 1212.0, 836.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,15 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 488.25, 53.0, 140.0, 38.0 ],
+					"text" : "THIS IS TIMERATIO \nBEHAVIOR",
+					"textcolor" : [ 0.184313725490196, 0.086274509803922, 0.815686274509804, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-3",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 22.5, 82.0, 96.0, 38.0 ],
+					"text" : "THIS IS LINE \nBEHAVIOR",
+					"textcolor" : [ 0.156862745098039, 0.815686274509804, 0.086274509803922, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-120",
 					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 643.0, 690.0, 95.0, 91.0 ],
-					"presentation_linecount" : 6,
-					"text" : "Everything after accumulate~ belongs in tghe help file, not here"
+					"patching_rect" : [ 643.0, 690.0, 97.0, 91.0 ],
+					"text" : "Everything after accumulate~ belongs in the help file, not here"
 				}
 
 			}
@@ -71,7 +98,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 559.25, 472.0, 89.0, 33.0 ],
+					"patching_rect" : [ 574.75, 466.5, 89.0, 33.0 ],
 					"text" : "The upcoming fixed value"
 				}
 
@@ -96,7 +123,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 228.0, 179.0, 64.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Slew Time"
 				}
 
@@ -121,7 +147,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 663.0, 323.5, 123.0, 33.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Jump to a new value and hold steady"
 				}
 
@@ -146,7 +171,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 236.5, 82.0, 65.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "500 10000"
 				}
 
@@ -172,8 +196,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 491.0, 107.0, 78.0 ],
-					"presentation_linecount" : 7,
+					"patching_rect" : [ 16.0, 491.0, 109.0, 78.0 ],
 					"text" : "\"rate\" = how much we have to change/slew the delay time PER SAMPLE"
 				}
 
@@ -358,7 +381,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 257.5, 281.5, 162.5, 33.0 ],
+					"patching_rect" : [ 257.5, 281.5, 163.0, 33.0 ],
 					"text" : "Hope this [t f f] happens within the same signal vector"
 				}
 
@@ -421,7 +444,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.5, 428.0, 118.5, 64.0 ],
+					"patching_rect" : [ 4.5, 428.0, 120.0, 64.0 ],
 					"text" : "\"distance\" = how much we have to change/slew the delay time"
 				}
 
@@ -470,7 +493,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 382.0, 532.0, 135.75, 33.0 ],
+					"patching_rect" : [ 382.0, 532.0, 139.0, 33.0 ],
 					"text" : "Rate of change of delay time (ms/sample)"
 				}
 
@@ -852,7 +875,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 236.5, 113.0, 72.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "1000 10000"
 				}
 
@@ -902,7 +924,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 475.75, 107.5, 145.75, 33.0 ],
-					"presentation_linecount" : 10,
 					"text" : "Jump to a new rate (until you hit a clipping limit)"
 				}
 
@@ -980,7 +1001,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.75, 145.0, 36.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "-0.01"
 				}
 
@@ -993,7 +1013,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 547.0, 145.0, 32.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "0.01"
 				}
 
