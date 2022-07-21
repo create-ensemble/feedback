@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 117.0, 1226.0, 654.0 ],
+		"rect" : [ 59.0, 117.0, 978.0, 577.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,6 +45,38 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"id" : "obj-3",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "multi-matrixctrl.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 705.0, 73.25, 259.0, 263.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 25.0, 45.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-18",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -53,7 +85,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 901.0, 106.25, 259.0, 263.0 ],
+					"patching_rect" : [ 369.0, 73.25, 259.0, 263.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -64,7 +96,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.803188999999975, 537.0, 94.0, 20.0 ],
+					"patching_rect" : [ 44.803188999999975, 507.0, 94.0, 20.0 ],
 					"text" : "Imagine outptus"
 				}
 
@@ -75,7 +107,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 104.803188999999975, 471.0, 87.0, 20.0 ],
+					"patching_rect" : [ 44.803188999999975, 441.0, 87.0, 20.0 ],
 					"text" : "Imagine inputs"
 				}
 
@@ -87,7 +119,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 459.0, 507.0, 153.0, 33.0 ],
+					"patching_rect" : [ 386.0, 439.0, 153.0, 33.0 ],
 					"text" : "Zillions of matrix topology presets are here:"
 				}
 
@@ -98,7 +130,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 471.0, 539.0, 85.0, 22.0 ],
+					"patching_rect" : [ 398.0, 471.0, 85.0, 22.0 ],
 					"text" : "matrix-presets"
 				}
 
@@ -109,8 +141,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 580.0, 44.25, 307.0, 20.0 ],
-					"text" : "Other ones stay in sync and can control the \"real\" matrix"
+					"patching_rect" : [ 137.0, 24.25, 669.0, 20.0 ],
+					"text" : "All instances of multi-matrixctrl stay in sync with each other and with the \"real\" matrix~ inside the ONE instance of mymatrix~"
 				}
 
 			}
@@ -129,7 +161,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 557.0, 106.25, 259.0, 263.0 ],
+					"patching_rect" : [ 25.0, 73.25, 259.0, 263.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -141,7 +173,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 654.0, 500.0, 199.0, 47.0 ],
+					"patching_rect" : [ 715.0, 440.0, 199.0, 47.0 ],
 					"text" : "Use multi-matrixctrl within bpatcher as shown above, not inside a regular object box like this:"
 				}
 
@@ -152,34 +184,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 707.0, 549.0, 86.0, 22.0 ],
+					"patching_rect" : [ 768.0, 489.0, 86.0, 22.0 ],
 					"text" : "multi-matrixctrl"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 200.0, 24.25, 198.0, 74.0 ],
-					"text" : "This is the \"real\" one because only one matrixctl can receive \"r matrix\" (or mayhem ensues).  It's here, among other reasons, for recalling presets"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-76",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.99993900000004, 44.25, 48.0, 22.0 ],
-					"text" : "r matrix"
 				}
 
 			}
@@ -190,57 +196,16 @@
 					"numinlets" : 13,
 					"numoutlets" : 13,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 104.803188999999975, 500.0, 145.0, 22.0 ],
+					"patching_rect" : [ 44.803188999999975, 470.0, 145.0, 22.0 ],
 					"text" : "mymatrix~.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-8",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.5, 44.25, 35.0, 22.0 ],
-					"text" : "clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "multi-matrixctrl.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 94.99993900000004, 106.25, 255.0, 259.0 ],
-					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-76", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-8", 0 ]
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
