@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 124.0, 216.0, 979.0, 521.0 ],
+		"rect" : [ 124.0, 216.0, 566.0, 390.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 358.0, 235.0, 177.0, 33.0 ],
+					"text" : "to instantiate as a bpatcher\n\"bpatcher gainStage @args 12\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 609.0, 105.5, 150.0, 33.0 ],
+					"patching_rect" : [ 244.0, 305.5, 150.0, 33.0 ],
 					"text" : "the inlets & outlets are created upon instantiation"
 				}
 
@@ -57,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 401.0, 15.5, 150.0, 47.0 ],
+					"patching_rect" : [ 249.0, 163.0, 150.0, 47.0 ],
 					"text" : "the extrra inlet is for the purpose of controlling the level of the gain.slider"
 				}
 
@@ -69,9 +81,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 145.0, 150.0, 135.0, 167.0 ],
+					"patching_rect" : [ 134.0, 150.0, 72.0, 167.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.0, 3.0, 135.0, 167.0 ]
+					"presentation_rect" : [ 96.0, 2.0, 81.0, 167.0 ]
 				}
 
 			}
@@ -84,7 +96,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 377.0, 15.5, 22.0, 124.0 ]
+					"patching_rect" : [ 225.0, 163.0, 22.0, 124.0 ]
 				}
 
 			}
@@ -106,7 +118,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 473.0, 79.0, 1173.0, 792.0 ],
+						"rect" : [ 564.0, 79.0, 1173.0, 792.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -135,6 +147,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 50.000024321865112, 52.0, 172.0, 22.0 ],
+									"text" : "if $i1 > 0 then $i1 else out2 $i1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
@@ -167,8 +191,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 599.0, 306.800001621246338, 496.0, 21.0 ],
-									"text" : "script newdefault in1 inlet, script offset in1 55 5, script connect in1 0 mcgain 0"
+									"patching_rect" : [ 599.0, 306.800001621246338, 496.0, 21.0 ]
 								}
 
 							}
@@ -275,8 +298,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "int" ],
-									"patching_rect" : [ 50.0, 153.200000643730164, 41.0, 22.0 ],
-									"text" : "uzi #1"
+									"patching_rect" : [ 50.0, 153.200000643730164, 40.0, 22.0 ],
+									"text" : "uzi"
 								}
 
 							}
@@ -313,8 +336,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.0, 464.800001621246338, 496.0, 21.0 ],
-									"text" : "script newdefault out12 outlet, script offset out12 396 400, script connect mcunpack 11 out12 0"
+									"patching_rect" : [ 119.0, 464.800001621246338, 496.0, 21.0 ]
 								}
 
 							}
@@ -375,8 +397,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 310.800001621246338, 496.0, 21.0 ],
-									"text" : "script newdefault in12 inlet, script offset in12 420 0, script connect in12 0 mcpack 11"
+									"patching_rect" : [ 50.0, 310.800001621246338, 496.0, 21.0 ]
 								}
 
 							}
@@ -401,7 +422,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.000024321865112, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 50.000024321865112, 4.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -529,6 +550,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-111", 3 ],
 									"source" : [ "obj-112", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -702,7 +730,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
+									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -710,7 +738,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 617.0, 51.0, 76.0, 22.0 ],
+					"patching_rect" : [ 252.0, 251.0, 76.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -729,7 +757,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 617.399999678134918, 23.0, 77.0, 22.0 ],
+					"patching_rect" : [ 252.399999678134918, 223.0, 77.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -741,7 +769,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 617.0, 79.0, 67.0, 22.0 ],
+					"patching_rect" : [ 252.0, 279.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -782,24 +810,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 150.0, 105.0, 169.0 ],
+					"patching_rect" : [ 30.0, 150.0, 65.0, 167.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 3.0, 105.0, 169.0 ],
+					"presentation_rect" : [ 3.0, 3.0, 83.0, 167.0 ],
 					"varname" : "mcgain"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-8",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 55.0, 5.0, 30.0, 30.0 ],
-					"varname" : "in1"
 				}
 
 			}
@@ -845,13 +859,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-8", 0 ]
 				}
 
 			}
