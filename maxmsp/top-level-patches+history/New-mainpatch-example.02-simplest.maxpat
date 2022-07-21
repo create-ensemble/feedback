@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 190.0, 100.0, 1350.0, 950.0 ],
+		"rect" : [ 171.0, 160.0, 1350.0, 950.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.018349000000001, 642.0, 171.0, 51.0 ],
+					"patching_rect" : [ 39.018349000000001, 641.0, 171.0, 51.0 ],
 					"text" : "Historical topologies and strategies for selecting them during performance"
 				}
 
@@ -60,7 +60,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 212.018349000000001, 656.5, 85.0, 22.0 ],
+					"patching_rect" : [ 212.018349000000001, 655.5, 85.0, 22.0 ],
 					"text" : "matrix-presets"
 				}
 
@@ -73,7 +73,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 933.036865999999918, 27.25, 134.0, 64.0 ],
+					"patching_rect" : [ 933.036865999999918, 26.25, 134.0, 64.0 ],
 					"text" : "easy to make any instrument hear extra signals: patch explicitly (like this)"
 				}
 
@@ -238,7 +238,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 866.330161727272753, 48.25, 66.0, 22.0 ],
+					"patching_rect" : [ 866.330161727272753, 47.25, 66.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -258,7 +258,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 866.330161727272753, 20.25, 24.0, 24.0 ]
+					"patching_rect" : [ 866.330161727272753, 19.25, 24.0, 24.0 ]
 				}
 
 			}
@@ -278,7 +278,7 @@
 					"numoutlets" : 12,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 257.232941000000096, 111.25, 726.785491999999863, 184.5 ],
+					"patching_rect" : [ 257.232941000000096, 110.25, 726.785491999999863, 184.5 ],
 					"viewvisibility" : 1
 				}
 
@@ -290,7 +290,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 12,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 257.232941000000096, 48.25, 598.755207099999552, 22.0 ],
+					"patching_rect" : [ 257.232941000000096, 47.25, 598.755207099999552, 22.0 ],
 					"text" : "receive12~ hear"
 				}
 
@@ -302,7 +302,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 432.268341000000191, 530.5, 127.0, 74.0 ],
+					"patching_rect" : [ 432.268341000000191, 529.5, 127.0, 74.0 ],
 					"text" : "Frame these as examples of a bunch of ways of formatting this patch's state into OSC.  "
 				}
 
@@ -314,7 +314,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 849.999389999999948, 713.5, 220.0, 100.0 ],
+					"patching_rect" : [ 849.999389999999948, 712.5, 220.0, 100.0 ],
 					"text" : "Display is its own big thing:\n- turn it off sometimes (performance)\n- Need to customize a lot\n- but they all use the same core elements: matrixctl, matrix graph, hear/say meters, say spectrograms, possible seating chart or branding"
 				}
 
@@ -326,7 +326,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 645.999389999999948, 726.0, 127.0, 100.0 ],
+					"patching_rect" : [ 645.999389999999948, 725.0, 127.0, 100.0 ],
 					"text" : "Need a whole tutorial etc. about making your own matrix presets; maybe we should write a paper about the \"submatrix presets\"..."
 				}
 
@@ -338,7 +338,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.018349000000001, 395.5, 158.981589999999983, 127.0 ],
+					"patching_rect" : [ 8.018349000000001, 394.5, 158.981589999999983, 127.0 ],
 					"text" : "Change this from a general \"anything you need to configure, look right here\" area of the patch into more of an example of how to configure (this stuff for) one particular instance of a piece.  ALl \"source\" stuff should go away."
 				}
 
@@ -350,7 +350,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.018349000000001, 271.0, 171.0, 47.0 ],
+					"patching_rect" : [ 5.018349000000001, 270.0, 171.0, 47.0 ],
 					"text" : "Move I/O feature into an example instrument incluing hear-channel-offset"
 				}
 
@@ -362,7 +362,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.018349000000001, 171.0, 99.0, 87.0 ],
+					"patching_rect" : [ 32.018349000000001, 170.0, 99.0, 87.0 ],
 					"text" : "New options are just on (= \"s/r\") and off (= \"bypass\" aka replace with a delay line)"
 				}
 
@@ -763,7 +763,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 684.0, 649.0, 459.0, 50.0 ],
-									"text" : "three-forward-trios",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -2772,7 +2772,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 903.036865999999918, 689.5, 107.0, 22.0 ],
+					"patching_rect" : [ 903.036865999999918, 688.5, 107.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2792,7 +2792,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 926.018432999999959, 583.0, 24.0, 24.0 ]
+					"patching_rect" : [ 926.018432999999959, 582.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2803,7 +2803,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 926.018432999999959, 609.5, 42.0, 22.0 ],
+					"patching_rect" : [ 926.018432999999959, 608.5, 42.0, 22.0 ],
 					"text" : "gate 1"
 				}
 
@@ -5036,7 +5036,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 903.036865999999918, 665.0, 134.0, 22.0 ],
+					"patching_rect" : [ 903.036865999999918, 664.0, 134.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5056,7 +5056,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 733.999022999999852, 665.0, 24.0, 24.0 ]
+					"patching_rect" : [ 733.999022999999852, 664.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -5067,7 +5067,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 598.768341000000191, 683.0, 29.5, 22.0 ],
+					"patching_rect" : [ 598.768341000000191, 682.0, 29.5, 22.0 ],
 					"text" : "-"
 				}
 
@@ -5080,7 +5080,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 277.499451000000136, 726.0, 364.0, 102.0 ],
+					"patching_rect" : [ 277.499451000000136, 725.0, 364.0, 102.0 ],
 					"text" : "0 0 0 0 1 0 0 2 0 0 3 0 0 4 0 1 0 0 1 1 0 1 2 0 1 3 0 1 4 0 2 0 0 2 1 0 2 2 0 2 3 0 2 4 0 3 0 0 3 1 0 3 2 0 3 3 0 3 4 0 4 0 0 4 1 0 4 2 0 4 3 0 4 4 0 5 5 0 5 6 0 5 7 0 5 8 0 5 9 0 5 10 0 5 11 0 6 5 0 6 6 0 6 7 0 6 8 0 6 9 0 6 10 0 6 11 0 7 5 0 7 6 0 7 7 0 7 8 0 7 9 0 7 10 0 7 11 0 8 5 0 8 6 0 8 7 0 8 8 0 8 9 0 8 10 0 8 11 0 9 5 0 9 6 0 9 7 0 9 8 0 9 9 0 9 10 0 9 11 0 10 5 0 10 6 0 10 7 0 10 8 0 10 9 0 10 10 0 10 11 0 11 5 0 11 6 0 11 7 0 11 8 0 11 9 0 11 10 0 11 11 0"
 				}
 
@@ -5093,7 +5093,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 638.999389999999835, 648.0, 20.0, 20.0 ]
+					"patching_rect" : [ 638.999389999999835, 647.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -5344,7 +5344,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 660.499390000000062, 648.0, 86.0, 22.0 ],
+					"patching_rect" : [ 660.499390000000062, 647.0, 86.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5365,7 +5365,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.999389999999948, 624.0, 139.0, 22.0 ],
+					"patching_rect" : [ 633.999389999999948, 623.0, 139.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "select_submatrix.js",
 						"parameter_enable" : 0
@@ -5383,7 +5383,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1040.509144000000106, 353.25, 24.0, 24.0 ]
+					"patching_rect" : [ 1040.509144000000106, 352.25, 24.0, 24.0 ]
 				}
 
 			}
@@ -5760,7 +5760,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 760.166625999999951, 649.0, 382.833374000000049, 50.0 ],
-									"text" : "three-forward-trios",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -7769,7 +7769,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 926.018432999999959, 635.0, 58.0, 22.0 ],
+					"patching_rect" : [ 926.018432999999959, 634.0, 58.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8154,7 +8154,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 412.999694999999974, 466.5, 89.0, 22.0 ],
+					"patching_rect" : [ 412.999694999999974, 465.5, 89.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8173,7 +8173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1246.5, 685.5, 37.0, 22.0 ],
+					"patching_rect" : [ 1246.5, 684.5, 37.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -8398,7 +8398,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1098.5, 48.25, 197.0, 22.0 ],
+					"patching_rect" : [ 1098.5, 47.25, 197.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -10281,7 +10281,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 356.318053999999847, 406.0, 167.5, 22.0 ],
+					"patching_rect" : [ 356.318053999999847, 405.0, 167.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -10312,7 +10312,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 542.0, 672.0, 947.0, 586.0 ],
+						"rect" : [ 699.0, 457.0, 947.0, 586.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -10359,17 +10359,6 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 64.0, 24.0, 98.0, 20.0 ],
 									"text" : "need to declare "
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 7.75, 421.0, 164.0, 20.0 ],
-									"text" : "utility to create channel offset"
 								}
 
 							}
@@ -10472,34 +10461,6 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"id" : "obj-35",
-									"linecount" : 4,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 139.0, 508.0, 156.0, 60.0 ],
-									"text" : "For the AlloSphere, the speakers are already DAC 1-59, so this makes the \"hear\" signals start at 61"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-36",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 300.0, 523.0, 79.0, 22.0 ],
-									"text" : "loadmess 60"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
 									"id" : "obj-34",
 									"linecount" : 13,
 									"maxclass" : "message",
@@ -10511,78 +10472,8 @@
 								}
 
 							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-31",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 181.0, 480.0, 140.0, 22.0 ],
-									"text" : "print hear-channel-offset"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-30",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 198.5, 450.0, 123.0, 22.0 ],
-									"text" : "s hear-channel-offset"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-29",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 176.0, 337.0, 174.0, 74.0 ],
-									"text" : "In case it's somewhere like the AlloSphere, where the speakers are already low DAC outputs (1-60), this makes the \"hear\" signals start at 61"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-25",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 181.0, 413.0, 72.0, 22.0 ],
-									"text" : "loadmess 0"
-								}
-
-							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"order" : 0,
-									"source" : [ "obj-25", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
-									"order" : 1,
-									"source" : [ "obj-25", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-26", 0 ]
@@ -10620,7 +10511,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 169.036759000000018, 462.5, 81.0, 22.0 ],
+					"patching_rect" : [ 169.036759000000018, 461.5, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -11910,7 +11801,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 453.768341000000191, 501.0, 84.0, 22.0 ],
+					"patching_rect" : [ 453.768341000000191, 500.0, 84.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -11930,7 +11821,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 668.018340999999964, 565.0, 20.0, 20.0 ]
+					"patching_rect" : [ 668.018340999999964, 564.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -12199,7 +12090,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 685.018340999999964, 565.0, 86.0, 22.0 ],
+					"patching_rect" : [ 685.018340999999964, 564.0, 86.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -12220,7 +12111,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1077.99993900000004, 19.25, 50.0, 22.0 ],
+					"patching_rect" : [ 1077.99993900000004, 18.25, 50.0, 22.0 ],
 					"text" : "r matrix"
 				}
 
@@ -12234,7 +12125,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 696.86674650000009, 422.75, 150.0, 47.0 ],
+					"patching_rect" : [ 696.86674650000009, 421.75, 150.0, 47.0 ],
 					"text" : "<- current state of matrix in a format that matrixctrl understands."
 				}
 
@@ -12247,7 +12138,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1104.0, 362.25, 174.0, 20.0 ],
+					"patching_rect" : [ 1104.0, 361.25, 174.0, 20.0 ],
 					"text" : "this is a bpatcher of mymatrix~"
 				}
 
@@ -12259,7 +12150,7 @@
 					"numinlets" : 13,
 					"numoutlets" : 13,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 532.169935500000065, 406.0, 162.696810999999968, 22.0 ],
+					"patching_rect" : [ 532.169935500000065, 405.0, 162.696810999999968, 22.0 ],
 					"text" : "mymatrix~.maxpat"
 				}
 
@@ -12273,7 +12164,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1076.5, 377.75, 95.0, 22.0 ],
+					"patching_rect" : [ 1076.5, 376.75, 95.0, 22.0 ],
 					"text" : "prepend update"
 				}
 
@@ -12287,7 +12178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1211.5, 680.5, 33.0, 22.0 ],
+					"patching_rect" : [ 1211.5, 679.5, 33.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -12301,7 +12192,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1098.5, 83.25, 37.0, 22.0 ],
+					"patching_rect" : [ 1098.5, 82.25, 37.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -12315,7 +12206,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1197.0, 661.5, 74.0, 22.0 ],
+					"patching_rect" : [ 1197.0, 660.5, 74.0, 22.0 ],
 					"text" : "startwindow"
 				}
 
@@ -12326,7 +12217,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1197.0, 713.5, 45.0, 45.0 ]
+					"patching_rect" : [ 1197.0, 712.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -12339,7 +12230,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1077.99993900000004, 111.25, 255.0, 255.0 ],
+					"patching_rect" : [ 1077.99993900000004, 110.25, 255.0, 255.0 ],
 					"rows" : 12
 				}
 
@@ -12353,7 +12244,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 845.0, 583.0, 238.0, 252.0 ],
+					"patching_rect" : [ 845.0, 582.0, 238.0, 252.0 ],
 					"proportion" : 0.5
 				}
 
@@ -12367,7 +12258,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 395.768310500000325, 448.75, 172.000091499999826, 166.75 ],
+					"patching_rect" : [ 395.768310500000325, 447.75, 172.000091499999826, 166.75 ],
 					"proportion" : 0.5
 				}
 
