@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 124.0, 216.0, 784.0, 384.0 ],
+		"rect" : [ 124.0, 216.0, 979.0, 521.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -46,7 +46,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 609.0, 105.5, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "the inlets & outlets are created upon instantiation"
 				}
 
@@ -70,7 +69,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 145.0, 150.0, 135.0, 167.0 ]
+					"patching_rect" : [ 145.0, 150.0, 135.0, 167.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 118.0, 3.0, 135.0, 167.0 ]
 				}
 
 			}
@@ -782,7 +783,23 @@
 					"outlettype" : [ "multichannelsignal", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 150.0, 105.0, 169.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 3.0, 3.0, 105.0, 169.0 ],
 					"varname" : "mcgain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-8",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 55.0, 5.0, 30.0, 30.0 ],
+					"varname" : "in1"
 				}
 
 			}
@@ -828,6 +845,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}

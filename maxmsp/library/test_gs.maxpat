@@ -40,19 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
+					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 184.0, 133.0, 153.0, 22.0 ],
-					"text" : "gainStage+channelOffset 4"
+					"numinlets" : 11,
+					"numoutlets" : 9,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+					"patching_rect" : [ 203.0, 327.0, 174.0, 22.0 ],
+					"text" : "gainStage 9"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 4 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-1",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "gainStage.maxpat",
+					"numinlets" : 6,
+					"numoutlets" : 4,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "signal", "signal" ],
+					"patching_rect" : [ 27.0, 86.0, 265.0, 179.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "gainStage+channelOffset.maxpat",
+				"name" : "gainStage.maxpat",
 				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
