@@ -538,13 +538,15 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 3,
 					"id" : "obj-65",
-					"linecount" : 9,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.018349000000001, 419.5, 158.981589999999983, 127.0 ],
-					"text" : "Change this from a general \"anything you need to configure, look right here\" area of the patch into more of an example of how to configure (this stuff for) one particular instance of a piece.  ALl \"source\" stuff should go away."
+					"patching_rect" : [ 8.018349000000001, 419.5, 167.981589999999983, 78.0 ],
+					"text" : "Here you can set the names of the nodes of the network as well as the number of nodes (for preset-recalling purposes)."
 				}
 
 			}
@@ -968,7 +970,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 684.0, 649.0, 459.0, 50.0 ],
-									"text" : "no-connections",
+									"text" : "overwriteme",
 									"textjustification" : 1
 								}
 
@@ -5626,7 +5628,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 760.166625999999951, 649.0, 382.833374000000049, 50.0 ],
-									"text" : "no-connections",
+									"text" : "overwriteme",
 									"textjustification" : 1
 								}
 
@@ -9946,7 +9948,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 699.0, 457.0, 947.0, 586.0 ],
+						"rect" : [ 699.0, 457.0, 685.0, 332.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -9974,14 +9976,29 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-7",
+									"id" : "obj-1",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 425.0, 24.0, 186.0, 20.0 ],
-									"text" : "need to declare  (this is a default)"
+									"patching_rect" : [ 268.0, 6.0, 155.0, 33.0 ],
+									"presentation_linecount" : 2,
+									"text" : "But you could make them anything you want:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 430.0, 6.0, 155.0, 33.0 ],
+									"text" : "Default node names are simply the numerals 1-12"
 								}
 
 							}
@@ -10033,7 +10050,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 68.0, 105.0, 29.5, 22.0 ],
-									"text" : "4"
+									"text" : "8"
 								}
 
 							}
@@ -10058,8 +10075,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 319.5, 46.0, 69.0, 22.0 ],
-									"text" : "delay 1000"
+									"patching_rect" : [ 319.5, 46.0, 61.0, 22.0 ],
+									"text" : "delay 500"
 								}
 
 							}
@@ -10072,8 +10089,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 68.0, 79.5, 69.0, 22.0 ],
-									"text" : "delay 5000"
+									"patching_rect" : [ 68.0, 79.5, 67.0, 22.0 ],
+									"text" : "delay 1000"
 								}
 
 							}
@@ -10145,7 +10162,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 169.036759000000018, 486.5, 81.0, 22.0 ],
+					"patching_rect" : [ 177.999938999999983, 447.5, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
