@@ -40,16 +40,26 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 172.0, 549.0, 113.0, 22.0 ],
+					"text" : "s updatematrixstate"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 3,
 					"id" : "obj-4",
-					"linecount" : 5,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 518.0, 157.0, 78.0 ],
-					"presentation_linecount" : 5,
-					"text" : "Anything not discarded is an \"update\" to the matrix that should be passed to the control inlet of mymatrix"
+					"patching_rect" : [ 13.0, 518.0, 157.0, 91.0 ],
+					"text" : "Anything not discarded is an \"update\" to the matrix sent via \"updatematrixstate\" to  control the ONE instance mymatrix"
 				}
 
 			}
@@ -73,20 +83,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 446.0, 20.0, 258.0, 60.0 ],
+					"patching_rect" : [ 416.0, 25.0, 258.0, 60.0 ],
 					"text" : "A matrixctrl designed to have multiple instances in different parts of your patch, all staying in sync with each other both to display the current state and also to let you modify it."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "Matrixctl",
-					"id" : "obj-18",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 559.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -126,7 +124,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 273.5, 526.0, 24.0, 24.0 ]
+					"patching_rect" : [ 293.5, 549.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -175,20 +173,6 @@
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 238.49993900000004, 471.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 526.0, 95.0, 22.0 ],
-					"text" : "prepend update"
 				}
 
 			}
@@ -248,13 +232,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -298,7 +275,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-57", 0 ],
 					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}

@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1002.5, 88.0, 93.0, 22.0 ],
+					"text" : "prepend update"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1002.5, 62.25, 111.0, 22.0 ],
+					"text" : "r updatematrixstate"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-56",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -360,7 +384,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 578.0, 438.0, 721.0, 671.0 ],
+						"rect" : [ 700.0, 291.0, 721.0, 671.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -391,13 +415,41 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"bubble" : 1,
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 427.0, 104.5, 191.0, 37.0 ],
+									"presentation_linecount" : 3,
+									"text" : "Second inlet is for control messages, especially \"update\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-6",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 316.0, 292.0, 176.0, 51.0 ],
+									"presentation_linecount" : 4,
+									"text" : "First inlet is coming from the rightmost outlet of matrix~, the dumptarget info"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
 									"bubbleside" : 2,
 									"id" : "obj-43",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 201.0, -15.0, 153.0, 52.0 ],
+									"patching_rect" : [ 92.0, 16.0, 153.0, 52.0 ],
 									"text" : "the slew time of the matrix can be set  here"
 								}
 
@@ -409,7 +461,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "dumptarget" ],
-									"patching_rect" : [ 163.0, 252.0, 88.0, 22.0 ],
+									"patching_rect" : [ 133.0, 282.0, 88.0, 22.0 ],
 									"text" : "t b dumptarget"
 								}
 
@@ -421,7 +473,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 112.0, 445.0, 274.0, 100.0 ],
+									"patching_rect" : [ 82.0, 475.0, 274.0, 100.0 ],
 									"text" : "In practice it takes s brief moment after you change to a new matrix preset for all the update messages (one per matrix cell) to come out.  We want to send the new matrix state once after all updates have been received so this [delay 10] does that.  Note that if you bang delay while it's waiting to output, it continues to wait"
 								}
 
@@ -433,7 +485,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 163.0, 217.0, 56.0, 22.0 ],
+									"patching_rect" : [ 133.0, 247.0, 56.0, 22.0 ],
 									"text" : "delay 10"
 								}
 
@@ -447,7 +499,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 84.0, 165.0, 55.0, 22.0 ],
+									"patching_rect" : [ 54.0, 195.0, 55.0, 22.0 ],
 									"text" : "ramp $1"
 								}
 
@@ -461,7 +513,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 84.0, 130.0, 255.0, 22.0 ],
+									"patching_rect" : [ 54.0, 160.0, 255.0, 22.0 ],
 									"text" : "route matrix_slew_ms update output_slew_ms"
 								}
 
@@ -475,7 +527,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 310.0, 341.0, 113.0, 22.0 ],
+									"patching_rect" : [ 280.0, 371.0, 113.0, 22.0 ],
 									"text" : "zl 4096 group 4096"
 								}
 
@@ -489,7 +541,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "dumptarget", "zlclear", "" ],
-									"patching_rect" : [ 163.0, 180.0, 132.0, 22.0 ],
+									"patching_rect" : [ 133.0, 210.0, 132.0, 22.0 ],
 									"text" : "t b dumptarget zlclear l"
 								}
 
@@ -498,12 +550,12 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-44",
-									"index" : 1,
+									"index" : 2,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 84.0, 70.0, 25.0, 25.0 ]
+									"patching_rect" : [ 388.0, 110.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -511,12 +563,12 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-45",
-									"index" : 2,
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "list" ],
-									"patching_rect" : [ 314.0, 276.0, 25.0, 25.0 ]
+									"patching_rect" : [ 280.0, 307.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -528,7 +580,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 226.0, 374.0, 25.0, 25.0 ]
+									"patching_rect" : [ 196.0, 404.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -540,7 +592,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 513.0, 364.0, 25.0, 25.0 ]
+									"patching_rect" : [ 483.0, 394.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -552,7 +604,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 310.0, 374.0, 25.0, 25.0 ]
+									"patching_rect" : [ 280.0, 404.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -565,7 +617,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 283.0, 27.5, 85.0, 22.0 ],
+									"patching_rect" : [ 174.0, 58.5, 85.0, 22.0 ],
 									"text" : "loadmess 200"
 								}
 
@@ -579,7 +631,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 163.0, 27.5, 85.0, 22.0 ],
+									"patching_rect" : [ 54.0, 58.5, 85.0, 22.0 ],
 									"text" : "loadmess 200"
 								}
 
@@ -594,7 +646,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 283.0, 50.5, 50.0, 22.0 ]
+									"patching_rect" : [ 174.0, 81.5, 50.0, 22.0 ]
 								}
 
 							}
@@ -608,7 +660,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 163.0, 50.5, 50.0, 22.0 ]
+									"patching_rect" : [ 54.0, 81.5, 50.0, 22.0 ]
 								}
 
 							}
@@ -621,7 +673,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 283.0, 73.5, 114.0, 22.0 ],
+									"patching_rect" : [ 174.0, 104.5, 114.0, 22.0 ],
 									"text" : "output_slew_ms $1"
 								}
 
@@ -635,7 +687,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 163.0, 73.5, 113.0, 22.0 ],
+									"patching_rect" : [ 54.0, 104.5, 113.0, 22.0 ],
 									"text" : "matrix_slew_ms $1"
 								}
 
@@ -1585,8 +1637,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 1 ],
-					"midpoints" : [ 831.499938999999927, 204.0, 912.499969499999906, 204.0, 912.499969499999906, 114.0, 993.5, 114.0 ],
+					"destination" : [ "obj-49", 0 ],
+					"midpoints" : [ 831.499938999999927, 201.0, 939.0, 201.0, 939.0, 114.0, 961.5, 114.0 ],
 					"order" : 0,
 					"source" : [ "obj-2", 12 ]
 				}
@@ -1809,6 +1861,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
 					"order" : 11,
 					"source" : [ "obj-58", 0 ]
@@ -1900,6 +1959,13 @@
 					"destination" : [ "obj-9", 2 ],
 					"order" : 0,
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 1 ],
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
@@ -2042,7 +2108,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
+					"destination" : [ "obj-49", 1 ],
 					"source" : [ "obj-76", 0 ]
 				}
 

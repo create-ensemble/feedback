@@ -51,9 +51,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "multi-matrixctrl.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 901.0, 106.25, 259.0, 263.0 ],
 					"viewvisibility" : 1
 				}
@@ -111,7 +110,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 580.0, 44.25, 307.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Other ones stay in sync and can control the \"real\" matrix"
 				}
 
@@ -129,9 +127,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "multi-matrixctrl.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 557.0, 106.25, 259.0, 263.0 ],
 					"viewvisibility" : 1
 				}
@@ -154,8 +151,7 @@
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 707.0, 549.0, 86.0, 22.0 ],
 					"text" : "multi-matrixctrl"
 				}
@@ -164,12 +160,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 3,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 204.0, 44.25, 176.0, 47.0 ],
-					"text" : "This is the \"real\" one because only one matrixctl can receive \"r matrix\" (or mayhem ensues)"
+					"patching_rect" : [ 200.0, 24.25, 198.0, 74.0 ],
+					"text" : "This is the \"real\" one because only one matrixctl can receive \"r matrix\" (or mayhem ensues).  It's here, among other reasons, for recalling presets"
 				}
 
 			}
@@ -177,7 +173,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-76",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -204,7 +199,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-8",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -228,9 +222,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "multi-matrixctrl.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 94.99993900000004, 106.25, 255.0, 259.0 ],
 					"viewvisibility" : 1
 				}
@@ -238,27 +231,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 12 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 12 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 12 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-76", 0 ]
