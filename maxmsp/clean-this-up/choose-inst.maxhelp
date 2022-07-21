@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 2,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2336.0, 428.0, 562.0, 611.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 177.0, 189.0, 594.0, 718.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,15 +37,41 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 2,
+					"id" : "obj-16",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 137.5, 134.0, 107.0, 66.0 ],
+					"text" : "Designed to be used within a bpatcher, like so:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 97.0, 20.0, 416.0, 87.0 ],
+					"text" : "Choose-inst is designed for situations where each node of the network is a person, with hear/say connected via MSP signal outputs and inputs (which might go to local audio hardware and/or jacktrip), but sometimes that person isn't ready (e.g., missing an entire rehearsal, or maybe just debugging for a moment) so you want to replace their instrument with just a simple delay line.  Also maybe you want to just add some delay to each instrument."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 190.0, 176.0, 20.0 ],
-					"style" : "",
-					"text" : "matt = whistlespace patch"
+					"patching_rect" : [ 246.0, 268.0, 176.0, 20.0 ],
+					"text" : "silence = always output zero"
 				}
 
 			}
@@ -54,8 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 174.0, 176.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 246.0, 299.0, 176.0, 20.0 ],
 					"text" : "I/O = say from adc, hear to dac"
 				}
 
@@ -66,23 +92,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 159.0, 145.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 246.0, 284.0, 145.0, 20.0 ],
 					"text" : "bypass = just a delay line"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-16",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 227.0, 174.0, 129.0, 37.0 ],
-					"style" : "",
-					"text" : "button opens whistlespace UI"
 				}
 
 			}
@@ -93,8 +104,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.0, 154.0, 146.0, 24.0 ],
-					"style" : "",
+					"patching_rect" : [ 227.0, 249.0, 146.0, 24.0 ],
 					"text" : "Select instrument type"
 				}
 
@@ -106,8 +116,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.0, 132.0, 205.0, 24.0 ],
-					"style" : "",
+					"patching_rect" : [ 227.0, 222.0, 205.0, 24.0 ],
 					"text" : "Delay (for both bypass and I/O)"
 				}
 
@@ -119,8 +128,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.0, 110.0, 164.0, 24.0 ],
-					"style" : "",
+					"patching_rect" : [ 227.0, 200.0, 164.0, 24.0 ],
 					"text" : "Voice number (argument)"
 				}
 
@@ -131,8 +139,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 228.5, 531.0, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 228.5, 621.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -140,12 +147,12 @@
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "int" ],
+					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 240.0, 371.0, 22.0, 140.0 ],
-					"style" : ""
+					"patching_rect" : [ 240.0, 461.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -156,8 +163,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 125.0, 322.0, 123.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 129.5, 414.0, 123.0, 33.0 ],
 					"text" : "Say signal coming out of this instrument"
 				}
 
@@ -168,8 +174,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 97.0, 371.0, 130.0, 130.0 ],
-					"style" : ""
+					"patching_rect" : [ 97.0, 461.0, 130.0, 130.0 ]
 				}
 
 			}
@@ -180,8 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 159.0, 62.0, 114.0, 33.0 ],
-					"style" : "",
+					"patching_rect" : [ 7.0, 338.0, 114.0, 33.0 ],
 					"text" : "Hear signal going into this instrument"
 				}
 
@@ -195,8 +199,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 20.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 30.0, 110.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -204,12 +207,12 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "int" ],
+					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 99.0, 22.0, 140.0 ],
-					"style" : ""
+					"patching_rect" : [ 30.0, 189.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -220,8 +223,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 30.0, 52.0, 68.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 30.0, 142.0, 68.0, 22.0 ],
 					"text" : "cycle~ 220"
 				}
 
@@ -236,13 +238,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-9",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "choose-inst.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 159.0, 110.0, 64.0, 175.0 ],
+					"patching_rect" : [ 159.0, 200.0, 64.0, 175.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -4.0, 50.0, 63.0, 180.0 ],
 					"viewvisibility" : 1
@@ -253,8 +256,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -262,8 +263,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -271,8 +271,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -280,8 +279,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -289,8 +286,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -298,8 +293,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -307,92 +301,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "choose-inst.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "whistlespace.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gain~.1cyb.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mod-delay~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "boring.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "boring~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "nothing.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "uc_license.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Documents/max_path/enabled/CNMAT-Everything-OSX-MachO-100331/CNMAT_MMJ-Depot/modules/Depot_Support",
-				"type" : "GIFf",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "near-jog.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "jog-scale-semitones.coll.txt",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "slew-blipper.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "OSC-route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mattrms~.mxo",
-				"type" : "iLaX"
+				"name" : "choose-inst.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0
