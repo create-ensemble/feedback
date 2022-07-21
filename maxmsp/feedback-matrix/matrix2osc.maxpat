@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 43.0, 307.0, 815.0, 536.0 ],
+		"rect" : [ 515.0, 222.0, 1215.0, 534.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,49 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 820.0, 150.0, 97.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 800.0, 191.0, 105.0, 22.0 ],
+					"text" : "prepend /topology"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 800.0, 114.0, 99.0, 22.0 ],
+					"text" : "r topology-preset"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-25",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 629.0, 104.0, 153.0, 74.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 569.0, 89.0, 156.0, 74.0 ],
 					"text" : "These /sparse_matrix messages only list the curent connections, not the full on/off state of every possible connection."
 				}
 
@@ -55,11 +91,11 @@
 				"box" : 				{
 					"comment" : "OSC messages representing current matrix state",
 					"id" : "obj-24",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 604.0, 407.0, 30.0, 30.0 ]
+					"patching_rect" : [ 544.0, 392.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -70,8 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 358.5, 150.0, 47.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 3.0, 308.0, 153.0, 47.0 ],
 					"text" : "Turn on if you want to emit the full /verbose_matrix messages"
 				}
 
@@ -82,7 +117,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 279.0, 418.0, 93.0, 20.0 ],
+					"patching_rect" : [ 219.0, 403.0, 93.0, 20.0 ],
 					"text" : "Turn on to print "
 				}
 
@@ -95,7 +130,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 162.0, 370.0, 24.0, 24.0 ]
+					"patching_rect" : [ 102.0, 355.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -106,7 +141,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 188.0, 372.0, 32.0, 22.0 ],
+					"patching_rect" : [ 128.0, 357.0, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -121,7 +156,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 467.5, 301.0, 50.0, 22.0 ]
+					"patching_rect" : [ 407.5, 286.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -134,7 +169,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 467.5, 274.0, 69.0, 22.0 ],
+					"patching_rect" : [ 407.5, 259.0, 69.0, 22.0 ],
 					"text" : "zl 4096 len"
 				}
 
@@ -148,7 +183,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 445.0, 363.0, 50.0, 22.0 ],
+					"patching_rect" : [ 385.0, 348.0, 50.0, 22.0 ],
 					"text" : "nothing"
 				}
 
@@ -163,7 +198,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 244.0, 290.0, 50.0, 22.0 ]
+					"patching_rect" : [ 184.0, 275.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -176,7 +211,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 244.0, 263.0, 69.0, 22.0 ],
+					"patching_rect" : [ 184.0, 248.0, 69.0, 22.0 ],
 					"text" : "zl 4096 len"
 				}
 
@@ -191,7 +226,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 341.0, 183.0, 50.0, 22.0 ]
+					"patching_rect" : [ 281.0, 168.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -204,7 +239,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 341.0, 156.0, 69.0, 22.0 ],
+					"patching_rect" : [ 281.0, 141.0, 69.0, 22.0 ],
 					"text" : "zl 4096 len"
 				}
 
@@ -218,7 +253,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 225.0, 143.0, 22.0 ],
+					"patching_rect" : [ 135.0, 210.0, 143.0, 22.0 ],
 					"text" : "prepend /verbose_matrix"
 				}
 
@@ -232,7 +267,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "/sparse_matrix" ],
-					"patching_rect" : [ 446.0, 94.0, 112.0, 22.0 ],
+					"patching_rect" : [ 386.0, 79.0, 112.0, 22.0 ],
 					"text" : "t b l /sparse_matrix"
 				}
 
@@ -246,7 +281,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 459.5, 135.0, 49.0, 22.0 ],
+					"patching_rect" : [ 399.5, 120.0, 49.0, 22.0 ],
 					"text" : "zl iter 3"
 				}
 
@@ -259,7 +294,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 388.5, 448.0, 153.0, 22.0 ],
+					"patching_rect" : [ 328.5, 433.0, 153.0, 22.0 ],
 					"text" : "print matrix2OSC-message"
 				}
 
@@ -272,7 +307,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 369.5, 418.0, 20.0, 20.0 ]
+					"patching_rect" : [ 309.5, 403.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -285,7 +320,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 388.5, 418.0, 34.0, 22.0 ],
+					"patching_rect" : [ 328.5, 403.0, 34.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -298,7 +333,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 332.0, 35.5, 110.0, 20.0 ],
+					"patching_rect" : [ 272.0, 20.5, 110.0, 20.0 ],
 					"text" : "state of matrix "
 				}
 
@@ -312,7 +347,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 446.0, 236.0, 53.0, 22.0 ],
+					"patching_rect" : [ 386.0, 221.0, 53.0, 22.0 ],
 					"text" : "zl group"
 				}
 
@@ -326,7 +361,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 459.5, 166.0, 142.0, 22.0 ],
+					"patching_rect" : [ 399.5, 151.0, 142.0, 22.0 ],
 					"text" : "if $f3 > 0 then $i1 $i2 $f3"
 				}
 
@@ -338,7 +373,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 332.0, 56.5, 112.0, 22.0 ],
+					"patching_rect" : [ 272.0, 41.5, 112.0, 22.0 ],
 					"text" : "r currentmatrixstate"
 				}
 
@@ -354,7 +389,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-140", 0 ],
-					"midpoints" : [ 548.5, 132.0, 609.0, 132.0, 609.0, 222.0, 455.5, 222.0 ],
+					"midpoints" : [ 488.5, 117.0, 549.0, 117.0, 549.0, 207.0, 395.5, 207.0 ],
 					"source" : [ "obj-1", 2 ]
 				}
 
@@ -466,6 +501,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-41", 0 ]
 				}
@@ -501,16 +552,14 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "nothing.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
-				"patcherrelativepath" : "../whistlespace",
-				"type" : "JSON",
-				"implicit" : 1
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 157.0, 100.0, 1294.0, 804.0 ],
+		"rect" : [ 172.0, 332.0, 1294.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 38.527554000000009, 488.5, 167.981589999999983, 78.0 ],
+					"patching_rect" : [ 38.527554000000009, 488.5, 168.0, 78.0 ],
 					"text" : "Here you can set the names of the nodes of the network as well as the number of nodes (for preset-recalling purposes)."
 				}
 
@@ -7502,7 +7502,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 628.0, 192.0, 668.0, 362.0 ],
+						"rect" : [ 829.0, 159.0, 668.0, 362.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -7532,13 +7532,15 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-1",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ -1.0, 9.0, 145.0, 22.0 ],
-									"text" : "receive OSC-to-feedback"
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "clear" ],
+									"patching_rect" : [ 269.200012000000015, 280.296875, 47.0, 22.0 ],
+									"text" : "t l clear"
 								}
 
 							}
@@ -7558,17 +7560,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 128.0, 69.296875, 185.0, 20.0 ],
-									"text" : "CCRMA-compatible port number"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-2",
@@ -7576,7 +7567,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 69.296875, 99.0, 22.0 ],
+									"patching_rect" : [ 23.0, 12.296875, 99.0, 22.0 ],
 									"text" : "udpreceive 9004"
 								}
 
@@ -7607,17 +7598,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 92.0, 259.296875, 80.0, 22.0 ],
-									"text" : "s drip-control"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-81",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -7634,7 +7614,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 297.0, 129.296875, 117.0, 22.0 ],
+									"patching_rect" : [ 380.0, 162.296875, 117.0, 22.0 ],
 									"text" : "/speaker master 0.9"
 								}
 
@@ -7671,7 +7651,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 343.200012000000015, 259.296875, 52.0, 22.0 ],
+									"patching_rect" : [ 242.200012000000015, 333.296875, 52.0, 22.0 ],
 									"text" : "s matrix"
 								}
 
@@ -7684,7 +7664,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 228.199996999999996, 259.296875, 103.0, 22.0 ],
+									"patching_rect" : [ 91.5, 313.296875, 103.0, 22.0 ],
 									"text" : "s topology-preset"
 								}
 
@@ -7698,7 +7678,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 63.0, 108.296875, 160.0, 22.0 ],
+									"patching_rect" : [ 76.0, 81.296875, 160.0, 22.0 ],
 									"text" : "zzzzzzzzzzzzzzzzzzzzzzzzz"
 								}
 
@@ -7711,10 +7691,10 @@
 									"id" : "obj-95",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 6,
-									"outlettype" : [ "", "", "", "", "", "" ],
-									"patching_rect" : [ 50.0, 222.296875, 316.0, 22.0 ],
-									"text" : "OSC-route /speaker /drip /sync /topology /verbose_matrix"
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 50.0, 222.296875, 338.0, 22.0 ],
+									"text" : "OSC-route /speaker /topology /verbose_matrix /sparse_matrix"
 								}
 
 							}
@@ -7727,7 +7707,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 137.296875, 99.0, 22.0 ],
+									"patching_rect" : [ 63.0, 110.296875, 99.0, 22.0 ],
 									"text" : "udpreceive 8082"
 								}
 
@@ -7746,6 +7726,20 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-87", 0 ],
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-87", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-89", 1 ],
 									"order" : 0,
@@ -7794,13 +7788,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-95", 0 ],
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-95", 0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -7822,7 +7809,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-95", 1 ]
+									"source" : [ "obj-95", 3 ]
 								}
 
 							}
@@ -7836,21 +7823,21 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
-									"source" : [ "obj-95", 5 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-87", 0 ],
 									"source" : [ "obj-95", 4 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-87", 0 ],
+									"source" : [ "obj-95", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-88", 0 ],
-									"source" : [ "obj-95", 3 ]
+									"source" : [ "obj-95", 1 ]
 								}
 
 							}
@@ -7900,7 +7887,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2333.0, 199.0, 858.0, 554.0 ],
+						"rect" : [ 836.0, 199.0, 858.0, 554.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
