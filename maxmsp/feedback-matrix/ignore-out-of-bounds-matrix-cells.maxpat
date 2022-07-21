@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1054.0, 239.0, 640.0, 480.0 ],
+		"rect" : [ 736.0, 213.0, 436.0, 377.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,25 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 253.0, 113.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 253.0, 81.0, 89.0, 22.0 ],
-					"text" : "patcherargs 12"
+					"annotation" : "int to determine the level of constraint",
+					"comment" : "int to determine the level of constraint",
+					"cool" : 1,
+					"hint" : "int to determine the level of constraint",
+					"id" : "obj-1",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 254.0, 96.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -69,7 +61,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.5, 23.0, 341.0, 47.0 ],
+					"patching_rect" : [ 90.5, 12.0, 341.0, 47.0 ],
 					"text" : "Given a list of [row column state] triples describing the state of a matrix, discard any whose row or column number is above the argument to this patch (or default 12)"
 				}
 
@@ -82,7 +74,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 123.0, 364.0, 50.0, 22.0 ]
+					"patching_rect" : [ 120.5, 335.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -152,9 +144,11 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "put the matrix to constrain in here\n",
+					"comment" : "put the matrix to constrain in here ",
+					"hint" : "put the matrix to constrain in here\n",
 					"id" : "obj-39",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -165,9 +159,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "constrained matrix",
 					"id" : "obj-42",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -177,6 +171,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 3 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-3", 0 ]
@@ -234,21 +235,9 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-40", 3 ],
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
