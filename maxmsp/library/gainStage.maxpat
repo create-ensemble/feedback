@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 124.0, 216.0, 566.0, 390.0 ],
+		"rect" : [ 124.0, 216.0, 624.0, 389.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,91 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 452.0, 242.0, 177.0, 74.0 ],
+					"presentation_linecount" : 5,
+					"text" : "when connecting in main patch, this is useful, note you must specify the scripting name of the thing you wish to connect to this instance of gainStage"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 410.0, 270.5, 17.0, 17.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.867, 0.867, 0.867, 1.0 ],
+					"bgcolor2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color1" : [ 0.867, 0.867, 0.867, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"gradient" : 1,
+					"id" : "obj-84",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 410.0, 317.5, 203.0, 21.0 ],
+					"text" : "script connect routing $1 gainstage $1",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "int" ],
+					"patching_rect" : [ 410.0, 292.5, 40.0, 21.0 ],
+					"text" : "uzi 12"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 410.0, 337.5, 67.0, 21.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 358.0, 235.0, 177.0, 33.0 ],
+					"patching_rect" : [ 405.0, 163.0, 177.0, 33.0 ],
 					"text" : "to instantiate as a bpatcher\n\"bpatcher gainStage @args 12\""
 				}
 
@@ -118,7 +197,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 564.0, 79.0, 1173.0, 792.0 ],
+						"rect" : [ 473.0, 79.0, 1173.0, 792.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -857,8 +936,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"source" : [ "obj-8", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-84", 0 ]
 				}
 
 			}
