@@ -40,13 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 71.0, 116.0, 83.0, 22.0 ],
+					"text" : "loadmess 120"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 452.0, 242.0, 177.0, 74.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 452.0, 242.0, 180.0, 74.0 ],
 					"text" : "when connecting in main patch, this is useful, note you must specify the scripting name of the thing you wish to connect to this instance of gainStage"
 				}
 
@@ -160,7 +171,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 134.0, 150.0, 72.0, 167.0 ],
+					"patching_rect" : [ 106.0, 150.0, 72.0, 167.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 96.0, 2.0, 81.0, 167.0 ]
 				}
@@ -908,6 +919,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
