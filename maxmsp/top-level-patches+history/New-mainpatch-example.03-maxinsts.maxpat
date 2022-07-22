@@ -72,7 +72,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1189.0, 855.0, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "left"
 				}
 
 			}
@@ -181,7 +181,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 156.5, 64.300293000000011, 68.0, 22.0 ],
-									"text" : "esc"
+									"text" : "left"
 								}
 
 							}
@@ -243,12 +243,12 @@
 					"bubble" : 1,
 					"bubbleside" : 3,
 					"id" : "obj-65",
-					"linecount" : 5,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 998.018348999999944, 721.5, 168.0, 78.0 ],
-					"text" : "Here you can set the names of the nodes of the network as well as the number of nodes (for preset-recalling purposes)."
+					"patching_rect" : [ 995.018348999999944, 735.0, 168.0, 51.0 ],
+					"text" : "Here you can set the names of the nodes of the network "
 				}
 
 			}
@@ -271,7 +271,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 186.0, 705.0, 586.0, 303.0 ],
+						"rect" : [ 186.0, 710.0, 410.0, 298.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -306,7 +306,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 403.0, 20.0, 156.0, 33.0 ],
+									"patching_rect" : [ 208.0, 20.0, 156.0, 33.0 ],
 									"text" : "...but you could make them anything you want:"
 								}
 
@@ -318,20 +318,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 220.0, 20.0, 155.0, 33.0 ],
+									"patching_rect" : [ 25.0, 20.0, 155.0, 33.0 ],
 									"text" : "Default node names are simply the numerals 1-12..."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"linecount" : 7,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 29.0, 20.0, 155.0, 100.0 ],
-									"text" : "You need to declare the number of nodes in the matrix (e.g., 4x4, 6x6, etc.) so that recalling matrix presets will choose from the ones of the appropriate size."
 								}
 
 							}
@@ -345,7 +333,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 432.5, 91.0, 97.0, 183.0 ],
+									"patching_rect" : [ 237.5, 91.0, 97.0, 183.0 ],
 									"text" : ";\r1-name Charles;\r2-name Kerem;\r3-name Bobby;\r4-name Ian;\r5-name Kitty;\r6-name Trijeet;\r7-name Vidya;\r8-name Ryan;\r9-name Kyle;\r10-name Jette;\r11-name foo;\r12-name bar"
 								}
 
@@ -359,32 +347,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 237.5, 60.0, 60.0, 22.0 ],
+									"patching_rect" : [ 42.5, 60.0, 60.0, 22.0 ],
 									"text" : "loadbang"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 41.0, 175.0, 29.5, 22.0 ],
-									"text" : "4"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontsize" : 12.0,
-									"id" : "obj-12",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 201.0, 130.0, 22.0 ],
-									"text" : "s num-nodes-in-matrix"
 								}
 
 							}
@@ -397,36 +361,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 432.5, 59.0, 61.0, 22.0 ],
+									"patching_rect" : [ 237.5, 59.0, 61.0, 22.0 ],
 									"text" : "delay 500"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-46",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 41.0, 149.5, 67.0, 22.0 ],
-									"text" : "delay 1000"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-40",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 41.0, 121.5, 60.0, 22.0 ],
-									"text" : "loadbang"
 								}
 
 							}
@@ -440,7 +376,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 237.5, 92.0, 81.0, 183.0 ],
+									"patching_rect" : [ 42.5, 92.0, 81.0, 183.0 ],
 									"text" : ";\r1-name 1;\r2-name 2;\r3-name 3;\r4-name 4;\r5-name 5;\r6-name 6;\r7-name 7;\r8-name 8;\r9-name 9;\r10-name 10;\r11-name 11;\r12-name 12"
 								}
 
@@ -448,29 +384,8 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-26", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-54", 0 ],
 									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-46", 0 ],
-									"source" : [ "obj-40", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"source" : [ "obj-46", 0 ]
 								}
 
 							}
@@ -484,7 +399,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1167.99993900000004, 749.5, 81.0, 22.0 ],
+					"patching_rect" : [ 1167.99993900000004, 749.5, 85.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -492,7 +407,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p config-insts"
+					"text" : "p name-nodes"
 				}
 
 			}
@@ -518,8 +433,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1164.0, 895.0, 85.0, 22.0 ],
-					"text" : "matrix-presets"
+					"patching_rect" : [ 1164.0, 895.0, 95.0, 22.0 ],
+					"text" : "matrix-presets 4"
 				}
 
 			}
@@ -541,8 +456,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 329.17417224999997, 410.0, 190.825217749999979, 33.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 329.17417224999997, 410.0, 194.0, 33.0 ],
 					"text" : "We explicitly route these \"whistler\" signals into the \"say\" signals:"
 				}
 
@@ -587,7 +501,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 139.909090909090935, 471.0, 174.347246499999926, 74.0 ],
-					"presentation_linecount" : 5,
 					"text" : "The \"bank\" arranges for hear1 through hear4 to be the inputs to the 4 instruments and for whistler1 through whistler4 to be the outputs"
 				}
 
@@ -706,7 +619,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 334.999389999999948, 240.0, 185.0, 79.0 ],
-					"presentation_linecount" : 4,
 					"text" : "We can even send additional sound (beyond the matrix outputs) into the instruments' \"hear\" inputs"
 				}
 
@@ -813,8 +725,7 @@
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 356.847795499999961, 323.0, 119.0, 22.0 ],
 					"text" : "inject-with-space-bar"
 				}
@@ -8495,22 +8406,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"order" : 1,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-67", 11 ],
 					"source" : [ "obj-16", 11 ]
 				}
@@ -9132,15 +9027,15 @@
 			}
 , 			{
 				"name" : "inject-with-space-bar.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/wright-concert",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/wright-concert",
+				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "key-nicenames.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
-				"patcherrelativepath" : "../library",
+				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
+				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 254.0, 144.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "int to determine the level of constraint",
 					"comment" : "int to determine the level of constraint",
 					"cool" : 1,
 					"hint" : "int to determine the level of constraint",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -74,7 +86,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 120.5, 335.0, 50.0, 22.0 ]
+					"patching_rect" : [ 108.0, 335.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -85,7 +97,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 120.5, 303.0, 39.0, 22.0 ],
+					"patching_rect" : [ 108.0, 303.0, 39.0, 22.0 ],
 					"text" : "zl len"
 				}
 
@@ -109,8 +121,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 62.5, 245.0, 83.0, 22.0 ],
-					"text" : "zl group 2000"
+					"patching_rect" : [ 50.0, 245.0, 111.0, 22.0 ],
+					"text" : "zl 4096 group 9999"
 				}
 
 			}
@@ -148,12 +160,12 @@
 					"comment" : "put the matrix to constrain in here ",
 					"hint" : "put the matrix to constrain in here\n",
 					"id" : "obj-39",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+					"patching_rect" : [ 50.0, 42.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -161,18 +173,18 @@
 				"box" : 				{
 					"comment" : "constrained matrix",
 					"id" : "obj-42",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.5, 327.0, 30.0, 30.0 ]
+					"patching_rect" : [ 50.0, 327.0, 30.0, 30.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 3 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -235,9 +247,14 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 3 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+ ]
 	}
 
 }

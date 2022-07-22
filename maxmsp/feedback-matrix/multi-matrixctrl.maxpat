@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 71.0, 269.0, 986.0, 671.0 ],
+		"rect" : [ 71.0, 269.0, 909.0, 672.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 179.5, 187.0, 185.0, 22.0 ],
+					"text" : "ignore-out-of-bounds-matrix-cells"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
@@ -70,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 602.0, 259.0, 174.0, 22.0 ],
-					"text" : "presentation_rect 0 0 250 250"
+					"text" : "presentation_rect 5 5 250 250"
 				}
 
 			}
@@ -143,18 +155,6 @@
 					"outlettype" : [ "int", "int", "int" ],
 					"patching_rect" : [ 570.0, 34.5, 65.0, 22.0 ],
 					"text" : "unpack i i i"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"linecount" : 11,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 358.0, 20.0, 150.0, 154.0 ],
-					"text" : "Declare multi-matrixctrl with 2 or 3 args\n- if 2 matrix size & rectangle x (y inherits x)\n- if 3 matrix size & rectangle x & y\n\n3 arguments \n- matrix size (4x4 = 4)\n- x size\n- y size"
 				}
 
 			}
@@ -287,7 +287,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 89.0, 20.0, 258.0, 60.0 ],
+					"patching_rect" : [ 76.0, 9.0, 258.0, 60.0 ],
 					"text" : "A matrixctrl designed to have multiple instances in different parts of your patch, all staying in sync with each other both to display the current state and also to let you modify it."
 				}
 
@@ -311,11 +311,11 @@
 					"bubble" : 1,
 					"bubbleside" : 3,
 					"id" : "obj-13",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.5, 167.5, 172.0, 51.0 ],
+					"patching_rect" : [ 6.0, 94.0, 128.0, 64.0 ],
 					"text" : "This is the true matrix state, sent out by mymatrix~ on each change"
 				}
 
@@ -351,7 +351,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "int" ],
-					"patching_rect" : [ 169.0, 215.0, 40.0, 22.0 ],
+					"patching_rect" : [ 139.0, 142.0, 40.0, 22.0 ],
 					"text" : "t 1 l 0"
 				}
 
@@ -363,7 +363,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 179.5, 182.0, 112.0, 22.0 ],
+					"patching_rect" : [ 139.0, 111.0, 112.0, 22.0 ],
 					"text" : "r currentmatrixstate"
 				}
 
@@ -406,7 +406,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 206.0, 257.0, 255.0, 255.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 255.0, 255.0 ],
+					"presentation_rect" : [ 5.0, 5.0, 250.0, 250.0 ],
 					"rows" : 12
 				}
 
@@ -458,6 +458,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -481,6 +488,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"order" : 1,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"order" : 2,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -616,7 +631,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-7", 1 ]
 				}
 
@@ -659,7 +674,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "ignore-out-of-bounds-matrix-cells.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 

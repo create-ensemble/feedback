@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 49.0, 100.0, 1021.0, 937.0 ],
+		"rect" : [ 49.0, 100.0, 1488.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,6 +42,20 @@
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 3,
+					"id" : "obj-2",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 9.499938999999983, 773.5, 183.0, 64.0 ],
+					"text" : "Here you can set the names of the nodes of the network as well as the configuring choose-12-instruments"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 3,
 					"id" : "obj-17",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -60,7 +74,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 190.5, 663.0, 50.0, 22.0 ],
-					"text" : ""
+					"text" : "1"
 				}
 
 			}
@@ -169,7 +183,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 156.5, 64.300293000000011, 68.0, 22.0 ],
-									"text" : ""
+									"text" : "backspace"
 								}
 
 							}
@@ -248,8 +262,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 173.0, 698.0, 85.0, 22.0 ],
-					"text" : "matrix-presets"
+					"patching_rect" : [ 173.0, 698.0, 101.0, 22.0 ],
+					"text" : "matrix-presets 12"
 				}
 
 			}
@@ -292,20 +306,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
-					"bubbleside" : 3,
-					"id" : "obj-65",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 24.518349000000001, 766.5, 168.0, 78.0 ],
-					"text" : "Here you can set the names of the nodes of the network as well as the number of nodes (for preset-recalling purposes)."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-136",
@@ -323,7 +323,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 186.0, 705.0, 1278.0, 323.0 ],
+						"rect" : [ 186.0, 713.0, 955.0, 315.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -358,7 +358,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1001.0, 223.0, 95.0, 22.0 ],
+									"patching_rect" : [ 791.0, 223.0, 95.0, 22.0 ],
 									"text" : "/*/delay 345.678"
 								}
 
@@ -370,7 +370,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 904.0, 223.0, 89.0, 22.0 ],
+									"patching_rect" : [ 694.0, 223.0, 89.0, 22.0 ],
 									"text" : "/*/delay 12.345"
 								}
 
@@ -383,7 +383,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 663.0, 223.0, 239.0, 24.0 ],
+									"patching_rect" : [ 453.0, 223.0, 239.0, 24.0 ],
 									"text" : "Set delay times  (ms)"
 								}
 
@@ -397,7 +397,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 663.0, 172.0, 239.0, 51.0 ],
+									"patching_rect" : [ 453.0, 172.0, 239.0, 51.0 ],
 									"text" : "Make most instruments use MSP signal I/O, except for player 3 who's not ready right now and needs to be bypassed."
 								}
 
@@ -409,7 +409,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 904.0, 186.5, 166.0, 22.0 ],
+									"patching_rect" : [ 694.0, 186.5, 166.0, 22.0 ],
 									"text" : "/*/source io, /3/source bypass"
 								}
 
@@ -423,7 +423,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 684.0, 121.5, 215.0, 51.0 ],
+									"patching_rect" : [ 474.0, 121.5, 215.0, 51.0 ],
 									"text" : "Make all instruments use MSP signal I/O (like for jacktrip or local analog connections to instruments)"
 								}
 
@@ -437,7 +437,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 737.0, 89.5, 162.0, 37.0 ],
+									"patching_rect" : [ 527.0, 89.5, 162.0, 37.0 ],
 									"text" : "Make all instruments be the \"bypass\" delay line"
 								}
 
@@ -449,7 +449,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 904.0, 136.0, 69.0, 22.0 ],
+									"patching_rect" : [ 694.0, 136.0, 69.0, 22.0 ],
 									"text" : "/*/source io"
 								}
 
@@ -461,7 +461,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 904.0, 97.0, 97.0, 22.0 ],
+									"patching_rect" : [ 694.0, 97.0, 97.0, 22.0 ],
 									"text" : "/*/source bypass"
 								}
 
@@ -473,7 +473,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 769.0, 34.0, 277.0, 47.0 ],
+									"patching_rect" : [ 559.0, 34.0, 277.0, 47.0 ],
 									"text" : "If you use choose-inst (e.g., from within  choose-12-instruments), there's a special OSC send/receive channel for configuring it/them:"
 								}
 
@@ -486,7 +486,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 892.0, 273.0, 109.0, 22.0 ],
+									"patching_rect" : [ 682.0, 273.0, 109.0, 22.0 ],
 									"text" : "s choose-inst-OSC"
 								}
 
@@ -498,7 +498,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 403.0, 20.0, 155.0, 33.0 ],
+									"patching_rect" : [ 193.0, 20.0, 156.0, 33.0 ],
 									"text" : "...but you could make them anything you want:"
 								}
 
@@ -510,20 +510,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 220.0, 20.0, 155.0, 33.0 ],
+									"patching_rect" : [ 10.0, 20.0, 155.0, 33.0 ],
 									"text" : "Default node names are simply the numerals 1-12..."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"linecount" : 7,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 29.0, 20.0, 154.0, 100.0 ],
-									"text" : "You need to declare the number of nodes in the matrix (e.g., 4x4, 6x6, etc.) so that recalling matrix presets will choose from the ones of the appropriate size."
 								}
 
 							}
@@ -537,7 +525,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 432.5, 91.0, 97.0, 183.0 ],
+									"patching_rect" : [ 222.5, 91.0, 97.0, 183.0 ],
 									"text" : ";\r1-name Charles;\r2-name Kerem;\r3-name Bobby;\r4-name Ian;\r5-name Kitty;\r6-name Trijeet;\r7-name Vidya;\r8-name Ryan;\r9-name Kyle;\r10-name Jette;\r11-name foo;\r12-name bar"
 								}
 
@@ -551,32 +539,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 237.5, 60.0, 60.0, 22.0 ],
+									"patching_rect" : [ 27.5, 60.0, 60.0, 22.0 ],
 									"text" : "loadbang"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 41.0, 175.0, 29.5, 22.0 ],
-									"text" : "8"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontsize" : 12.0,
-									"id" : "obj-12",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 201.0, 130.0, 22.0 ],
-									"text" : "s num-nodes-in-matrix"
 								}
 
 							}
@@ -589,36 +553,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 432.5, 59.0, 61.0, 22.0 ],
+									"patching_rect" : [ 222.5, 59.0, 61.0, 22.0 ],
 									"text" : "delay 500"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-46",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 41.0, 149.5, 67.0, 22.0 ],
-									"text" : "delay 1000"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-40",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 41.0, 121.5, 60.0, 22.0 ],
-									"text" : "loadbang"
 								}
 
 							}
@@ -632,7 +568,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 237.5, 92.0, 81.0, 183.0 ],
+									"patching_rect" : [ 27.5, 92.0, 81.0, 183.0 ],
 									"text" : ";\r1-name 1;\r2-name 2;\r3-name 3;\r4-name 4;\r5-name 5;\r6-name 6;\r7-name 7;\r8-name 8;\r9-name 9;\r10-name 10;\r11-name 11;\r12-name 12"
 								}
 
@@ -661,29 +597,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-26", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-54", 0 ],
 									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-46", 0 ],
-									"source" : [ "obj-40", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"source" : [ "obj-46", 0 ]
 								}
 
 							}
@@ -842,7 +757,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1271.0, 47.0, 35.0, 22.0 ],
+					"patching_rect" : [ 973.0, 22.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -1630,7 +1545,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 684.0, 649.0, 459.0, 50.0 ],
-									"text" : "overwriteme",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -6288,7 +6203,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 760.166625999999951, 649.0, 382.833374000000049, 50.0 ],
-									"text" : "overwriteme",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -9172,9 +9087,16 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ignore-out-of-bounds-matrix-cells.maxpat",
+				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"patcherrelativepath" : "../feedback-matrix",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "key-nicenames.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
-				"patcherrelativepath" : "../library",
+				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
+				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
