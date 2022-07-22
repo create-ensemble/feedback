@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 84.0, 129.0, 640.0, 480.0 ],
+		"rect" : [ 84.0, 129.0, 651.0, 604.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-6",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 80.0, 389.0, 206.0, 51.0 ],
+					"presentation_linecount" : 3,
+					"text" : "(Note that [uzi 12 0] counts 0 - 11, matching thispatcher's 0-orgin numbering of inlets & outlets.)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 96.0, 346.5, 114.0, 20.0 ],
+					"patching_rect" : [ 89.0, 358.5, 114.0, 20.0 ],
 					"text" : "to make our ship go"
 				}
 
@@ -56,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.0, 320.5, 60.0, 24.0 ],
+					"patching_rect" : [ 80.0, 332.5, 60.0, 24.0 ],
 					"text" : "BANG"
 				}
 
@@ -78,7 +92,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.0, 320.5, 29.5, 22.0 ],
+					"patching_rect" : [ 142.0, 332.5, 29.5, 22.0 ],
 					"text" : "4",
 					"textjustification" : 1
 				}
@@ -88,13 +102,12 @@
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-35",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 273.0, 357.0, 334.0, 64.0 ],
-					"presentation_linecount" : 9,
-					"text" : "Make your script reflect the names you have choosen. (note the uzi counts 0 - 12, the 0 having been declared as orgin in order to accomodate 0 orgin numbering of inlets & outlets."
+					"patching_rect" : [ 302.5, 439.5, 227.0, 37.0 ],
+					"text" : "Edit this \"script\" message box to reflect the names you have choosen. "
 				}
 
 			}
@@ -115,7 +128,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.5, 333.0, 29.5, 22.0 ],
+					"patching_rect" : [ 533.5, 447.0, 29.5, 22.0 ],
 					"text" : "3",
 					"textjustification" : 1
 				}
@@ -129,9 +142,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 245.0, 269.5, 165.0, 51.0 ],
-					"presentation_linecount" : 4,
-					"text" : "repeat the process for the dac (note this one has been declared dacBird)"
+					"patching_rect" : [ 245.0, 269.5, 192.0, 51.0 ],
+					"text" : "Repeat the process for the dac~ (note this one has already been named \"dacBird\")"
 				}
 
 			}
@@ -152,7 +164,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 245.0, 245.5, 29.5, 22.0 ],
+					"patching_rect" : [ 439.0, 284.0, 29.5, 22.0 ],
 					"text" : "2",
 					"textjustification" : 1
 				}
@@ -167,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 205.25, 134.5, 218.75, 64.0 ],
-					"text" : "select gainStage object, open inspector & declare the scripting name (note this one has been named gainSnuffy)"
+					"text" : "Select gainStage object, open inspector & declare the scripting name (note this one has already been named \"gainSnuffy\")"
 				}
 
 			}
@@ -210,7 +222,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 205.0, 107.5, 29.5, 22.0 ],
+					"patching_rect" : [ 426.0, 155.5, 29.5, 22.0 ],
 					"text" : "1",
 					"textjustification" : 1
 				}
@@ -224,7 +236,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 19.0, 322.0, 24.0, 24.0 ]
+					"patching_rect" : [ 19.0, 334.0, 57.0, 57.0 ]
 				}
 
 			}
@@ -235,7 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 21.0, 405.0, 67.0, 22.0 ],
+					"patching_rect" : [ 21.0, 474.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -248,7 +260,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 21.0, 378.0, 220.0, 22.0 ],
+					"patching_rect" : [ 21.0, 447.0, 220.0, 22.0 ],
 					"text" : "script connect gainSnuffy $1 dacBird $1"
 				}
 
@@ -260,7 +272,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 19.0, 350.0, 51.0, 22.0 ],
+					"patching_rect" : [ 19.0, 404.0, 51.0, 22.0 ],
 					"text" : "uzi 12 0"
 				}
 
@@ -272,8 +284,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 448.0, 470.0, 20.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 21.0, 516.0, 470.0, 20.0 ],
 					"text" : "USAGE: Copy thie uzi+script message & thispatcher to the patch need, use it & delete."
 				}
 
@@ -286,7 +297,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 43.0, 613.0, 33.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Easier way to connect 2 objects with many ins and outs. To use copy the uzi, script & thispatcher to desired patch and use, then delete. For more info on scripting see thispatcher help"
 				}
 
@@ -299,7 +309,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 1.0, 327.0, 40.0 ],
-					"presentation_linecount" : 3,
 					"text" : "scriptManyConnections"
 				}
 
@@ -342,7 +351,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "gainStage.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
+				"bootpath" : "~/repos/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
