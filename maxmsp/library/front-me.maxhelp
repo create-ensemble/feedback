@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 221.0, 355.0, 47.0 ],
+					"text" : "By way of example, this behavior could be useful if located in a patch of a midi controller. Then every time that controller is touched it comes to the front for 10 seconds to give a visual cue."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-7",
 					"linecount" : 3,
@@ -47,7 +59,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 102.0, 43.0, 234.0, 51.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Even if this help patch is buried behind other patches you can just press the space bar to bring it to the front."
 				}
 
@@ -60,8 +71,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 102.0, 103.0, 214.0, 51.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 102.0, 103.0, 216.0, 51.0 ],
 					"text" : "Any time this bangs, this patch (the one that *uses* front-me) will come to the front of all Max windows."
 				}
 
@@ -74,7 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 102.0, 162.0, 150.0, 51.0 ],
+					"patching_rect" : [ 102.0, 162.0, 152.0, 51.0 ],
 					"text" : "front-me should always be connected to thispatcher like this."
 				}
 
@@ -172,7 +182,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "front-me.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/util",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
