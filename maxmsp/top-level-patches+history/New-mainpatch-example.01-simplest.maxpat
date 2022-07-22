@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 355.0, 100.0, 1339.0, 712.0 ],
+		"rect" : [ 355.0, 100.0, 1294.0, 707.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,7 +55,7 @@
 					"numoutlets" : 12,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 332.818053999999847, 369.75, 177.0, 177.0 ],
+					"patching_rect" : [ 288.090781272727099, 379.0, 177.0, 177.0 ],
 					"varname" : "gainstage",
 					"viewvisibility" : 1
 				}
@@ -70,8 +70,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.999938999999983, 136.75, 136.0, 93.0 ],
-					"text" : "For an instrument to \"say\" extra signals you have to put them in both the speakers and the matrix~ (like this):"
+					"patching_rect" : [ 44.999938999999983, 138.75, 139.0, 93.0 ],
+					"text" : "For an instrument to \"say\" extra signals you have to put them in both the speakers and the mymatrix~ (like this):"
 				}
 
 			}
@@ -235,7 +235,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 181.330161727272753, 260.0, 66.0, 22.0 ],
+					"patching_rect" : [ 106.330161727272753, 256.0, 66.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -255,7 +255,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 181.330161727272753, 232.0, 24.0, 24.0 ]
+					"patching_rect" : [ 106.330161727272753, 228.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -266,7 +266,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1083.0, 24.25, 36.0, 22.0 ],
+					"patching_rect" : [ 1008.0, 20.25, 36.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -286,7 +286,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1083.0, 52.5, 260.0, 259.5 ],
+					"patching_rect" : [ 1008.0, 48.5, 260.0, 259.5 ],
 					"viewvisibility" : 1
 				}
 
@@ -300,7 +300,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.018349000000001, 531.0, 171.0, 51.0 ],
+					"patching_rect" : [ 10.018349000000001, 422.0, 171.0, 51.0 ],
 					"text" : "Historical topologies and strategies for selecting them during performance"
 				}
 
@@ -313,7 +313,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 182.018349000000001, 545.5, 85.0, 22.0 ],
+					"patching_rect" : [ 183.018349000000001, 436.5, 85.0, 22.0 ],
 					"text" : "matrix-presets"
 				}
 
@@ -326,8 +326,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 933.036865999999918, 21.25, 134.0, 64.0 ],
-					"text" : "easy to make any instrument hear extra signals: patch explicitly (like this)"
+					"patching_rect" : [ 861.0, 17.25, 134.0, 64.0 ],
+					"text" : "It's easy to make any instrument hear extra signals: patch explicitly (like this)"
 				}
 
 			}
@@ -491,7 +491,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 866.330161727272753, 42.25, 66.0, 22.0 ],
+					"patching_rect" : [ 791.330161727272753, 38.25, 66.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -511,7 +511,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 866.330161727272753, 14.25, 24.0, 24.0 ]
+					"patching_rect" : [ 791.330161727272753, 10.25, 24.0, 24.0 ]
 				}
 
 			}
@@ -531,7 +531,7 @@
 					"numoutlets" : 12,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 257.232941000000096, 105.25, 726.785491999999863, 184.5 ],
+					"patching_rect" : [ 182.232941000000096, 101.25, 726.785491999999863, 184.5 ],
 					"varname" : "routing",
 					"viewvisibility" : 1
 				}
@@ -544,7 +544,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 12,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 257.232941000000096, 42.25, 598.755207099999552, 22.0 ],
+					"patching_rect" : [ 182.232941000000096, 38.25, 598.755207099999552, 22.0 ],
 					"text" : "receive12~ hear"
 				}
 
@@ -556,7 +556,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 613.999389999999948, 572.5, 220.0, 100.0 ],
+					"patching_rect" : [ 538.999389999999948, 568.5, 220.0, 100.0 ],
 					"text" : "Display is its own big thing:\n- turn it off sometimes (performance)\n- Need to customize a lot\n- but they all use the same core elements: matrixctl, matrix graph, hear/say meters, say spectrograms, possible seating chart or branding"
 				}
 
@@ -570,32 +570,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.018349000000001, 419.5, 168.0, 78.0 ],
+					"patching_rect" : [ 9.018349000000001, 310.5, 168.0, 78.0 ],
 					"text" : "Here you can set the names of the nodes of the network as well as the number of nodes (for preset-recalling purposes)."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-63",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 5.018349000000001, 295.0, 171.0, 47.0 ],
-					"text" : "Move I/O feature into an example instrument incluing hear-channel-offset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 8.018349000000001, 189.0, 99.0, 87.0 ],
-					"text" : "New options are just on (= \"s/r\") and off (= \"bypass\" aka replace with a delay line)"
 				}
 
 			}
@@ -3004,7 +2980,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 667.036865999999918, 548.5, 107.0, 22.0 ],
+					"patching_rect" : [ 592.036865999999918, 544.5, 107.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3024,7 +3000,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 690.018432999999959, 442.0, 24.0, 24.0 ]
+					"patching_rect" : [ 615.018432999999959, 438.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -3035,7 +3011,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 690.018432999999959, 468.5, 42.0, 22.0 ],
+					"patching_rect" : [ 615.018432999999959, 464.5, 42.0, 22.0 ],
 					"text" : "gate 1"
 				}
 
@@ -5268,7 +5244,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 667.036865999999918, 524.0, 134.0, 22.0 ],
+					"patching_rect" : [ 592.036865999999918, 520.0, 134.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7662,7 +7638,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 690.018432999999959, 494.0, 58.0, 22.0 ],
+					"patching_rect" : [ 615.018432999999959, 490.0, 58.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7681,7 +7657,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1021.5, 499.5, 37.0, 22.0 ],
+					"patching_rect" : [ 946.5, 465.5, 37.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -7694,7 +7670,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 12,
 					"numoutlets" : 0,
-					"patching_rect" : [ 333.090781272727099, 559.0, 174.0, 22.0 ],
+					"patching_rect" : [ 288.090781272727099, 570.0, 174.0, 22.0 ],
 					"text" : "dac~ 1 2 3 4 5 6 7 8 9 10 11 12",
 					"varname" : "speakers"
 				}
@@ -7755,7 +7731,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1001.0, 223.0, 95.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "/*/delay 345.678"
 								}
 
@@ -7795,7 +7770,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 663.0, 172.0, 239.0, 51.0 ],
-									"presentation_linecount" : 4,
 									"text" : "Make most instruments use MSP signal I/O, except for player 3 who's not ready right now and needs to be bypassed."
 								}
 
@@ -7808,7 +7782,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 904.0, 186.5, 166.0, 22.0 ],
-									"presentation_linecount" : 4,
 									"text" : "/*/source io, /3/source bypass"
 								}
 
@@ -7823,7 +7796,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 684.0, 121.5, 215.0, 51.0 ],
-									"presentation_linecount" : 5,
 									"text" : "Make all instruments use MSP signal I/O (like for jacktrip or local analog connections to instruments)"
 								}
 
@@ -7874,7 +7846,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 769.0, 34.0, 277.0, 47.0 ],
-									"presentation_linecount" : 6,
 									"text" : "If you use choose-inst (e.g., from within  choose-12-instruments), there's a special OSC send/receive channel for configuring it/them:"
 								}
 
@@ -7899,7 +7870,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 403.0, 20.0, 155.0, 33.0 ],
+									"patching_rect" : [ 403.0, 20.0, 156.0, 33.0 ],
 									"text" : "...but you could make them anything you want:"
 								}
 
@@ -7923,7 +7894,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 29.0, 20.0, 154.0, 100.0 ],
+									"patching_rect" : [ 29.0, 20.0, 155.0, 100.0 ],
 									"text" : "You need to declare the number of nodes in the matrix (e.g., 4x4, 6x6, etc.) so that recalling matrix presets will choose from the ones of the appropriate size."
 								}
 
@@ -8112,7 +8083,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 177.999938999999983, 447.5, 81.0, 22.0 ],
+					"patching_rect" : [ 178.999938999999983, 338.5, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8126,26 +8097,12 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-72",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 736.86674650000009, 356.0, 150.0, 47.0 ],
-					"text" : "<- current state of matrix in a format that matrixctrl understands."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
 					"numinlets" : 13,
 					"numoutlets" : 13,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 569.169935500000065, 356.0, 162.696810999999968, 22.0 ],
+					"patching_rect" : [ 494.169935500000065, 352.0, 162.696810999999968, 22.0 ],
 					"text" : "mymatrix~.maxpat"
 				}
 
@@ -8159,7 +8116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 986.5, 494.5, 33.0, 22.0 ],
+					"patching_rect" : [ 911.5, 460.5, 33.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -8173,7 +8130,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 972.0, 475.5, 74.0, 22.0 ],
+					"patching_rect" : [ 897.0, 441.5, 74.0, 22.0 ],
 					"text" : "startwindow"
 				}
 
@@ -8184,7 +8141,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 972.0, 527.5, 45.0, 45.0 ]
+					"patching_rect" : [ 897.0, 493.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -8197,7 +8154,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 609.0, 442.0, 238.0, 252.0 ],
+					"patching_rect" : [ 534.0, 438.0, 238.0, 252.0 ],
 					"proportion" : 0.5
 				}
 
@@ -8476,15 +8433,15 @@
 			}
 , 			{
 				"name" : "choose-12-instruments.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
-				"patcherrelativepath" : "../clean-this-up",
+				"bootpath" : "~/repos/feedback/maxmsp/instruments",
+				"patcherrelativepath" : "../instruments",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "choose-inst.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
-				"patcherrelativepath" : "../clean-this-up",
+				"bootpath" : "~/repos/feedback/maxmsp/instruments",
+				"patcherrelativepath" : "../instruments",
 				"type" : "JSON",
 				"implicit" : 1
 			}
