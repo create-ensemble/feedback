@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 855.0, 211.0, 662.0, 556.0 ],
+		"rect" : [ 855.0, 211.0, 680.0, 633.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,36 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 0,
+					"id" : "obj-25",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 139.5, 340.0, 91.0, 93.0 ],
+					"presentation_linecount" : 5,
+					"text" : "These meters are PRE-fader, showing the input(s) to gainStage"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 0,
+					"id" : "obj-14",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 35.5, 340.0, 99.0, 93.0 ],
+					"presentation_linecount" : 5,
+					"text" : "This single GUI element controls all channels' gain by the same amount"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
@@ -70,7 +100,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 102.0, 400.5, 166.0, 24.0 ],
+					"patching_rect" : [ 102.0, 476.5, 166.0, 24.0 ],
 					"text" : "to see this work, hit bang"
 				}
 
@@ -81,7 +111,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 367.5, 176.0, 22.0 ],
+					"patching_rect" : [ 46.0, 443.5, 176.0, 22.0 ],
 					"text" : "dac~ 1 2 3 4",
 					"varname" : "dac04"
 				}
@@ -224,7 +254,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 53.0, 400.5, 25.0, 25.0 ]
+					"patching_rect" : [ 53.0, 476.5, 25.0, 25.0 ]
 				}
 
 			}
@@ -247,7 +277,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.0, 455.5, 182.0, 21.0 ],
+					"patching_rect" : [ 53.0, 531.5, 182.0, 21.0 ],
 					"text" : "script connect gain01 $1 dac04 $1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -262,7 +292,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 53.0, 430.5, 43.0, 21.0 ],
+					"patching_rect" : [ 53.0, 506.5, 43.0, 21.0 ],
 					"text" : "uzi 6 0"
 				}
 
@@ -276,7 +306,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 53.0, 475.5, 67.0, 21.0 ],
+					"patching_rect" : [ 53.0, 551.5, 67.0, 21.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -387,6 +417,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 4 ],
 					"source" : [ "obj-11", 0 ]
 				}
@@ -459,7 +496,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "gainStage.maxpat",
-				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
+				"bootpath" : "~/repos/feedback/maxmsp/library",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
