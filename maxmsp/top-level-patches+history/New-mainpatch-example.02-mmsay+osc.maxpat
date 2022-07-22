@@ -804,18 +804,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-85",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 680.0, 642.0, 50.5, 22.0 ],
-					"text" : "t l l l l"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-83",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -8259,20 +8247,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-72",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 743.249389999999948, 632.5, 150.0, 47.0 ],
-					"text" : "<- current state of matrix in a format that matrixctrl understands."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
 					"numinlets" : 13,
@@ -8629,7 +8603,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-85", 0 ],
+					"destination" : [ "obj-53", 1 ],
 					"source" : [ "obj-25", 12 ]
 				}
 
@@ -8949,13 +8923,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-86", 0 ],
 					"source" : [ "obj-81", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 1 ],
-					"source" : [ "obj-85", 3 ]
 				}
 
 			}

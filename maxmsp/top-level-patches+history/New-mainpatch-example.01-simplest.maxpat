@@ -40,24 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1082.811812727272809, 624.0, 150.0, 47.0 ],
+					"text" : "This num-nodes-in-matrix stuff should be in matrix-presets.maxhelp"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1074.811812727272809, 575.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1082.811812727272809, 563.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
-					"linecount" : 9,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1069.811812727272809, 440.5, 172.0, 127.0 ],
+					"patching_rect" : [ 1069.811812727272809, 440.5, 190.0, 114.0 ],
 					"text" : "You need to declare the number of nodes in the matrix (e.g., 4x4, 6x6, etc.) so that recalling matrix presets will choose from the ones of the appropriate size.  The argument to matrix-presets does this, or you can send the value later:"
 				}
 
@@ -69,7 +81,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1074.811812727272809, 605.0, 130.0, 22.0 ],
+					"patching_rect" : [ 1082.811812727272809, 593.0, 130.0, 22.0 ],
 					"text" : "s num-nodes-in-matrix"
 				}
 
@@ -107,7 +119,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1074.811812727272809, 368.0, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "c"
 				}
 
 			}
@@ -216,7 +228,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 156.5, 64.300293000000011, 68.0, 22.0 ],
-									"text" : "esc"
+									"text" : "c"
 								}
 
 							}
@@ -1220,7 +1232,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 684.0, 649.0, 459.0, 50.0 ],
-									"text" : "overwriteme",
+									"text" : "quartets-backward",
 									"textjustification" : 1
 								}
 
@@ -5878,7 +5890,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 760.166625999999951, 649.0, 382.833374000000049, 50.0 ],
-									"text" : "overwriteme",
+									"text" : "quartets-backward",
 									"textjustification" : 1
 								}
 
