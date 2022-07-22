@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,28 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 333.0, 68.0, 150.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 30.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 21.0, 1.0, 327.0, 40.0 ],
+					"text" : "choose-inst"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -175,11 +197,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"linecount" : 6,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 97.0, 20.0, 416.0, 87.0 ],
+					"patching_rect" : [ 21.0, 45.0, 617.0, 60.0 ],
 					"text" : "Choose-inst is designed for situations where each node of the network is a person, with hear/say connected via MSP signal outputs and inputs (which might go to local audio hardware and/or jacktrip), but sometimes that person isn't ready (e.g., missing an entire rehearsal, or maybe just debugging for a moment) so you want to replace their instrument with just a simple delay line.  Also maybe you want to just add some delay to each instrument."
 				}
 
@@ -465,7 +487,7 @@
 			}
 , 			{
 				"name" : "choose-inst.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/instruments",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
