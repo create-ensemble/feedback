@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 355.0, 100.0, 1294.0, 707.0 ],
+		"rect" : [ 352.0, 100.0, 1294.0, 707.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,9 +55,23 @@
 					"numoutlets" : 12,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 288.090781272727099, 379.0, 177.0, 177.0 ],
+					"patching_rect" : [ 278.909090909090935, 347.5, 174.000000000000057, 174.0 ],
 					"varname" : "gainstage",
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-67",
+					"maxclass" : "newobj",
+					"numinlets" : 12,
+					"numoutlets" : 0,
+					"patching_rect" : [ 278.909090909090935, 531.0, 174.0, 22.0 ],
+					"text" : "dac~ 1 2 3 4 5 6 7 8 9 10 11 12",
+					"varname" : "dac"
 				}
 
 			}
@@ -70,7 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.999938999999983, 138.75, 139.0, 93.0 ],
+					"patching_rect" : [ 44.999938999999983, 138.75, 143.0, 93.0 ],
 					"text" : "For an instrument to \"say\" extra signals you have to put them in both the speakers and the mymatrix~ (like this):"
 				}
 
@@ -86,8 +100,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -326,7 +340,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 861.0, 17.25, 134.0, 64.0 ],
+					"patching_rect" : [ 861.0, 17.25, 135.0, 64.0 ],
 					"text" : "It's easy to make any instrument hear extra signals: patch explicitly (like this)"
 				}
 
@@ -342,8 +356,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -587,8 +601,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -684,8 +698,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -943,6 +957,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 1929.0, 156.0, 217.0, 22.0 ]
 								}
 
@@ -1044,8 +1059,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1350,8 +1365,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1396,8 +1411,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1964,8 +1979,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2145,8 +2160,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2453,8 +2468,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3028,8 +3043,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3097,8 +3112,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3316,6 +3331,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 1929.0, 156.0, 217.0, 22.0 ]
 								}
 
@@ -3389,8 +3405,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3679,8 +3695,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3725,8 +3741,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4293,8 +4309,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4474,8 +4490,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4782,8 +4798,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -5268,8 +5284,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5342,8 +5358,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5601,6 +5617,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 1929.0, 156.0, 217.0, 22.0 ]
 								}
 
@@ -5702,8 +5719,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6008,8 +6025,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6054,8 +6071,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6622,8 +6639,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6803,8 +6820,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7111,8 +7128,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7666,20 +7683,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-67",
-					"maxclass" : "newobj",
-					"numinlets" : 12,
-					"numoutlets" : 0,
-					"patching_rect" : [ 288.090781272727099, 570.0, 174.0, 22.0 ],
-					"text" : "dac~ 1 2 3 4 5 6 7 8 9 10 11 12",
-					"varname" : "speakers"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-136",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -7688,8 +7691,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8162,6 +8165,90 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-67", 11 ],
+					"source" : [ "obj-1", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 10 ],
+					"source" : [ "obj-1", 10 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 9 ],
+					"source" : [ "obj-1", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 8 ],
+					"source" : [ "obj-1", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 7 ],
+					"source" : [ "obj-1", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 6 ],
+					"source" : [ "obj-1", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 5 ],
+					"source" : [ "obj-1", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 4 ],
+					"source" : [ "obj-1", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 3 ],
+					"source" : [ "obj-1", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 2 ],
+					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 1 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -8211,7 +8298,104 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 11 ],
+					"order" : 1,
+					"source" : [ "obj-75", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 10 ],
+					"order" : 1,
+					"source" : [ "obj-75", 10 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 9 ],
+					"order" : 1,
+					"source" : [ "obj-75", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 8 ],
+					"order" : 1,
+					"source" : [ "obj-75", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 7 ],
+					"order" : 1,
+					"source" : [ "obj-75", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 6 ],
+					"order" : 1,
+					"source" : [ "obj-75", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 5 ],
+					"order" : 1,
+					"source" : [ "obj-75", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 4 ],
+					"order" : 1,
+					"source" : [ "obj-75", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 3 ],
+					"order" : 1,
+					"source" : [ "obj-75", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 2 ],
+					"order" : 1,
+					"source" : [ "obj-75", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"order" : 1,
+					"source" : [ "obj-75", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 11 ],
+					"order" : 0,
 					"source" : [ "obj-75", 11 ]
 				}
 
@@ -8219,6 +8403,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 10 ],
+					"order" : 0,
 					"source" : [ "obj-75", 10 ]
 				}
 
@@ -8226,6 +8411,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 9 ],
+					"order" : 0,
 					"source" : [ "obj-75", 9 ]
 				}
 
@@ -8233,6 +8419,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 8 ],
+					"order" : 0,
 					"source" : [ "obj-75", 8 ]
 				}
 
@@ -8240,6 +8427,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 7 ],
+					"order" : 0,
 					"source" : [ "obj-75", 7 ]
 				}
 
@@ -8247,6 +8435,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 6 ],
+					"order" : 0,
 					"source" : [ "obj-75", 6 ]
 				}
 
@@ -8254,6 +8443,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 5 ],
+					"order" : 0,
 					"source" : [ "obj-75", 5 ]
 				}
 
@@ -8261,6 +8451,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 4 ],
+					"order" : 0,
 					"source" : [ "obj-75", 4 ]
 				}
 
@@ -8268,6 +8459,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 3 ],
+					"order" : 0,
 					"source" : [ "obj-75", 3 ]
 				}
 
@@ -8275,6 +8467,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 2 ],
+					"order" : 0,
 					"source" : [ "obj-75", 2 ]
 				}
 
@@ -8282,6 +8475,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 1 ],
+					"order" : 0,
 					"source" : [ "obj-75", 1 ]
 				}
 
@@ -8289,6 +8483,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
+					"order" : 0,
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -8408,14 +8603,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "12-display+gaintest-taller.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "12-display+gaintest.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8426,98 +8621,98 @@
 			}
 , 			{
 				"name" : "calculate_matrix_output_gains.js",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "choose-12-instruments.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/instruments",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/instruments",
 				"patcherrelativepath" : "../instruments",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "choose-inst.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/instruments",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/instruments",
 				"patcherrelativepath" : "../instruments",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display+gaintest-taller.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display+gaintest.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display-Slork-Bing-seating-layout.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/top-level-patches+history",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/top-level-patches+history",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gainStage.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gain_slew.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "graphviz_string_to_jitter_image.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/display",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/display",
 				"patcherrelativepath" : "../display",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "make_graph.js",
-				"bootpath" : "~/repos/feedback/maxmsp/display",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/display",
 				"patcherrelativepath" : "../display",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "matrix-presets.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multi-matrixctrl.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mymatrix~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "nothing.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8528,14 +8723,14 @@
 			}
 , 			{
 				"name" : "receive12~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/util",
-				"patcherrelativepath" : "../util",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
+				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "select_submatrix.js",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "TEXT",
 				"implicit" : 1
