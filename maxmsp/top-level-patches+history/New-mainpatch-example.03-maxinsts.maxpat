@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 126.0, 100.0, 1355.0, 884.0 ],
+		"rect" : [ 66.0, 510.0, 1349.0, 484.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,62 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1260.5, 85.0, 37.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1225.5, 80.0, 33.0, 22.0 ],
+					"text" : "stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1211.0, 61.0, 74.0, 22.0 ],
+					"text" : "startwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1211.0, 113.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-47",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 115.909090909090935, 593.5, 150.0, 33.0 ],
+					"patching_rect" : [ 499.909090909090935, 335.5, 150.0, 33.0 ],
 					"text" : "The \"interesting\" part is how you control the bank:"
 				}
 
@@ -59,7 +109,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 995.018348999999944, 816.5, 174.0, 37.0 ],
+					"patching_rect" : [ 1025.018348999999944, 261.5, 174.0, 37.0 ],
 					"text" : "Certain QWERTY keys can recall matrix topologies"
 				}
 
@@ -71,8 +121,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1189.0, 855.0, 50.0, 22.0 ],
-					"text" : "1"
+					"patching_rect" : [ 1219.0, 300.0, 50.0, 22.0 ],
+					"text" : "space"
 				}
 
 			}
@@ -87,8 +137,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -181,7 +231,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 156.5, 64.300293000000011, 68.0, 22.0 ],
-									"text" : "1"
+									"text" : "esc"
 								}
 
 							}
@@ -226,7 +276,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1164.0, 824.0, 91.0, 22.0 ],
+					"patching_rect" : [ 1194.0, 269.0, 91.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -247,7 +297,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 995.018348999999944, 735.0, 168.0, 51.0 ],
+					"patching_rect" : [ 995.018348999999944, 207.0, 168.0, 51.0 ],
 					"text" : "Here you can set the names of the nodes of the network "
 				}
 
@@ -264,8 +314,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -399,7 +449,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1167.99993900000004, 749.5, 85.0, 22.0 ],
+					"patching_rect" : [ 1167.99993900000004, 221.5, 85.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -420,7 +470,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 995.018348999999944, 880.5, 171.0, 51.0 ],
+					"patching_rect" : [ 1025.018348999999944, 313.5, 171.0, 51.0 ],
 					"text" : "Historical topologies and strategies for selecting them during performance"
 				}
 
@@ -433,7 +483,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1164.0, 895.0, 95.0, 22.0 ],
+					"patching_rect" : [ 1194.0, 328.0, 95.0, 22.0 ],
 					"text" : "matrix-presets 4"
 				}
 
@@ -444,7 +494,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 8,
 					"numoutlets" : 0,
-					"patching_rect" : [ 438.347795499999961, 529.5, 92.5, 22.0 ],
+					"patching_rect" : [ 365.347795499999961, 323.0, 92.5, 22.0 ],
 					"text" : "send8~ say"
 				}
 
@@ -456,7 +506,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 329.17417224999997, 410.0, 194.0, 33.0 ],
+					"patching_rect" : [ 251.347795499999961, 232.5, 194.0, 33.0 ],
 					"text" : "We explicitly route these \"whistler\" signals into the \"say\" signals:"
 				}
 
@@ -476,7 +526,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 324.347795499999961, 529.5, 112.0, 60.0 ],
+					"patching_rect" : [ 251.347795499999961, 323.0, 112.0, 60.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -488,7 +538,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 8,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 363.847795499999961, 459.0, 105.0, 22.0 ],
+					"patching_rect" : [ 290.847795499999961, 267.5, 105.0, 22.0 ],
 					"text" : "receive8~ whistler"
 				}
 
@@ -500,7 +550,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 139.909090909090935, 471.0, 174.347246499999926, 74.0 ],
+					"patching_rect" : [ 10.909090909090935, 429.0, 174.347246499999926, 74.0 ],
 					"text" : "The \"bank\" arranges for hear1 through hear4 to be the inputs to the 4 instruments and for whistler1 through whistler4 to be the outputs"
 				}
 
@@ -512,7 +562,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 115.909090909090935, 392.0, 174.347246499999926, 47.0 ],
+					"patching_rect" : [ 10.909090909090935, 350.0, 174.347246499999926, 47.0 ],
 					"text" : "This is a bank of 4 of the \"ws02\" instruments, the nodes of the feedback network."
 				}
 
@@ -523,7 +573,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 125.082714159090898, 443.0, 156.0, 22.0 ],
+					"patching_rect" : [ 10.909090909090935, 401.0, 156.0, 22.0 ],
 					"text" : "whistle-bank-ts-4-bpatchers"
 				}
 
@@ -534,7 +584,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1041.0, 52.0, 150.0, 20.0 ],
+					"patching_rect" : [ 755.56099700000027, 16.25, 150.0, 20.0 ],
 					"text" : "The matrix connections:"
 				}
 
@@ -545,7 +595,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 686.5, 73.0, 22.0 ],
+					"patching_rect" : [ 575.0, 436.5, 73.0, 22.0 ],
 					"text" : "print QOSC"
 				}
 
@@ -558,7 +608,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 165.5, 658.0, 22.0, 22.0 ]
+					"patching_rect" : [ 549.5, 408.0, 22.0, 22.0 ]
 				}
 
 			}
@@ -569,7 +619,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 191.0, 658.0, 34.0, 22.0 ],
+					"patching_rect" : [ 575.0, 408.0, 34.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -581,7 +631,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.75, 712.0, 280.0, 29.0 ],
+					"patching_rect" : [ 444.75, 462.0, 280.0, 29.0 ],
 					"text" : "whistle-bank-8-control-matt-08-Be"
 				}
 
@@ -593,7 +643,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 153.0, 620.5, 77.0, 22.0 ],
+					"patching_rect" : [ 537.0, 370.5, 77.0, 22.0 ],
 					"text" : "QuNeo-OSC"
 				}
 
@@ -604,7 +654,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.75, 339.0, 204.0, 20.0 ],
+					"patching_rect" : [ 41.75, 309.5, 204.0, 20.0 ],
 					"text" : "Route all say signals  to speakers"
 				}
 
@@ -618,51 +668,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 334.999389999999948, 240.0, 185.0, 79.0 ],
+					"patching_rect" : [ 986.518348999999944, 32.5, 185.0, 79.0 ],
 					"text" : "We can even send additional sound (beyond the matrix outputs) into the instruments' \"hear\" inputs"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-21",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "meter8~.maxpat",
-					"numinlets" : 8,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 25.500000000000028, 155.0, 112.0, 60.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.500000000000028, 28.0, 37.0, 22.0 ],
-					"text" : "open"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "ezadc~",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 25.500000000000028, 58.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -681,7 +688,7 @@
 					"numinlets" : 12,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 559.56099700000027, 549.5, 169.551979000000074, 61.0 ],
+					"patching_rect" : [ 792.86675450000007, 452.5, 169.551979000000074, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -693,7 +700,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 12,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 559.56099700000027, 509.5, 134.5, 22.0 ],
+					"patching_rect" : [ 792.86675450000007, 430.0, 134.5, 22.0 ],
 					"text" : "receive12~ hear"
 				}
 
@@ -705,7 +712,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 372.347795499999961, 350.0, 80.0, 13.0 ]
+					"patching_rect" : [ 1023.866754499999843, 142.5, 80.0, 13.0 ]
 				}
 
 			}
@@ -715,7 +722,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 356.847795499999961, 368.0, 76.0, 22.0 ],
+					"patching_rect" : [ 1008.366754499999956, 160.5, 76.0, 22.0 ],
 					"text" : "send~ hear1"
 				}
 
@@ -727,7 +734,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 356.847795499999961, 323.0, 119.0, 22.0 ],
+					"patching_rect" : [ 1008.366754499999956, 115.5, 119.0, 22.0 ],
 					"text" : "inject-with-space-bar"
 				}
 
@@ -741,7 +748,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 334.999389999999948, 155.0, 182.0, 79.0 ],
+					"patching_rect" : [ 222.008959984091007, 131.5, 182.0, 79.0 ],
 					"text" : "Matrix outputs are \"hear\" signals that get to the bank of instruments via send~, hence no connections to these outlets"
 				}
 
@@ -763,7 +770,7 @@
 					"numoutlets" : 12,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 139.909090909090935, 131.0, 174.000000000000057, 174.0 ],
+					"patching_rect" : [ 49.909090909090935, 101.0, 174.000000000000057, 174.0 ],
 					"varname" : "gainstage",
 					"viewvisibility" : 1
 				}
@@ -777,7 +784,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 12,
 					"numoutlets" : 0,
-					"patching_rect" : [ 139.909090909090935, 314.5, 174.0, 22.0 ],
+					"patching_rect" : [ 49.909090909090935, 284.5, 174.0, 22.0 ],
 					"text" : "dac~ 1 2 3 4 5 6 7 8 9 10 11 12",
 					"varname" : "dac"
 				}
@@ -789,7 +796,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 569.336986500000194, 376.5, 150.0, 20.0 ],
+					"patching_rect" : [ 792.86675450000007, 309.5, 150.0, 20.0 ],
 					"text" : "View all the signals"
 				}
 
@@ -809,7 +816,7 @@
 					"numinlets" : 12,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 559.56099700000027, 444.0, 169.551979000000074, 61.0 ],
+					"patching_rect" : [ 792.86675450000007, 362.0, 169.551979000000074, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -821,7 +828,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 12,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 559.56099700000027, 404.0, 134.5, 22.0 ],
+					"patching_rect" : [ 792.86675450000007, 331.5, 134.5, 22.0 ],
 					"text" : "receive12~ say"
 				}
 
@@ -833,7 +840,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 554.56099700000027, 49.0, 224.0, 74.0 ],
+					"patching_rect" : [ 201.00895998409095, 7.0, 224.0, 74.0 ],
 					"text" : "the point of using mymatrix-say~ is that it makes the send~/receive~ channels \"say1\" through \"say12\" so you can send~ even more signals into the matrix from other open  Max patches..."
 				}
 
@@ -849,8 +856,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -998,7 +1005,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 792.551369000000022, 77.0, 66.0, 22.0 ],
+					"patching_rect" : [ 464.551369000000022, 26.5, 66.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1018,7 +1025,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 792.551369000000022, 49.0, 24.0, 24.0 ]
+					"patching_rect" : [ 464.551369000000022, -1.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -1028,7 +1035,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 792.551369000000022, 106.0, 70.0, 22.0 ],
+					"patching_rect" : [ 464.551369000000022, 52.0, 70.0, 22.0 ],
 					"text" : "send~ say4"
 				}
 
@@ -1040,7 +1047,7 @@
 					"numinlets" : 12,
 					"numoutlets" : 12,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 282.424786674999837, 47.0, 149.099869075000015, 22.0 ],
+					"patching_rect" : [ 49.909090909090935, 49.25, 149.099869075000015, 22.0 ],
 					"text" : "mymatrix-say~",
 					"varname" : "matrixSay"
 				}
@@ -1053,7 +1060,7 @@
 					"numinlets" : 13,
 					"numoutlets" : 13,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 334.999389999999948, 131.0, 162.696810999999968, 22.0 ],
+					"patching_rect" : [ 225.909090909090992, 106.0, 162.696810999999968, 22.0 ],
 					"text" : "mymatrix~.maxpat"
 				}
 
@@ -1065,7 +1072,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 990.0, 51.0, 35.0, 22.0 ],
+					"patching_rect" : [ 704.56099700000027, 15.25, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -1085,7 +1092,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 990.0, 79.25, 259.0, 263.0 ],
+					"patching_rect" : [ 704.56099700000027, 43.5, 259.0, 263.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1097,7 +1104,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 833.999389999999948, 551.5, 220.0, 100.0 ],
+					"patching_rect" : [ 453.54195400000026, 206.5, 220.0, 100.0 ],
 					"text" : "Display is its own big thing:\n- turn it off sometimes (performance)\n- Need to customize a lot\n- but they all use the same core elements: matrixctl, matrix graph, hear/say meters, say spectrograms, possible seating chart or branding"
 				}
 
@@ -1114,8 +1121,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1211,8 +1218,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1470,6 +1477,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 1929.0, 156.0, 217.0, 22.0 ]
 								}
 
@@ -1498,7 +1506,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 684.0, 649.0, 459.0, 50.0 ],
-									"text" : "forward-12ring",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -1571,8 +1579,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1877,8 +1885,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1923,8 +1931,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2491,8 +2499,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2672,8 +2680,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2980,8 +2988,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3507,7 +3515,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 887.036865999999918, 527.5, 107.0, 22.0 ],
+					"patching_rect" : [ 506.579430000000229, 182.5, 107.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3527,7 +3535,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 910.018432999999959, 421.0, 24.0, 24.0 ]
+					"patching_rect" : [ 529.56099700000027, 76.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -3538,7 +3546,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 910.018432999999959, 447.5, 42.0, 22.0 ],
+					"patching_rect" : [ 529.56099700000027, 102.5, 42.0, 22.0 ],
 					"text" : "gate 1"
 				}
 
@@ -3555,8 +3563,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3624,8 +3632,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3843,6 +3851,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 1929.0, 156.0, 217.0, 22.0 ]
 								}
 
@@ -3916,8 +3925,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4206,8 +4215,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4252,8 +4261,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4820,8 +4829,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -5001,8 +5010,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -5309,8 +5318,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -5771,7 +5780,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 887.036865999999918, 503.0, 134.0, 22.0 ],
+					"patching_rect" : [ 506.579430000000229, 158.0, 134.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5795,8 +5804,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5869,8 +5878,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6128,6 +6137,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 1929.0, 156.0, 217.0, 22.0 ]
 								}
 
@@ -6156,7 +6166,7 @@
 									"patching_rect" : [ 1350.833374000000049, 627.0, 419.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 760.166625999999951, 649.0, 382.833374000000049, 50.0 ],
-									"text" : "forward-12ring",
+									"text" : "no-connections",
 									"textjustification" : 1
 								}
 
@@ -6229,8 +6239,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6535,8 +6545,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6581,8 +6591,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7149,8 +7159,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7330,8 +7340,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7638,8 +7648,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -8165,7 +8175,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 910.018432999999959, 473.0, 58.0, 22.0 ],
+					"patching_rect" : [ 529.56099700000027, 128.0, 58.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8179,20 +8189,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-72",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 936.018432999999959, 366.5, 150.0, 47.0 ],
-					"text" : "<- current state of matrix in a format that matrixctrl understands."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.062745098039216, 0.827450980392157, 0.345098039215686, 1.0 ],
 					"id" : "obj-61",
@@ -8200,7 +8196,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 829.0, 421.0, 238.0, 252.0 ],
+					"patching_rect" : [ 448.542564000000311, 76.0, 238.0, 252.0 ],
 					"proportion" : 0.5
 				}
 
@@ -8423,6 +8419,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 11 ],
 					"source" : [ "obj-16", 11 ]
 				}
@@ -8598,20 +8601,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 1 ],
-					"source" : [ "obj-22", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-53", 1 ],
 					"source" : [ "obj-25", 12 ]
 				}
@@ -8621,13 +8610,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -8660,6 +8642,13 @@
 					"destination" : [ "obj-5", 1 ],
 					"order" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -8903,17 +8892,24 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "12-display+gaintest-taller.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "12-display+gaintest.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8924,23 +8920,9 @@
 			}
 , 			{
 				"name" : "QuNeo-OSC.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNeo-interface-names.png",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNeo-preset5.png",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -8948,50 +8930,36 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "be-time-ratios.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/Pieces - Matt/Be-2022",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/Pieces - Matt/Be-2022",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "boring.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "buttongrid-8x8.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "calculate_matrix_output_gains.js",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display+gaintest-taller.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display+gaintest.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "display-Slork-Bing-seating-layout.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/top-level-patches+history",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/top-level-patches+history",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -9002,133 +8970,126 @@
 			}
 , 			{
 				"name" : "front-me.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/windows",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/windows",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
+				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gainStage.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gain_slew.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gain~.1cyb.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "graphviz_string_to_jitter_image.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/display",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/display",
 				"patcherrelativepath" : "../display",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ignore-out-of-bounds-matrix-cells.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "inject-with-space-bar.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/clean-this-up",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
 				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "key-nicenames.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
+				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "left-right-both.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "make_graph.js",
-				"bootpath" : "~/repos/feedback/maxmsp/display",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/display",
 				"patcherrelativepath" : "../display",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "matrix-presets.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "meter12~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "meter8~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mod-delay-timeratio~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multi-matrixctrl.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mymatrix-say~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mymatrix~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "note-or-noteon.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/matt-max/devices",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/matt-max/devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "nothing.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
@@ -9139,35 +9100,35 @@
 			}
 , 			{
 				"name" : "quneo-pad-mapping-matt-05-timeratio.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "receive12~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "receive8~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "select_submatrix.js",
-				"bootpath" : "~/repos/feedback/maxmsp/feedback-matrix",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/feedback-matrix",
 				"patcherrelativepath" : "../feedback-matrix",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "send8~.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/library",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/library",
 				"patcherrelativepath" : "../library",
 				"type" : "JSON",
 				"implicit" : 1
@@ -9177,43 +9138,36 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sounding-notes-reg2.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/Pieces - Matt/Schott-2016",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/Pieces - Matt/Schott-2016",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "timeratio-col.maxpat",
-				"bootpath" : "~/Documents/max_path/enabled/Pieces - Matt/Be-2022",
-				"patcherrelativepath" : "../../../../Documents/max_path/enabled/Pieces - Matt/Be-2022",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/clean-this-up",
+				"patcherrelativepath" : "../clean-this-up",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "whistle-bank-8-control-matt-08-Be.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "whistle-bank-ts-4-bpatchers.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ws-tolim.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ws02.maxpat",
-				"bootpath" : "~/repos/feedback/maxmsp/whistlespace",
+				"bootpath" : "~/Documents/projects/feedbackGIT/feedback/maxmsp/whistlespace",
 				"patcherrelativepath" : "../whistlespace",
 				"type" : "JSON",
 				"implicit" : 1
