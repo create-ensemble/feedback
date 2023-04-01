@@ -402,7 +402,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.0, 783.0, 108.0, 22.0 ],
 					"style" : "",
-					"text" : "noteout QUNEO 3"
+					"text" : "noteout QUNEO 3 @matchport 1"
 				}
 
 			}
@@ -598,7 +598,7 @@
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 424.0, 40.0, 103.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO -1 2"
+					"text" : "ctlin QUNEO -1 2 @matchport 1"
 				}
 
 			}
@@ -856,7 +856,7 @@
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 9.0, 40.0, 101.0, 22.0 ],
 					"style" : "",
-					"text" : "notein QUNEO 2"
+					"text" : "notein QUNEO 2 @matchport 1"
 				}
 
 			}

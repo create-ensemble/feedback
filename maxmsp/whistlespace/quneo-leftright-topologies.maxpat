@@ -465,7 +465,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 531.0, 408.0, 103.0, 22.0 ],
-					"text" : "ctlin QUNEO -1 1"
+					"text" : "ctlin QUNEO -1 1 @matchport 1"
 				}
 
 			}
@@ -501,7 +501,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 511.0, 16.0, 101.0, 22.0 ],
-					"text" : "notein QUNEO 1"
+					"text" : "notein QUNEO 1 @matchport 1"
 				}
 
 			}

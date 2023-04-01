@@ -386,7 +386,7 @@
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 539.0, 176.5, 124.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 23"
+					"text" : "ctlin \"Akai APC20\" 23 @matchport 1"
 				}
 
 			}
@@ -681,7 +681,7 @@
 					"outlettype" : [ "int", "int", "int" ],
 					"patching_rect" : [ 58.0, 33.0, 119.0, 22.0 ],
 					"style" : "",
-					"text" : "notein \"Akai APC20\""
+					"text" : "notein \"Akai APC20\" @matchport 1"
 				}
 
 			}

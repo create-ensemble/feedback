@@ -166,7 +166,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 536.0, 490.0, 134.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 14 1"
+					"text" : "ctlin \"Akai APC20\" 14 1 @matchport 1"
 				}
 
 			}
@@ -192,7 +192,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 467.0, 457.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 8"
+					"text" : "ctlin \"Akai APC20\" 7 8 @matchport 1"
 				}
 
 			}
@@ -218,7 +218,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 408.0, 425.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 7"
+					"text" : "ctlin \"Akai APC20\" 7 7 @matchport 1"
 				}
 
 			}
@@ -244,7 +244,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 347.0, 392.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 6"
+					"text" : "ctlin \"Akai APC20\" 7 6 @matchport 1"
 				}
 
 			}
@@ -270,7 +270,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 288.0, 360.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 5"
+					"text" : "ctlin \"Akai APC20\" 7 5 @matchport 1"
 				}
 
 			}
@@ -296,7 +296,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 223.0, 328.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 4"
+					"text" : "ctlin \"Akai APC20\" 7 4 @matchport 1"
 				}
 
 			}
@@ -322,7 +322,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 164.0, 296.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 3"
+					"text" : "ctlin \"Akai APC20\" 7 3 @matchport 1"
 				}
 
 			}
@@ -348,7 +348,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 103.0, 263.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 2"
+					"text" : "ctlin \"Akai APC20\" 7 2 @matchport 1"
 				}
 
 			}
@@ -374,7 +374,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 44.0, 231.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\" 7 1"
+					"text" : "ctlin \"Akai APC20\" 7 1 @matchport 1"
 				}
 
 			}
@@ -468,7 +468,7 @@
 					"outlettype" : [ "int", "int", "int" ],
 					"patching_rect" : [ 352.0, 20.0, 108.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin \"Akai APC20\""
+					"text" : "ctlin \"Akai APC20\" @matchport 1"
 				}
 
 			}

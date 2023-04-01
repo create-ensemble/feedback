@@ -101,7 +101,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 385.0, 743.0, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 22 1"
+					"text" : "ctlin QUNEO 22 1 @matchport 1"
 				}
 
 			}
@@ -1428,7 +1428,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 1012.75, 338.0, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 21 1"
+					"text" : "ctlin QUNEO 21 1 @matchport 1"
 				}
 
 			}
@@ -1441,7 +1441,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 900.5, 338.0, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 20 1"
+					"text" : "ctlin QUNEO 20 1 @matchport 1"
 				}
 
 			}
@@ -1454,7 +1454,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 788.25, 338.0, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 19 1"
+					"text" : "ctlin QUNEO 19 1 @matchport 1"
 				}
 
 			}
@@ -1482,7 +1482,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 676.0, 338.0, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 18 1"
+					"text" : "ctlin QUNEO 18 1 @matchport 1"
 				}
 
 			}
@@ -1881,7 +1881,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 414.0, 565.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 3 1"
+					"text" : "ctlin QUNEO 3 1 @matchport 1"
 				}
 
 			}
@@ -1909,7 +1909,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 401.0, 486.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 2 1"
+					"text" : "ctlin QUNEO 2 1 @matchport 1"
 				}
 
 			}
@@ -1937,7 +1937,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 390.0, 408.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 1 1"
+					"text" : "ctlin QUNEO 1 1 @matchport 1"
 				}
 
 			}
@@ -1965,7 +1965,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 368.0, 334.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 0 1"
+					"text" : "ctlin QUNEO 0 1 @matchport 1"
 				}
 
 			}
@@ -2055,7 +2055,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 928.0, 382.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 9 1"
+					"text" : "ctlin QUNEO 9 1 @matchport 1"
 				}
 
 			}
@@ -2081,7 +2081,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 824.0, 382.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 8 1"
+					"text" : "ctlin QUNEO 8 1 @matchport 1"
 				}
 
 			}
@@ -2107,7 +2107,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 720.0, 382.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 7 1"
+					"text" : "ctlin QUNEO 7 1 @matchport 1"
 				}
 
 			}
@@ -2148,7 +2148,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 616.0, 382.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "ctlin QUNEO 6 1"
+					"text" : "ctlin QUNEO 6 1 @matchport 1"
 				}
 
 			}
@@ -2976,7 +2976,7 @@
 													"outlettype" : [ "int", "int" ],
 													"patching_rect" : [ 233.0, 33.0, 101.0, 22.0 ],
 													"style" : "",
-													"text" : "notein QUNEO 2"
+													"text" : "notein QUNEO 2 @matchport 1"
 												}
 
 											}
@@ -5047,7 +5047,7 @@
 													"outlettype" : [ "int", "int" ],
 													"patching_rect" : [ 231.0, 37.0, 101.0, 22.0 ],
 													"style" : "",
-													"text" : "notein QUNEO 2"
+													"text" : "notein QUNEO 2 @matchport 1"
 												}
 
 											}
