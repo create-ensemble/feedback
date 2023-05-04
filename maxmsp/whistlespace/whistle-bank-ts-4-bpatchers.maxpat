@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 43.0, 100.0, 1604.0, 415.0 ],
+		"rect" : [ 37.0, 649.0, 1605.0, 434.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1057.0, 653.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1428.5, 5.0, 163.0, 159.0 ],
+					"presentation_rect" : [ 1427.5, 5.0, 163.0, 159.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -71,7 +71,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1567.5, 244.5, 106.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1457.5, 220.5, 134.0, 22.0 ],
+					"presentation_rect" : [ 1456.5, 220.5, 134.0, 22.0 ],
 					"text" : "/*/delay/delay 4146.729"
 				}
 
@@ -484,7 +484,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1509.0, 353.0, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1453.5, 257.5, 80.0, 22.0 ],
+					"presentation_rect" : [ 1452.5, 257.5, 80.0, 22.0 ],
 					"text" : "/*/delay/clear"
 				}
 
@@ -499,7 +499,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1607.5, 353.0, 106.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1457.5, 189.5, 134.0, 22.0 ],
+					"presentation_rect" : [ 1456.5, 189.5, 134.0, 22.0 ],
 					"text" : "/*/delay/delay 2073.364"
 				}
 
@@ -513,7 +513,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1539.0, 411.0, 97.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1453.5, 282.666687000000024, 97.0, 22.0 ],
+					"presentation_rect" : [ 1452.5, 282.666687000000024, 97.0, 22.0 ],
 					"text" : "init personalities"
 				}
 
@@ -558,13 +558,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1275.5, -45.0, 110.0, 35.0 ],
-					"text" : "/* /delay/timeratio 1"
+					"patching_rect" : [ 1275.5, -45.0, 110.0, 22.0 ],
+					"text" : "/[26] /delay/time"
 				}
 
 			}
@@ -635,7 +634,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1116.0, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1072.5, -2.0, 357.0, 405.0 ],
+					"presentation_rect" : [ 1071.5, -2.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -659,7 +658,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 746.0, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 722.5, -2.0, 357.0, 405.0 ],
+					"presentation_rect" : [ 721.5, -2.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -683,7 +682,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 376.0, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 358.0, -2.0, 357.0, 405.0 ],
+					"presentation_rect" : [ 357.0, -2.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -707,7 +706,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 4.5, 3.0, 353.0, 401.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -2.5, -2.0, 357.0, 405.0 ],
+					"presentation_rect" : [ -3.5, -2.0, 357.0, 405.0 ],
 					"viewvisibility" : 1
 				}
 
