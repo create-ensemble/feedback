@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.0, 847.0, 265.5, 47.0 ],
+					"text" : "Crossfade solution inspired by  https://music.arts.uci.edu/dobrian/maxcookbook/abstraction-crossfading-between-delay-times"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -444,7 +456,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 588.0, 501.0, 67.0, 30.0 ],
-					"presentation_linecount" : 2,
 					"text" : "hold new delay time"
 				}
 
@@ -459,7 +470,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 496.0, 672.0, 139.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "0 to hear 1st input only, 1 to hear 2nd input only"
 				}
 
@@ -513,7 +523,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 529.0, 427.0, 66.0, 30.0 ],
+					"patching_rect" : [ 529.0, 427.0, 67.0, 30.0 ],
 					"text" : "xfade time in ms"
 				}
 
