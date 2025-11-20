@@ -27,7 +27,7 @@ with changeable topologies along with many other features.
 
 
 
-## Installation
+## Installation / Dependencies
 
 The Max patches depend on some "externals" not distributed with Max:
 
